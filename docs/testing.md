@@ -2,6 +2,8 @@
 
 Use npm, the committed lockfile, and the Node version in `.node-version`.
 
+GitHub Actions runs verification for pushes to `main`, all pull requests, and manual dispatches. Feature and Dependabot branch pushes do not run a second copy alongside their pull-request checks.
+
 ```sh
 npm ci
 npm run format
