@@ -63,10 +63,10 @@
           documented sandbox conventions. The downloadable specs show these routing overrides.
         </p>
         <p>
-          Generic detail routes return an example for any path ID. Seeded scenarios list their
-          supported IDs separately. Query support is limited to declared offset and limit
-          pagination. Other query behavior returns an explicit error. Public requests require no
-          authentication.
+          Generic detail routes return an example for any path ID. For a seeded record, the example
+          request uses that record's published ID. Query support is limited to declared offset and
+          limit pagination. Other query behavior returns an explicit error. Public requests require
+          no authentication.
         </p>
         <p>
           Exact upstream versions, unavailable pairs, schema exceptions, and responses without
@@ -75,6 +75,6 @@
         </p>
       </section>
     </main>
-    <script src="/docs/app.js" defer></script>
+    <script type="module" src="/docs/app.js"></script>
   </body>
 </html>

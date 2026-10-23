@@ -46,6 +46,7 @@ const endpoints = [
   '/coverage',
   '/docs/',
   '/docs/app.js',
+  '/docs/example-path.js',
   '/docs/style.css',
   '/catalog/TMF629/v5/openapi.json',
   '/scenarios/support-fiber-outage',

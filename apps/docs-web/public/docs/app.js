@@ -1,19 +1,30 @@
+import { exampleId, examplePath } from './example-path.js';
+
 const $ = (id) => document.getElementById(id);
 let catalog,
-  operations = [];
+  operations = [],
+  projections = [];
 const text = (tag, value) => {
   const e = document.createElement(tag);
   e.textContent = value;
   return e;
 };
 async function load() {
-  const [coverage, data] = await Promise.all(
-    ['/coverage', '/catalog'].map(async (path) => {
+  const [coverage, data, scenarioIndex] = await Promise.all(
+    ['/coverage', '/catalog', '/scenarios'].map(async (path) => {
       const r = await fetch(path);
       if (!r.ok) throw Error(`Failed to load ${path}`);
       return r.json();
     }),
   );
+  const scenarios = await Promise.all(
+    scenarioIndex.map(async (item) => {
+      const r = await fetch(item.href);
+      if (!r.ok) throw Error(`Failed to load ${item.href}`);
+      return r.json();
+    }),
+  );
+  projections = scenarios.flatMap((scenario) => scenario.projections ?? []);
   catalog = data;
   $('summary').replaceChildren();
   const stats = text('div', '');
@@ -76,9 +87,9 @@ async function select(api, version) {
 }
 function selected() {
   const op = operations[Number($('operation').value)];
-  return (
-    op && { ...op, url: location.origin + op.pathTemplate.replace(/\{[^}]+\}/g, 'synthetic-001') }
-  );
+  if (!op) return;
+  const id = exampleId(op, projections);
+  return { ...op, url: location.origin + examplePath(op.pathTemplate, id) };
 }
 function updateCurl() {
   const op = selected();
