@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "telecom-api-sandbox",
+  "main": "apps/api-worker/src/index.ts",
+  "compatibility_date": "2026-10-22",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/tmf-api/*", "/catalog*", "/coverage", "/healthz", "/scenarios*", "/s/*"],
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": false }
+}

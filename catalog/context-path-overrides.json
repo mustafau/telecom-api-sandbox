@@ -1,0 +1,100 @@
+[
+  {
+    "apiId": "TMF622",
+    "major": "v5",
+    "targetSha256": "833d15f23c6e79c43594e68a236821669f1257426dedf51111e98fccdf30a3ba",
+    "referenceMajor": "v4",
+    "referenceSha256": "c4272dcf9ee9e405e1049f2a0b69a0a3149e7328fb172b7f69b77f7f197950ef",
+    "reason": "Upstream v5 server omits its context path. Use the verified v4 context path with the version segment changed to v5, as requested by the maintainer."
+  },
+  {
+    "apiId": "TMF637",
+    "major": "v5",
+    "targetSha256": "e3904d0788266b7005d63fce826e0cd07551d7611fc11e15ed42cd414d27c977",
+    "referenceMajor": "v4",
+    "referenceSha256": "ab24403bf2b9fa6f122acad55042bb3cde0112ca2c84c614d74c6133708feded",
+    "reason": "Upstream v5 server omits its context path. Use the verified v4 context path with the version segment changed to v5, as requested by the maintainer."
+  },
+  {
+    "apiId": "TMF638",
+    "major": "v5",
+    "targetSha256": "faec2d4b3e551db65cf4a4c1a803534e876f28649f2a2d92ed8297968070a551",
+    "contextPath": "/tmf-api/serviceInventory/v5",
+    "reason": "Maintainer-authorized project convention: v5 omits its context and TMF638 v4 is outside the directory target inventory. Do not acquire an out-of-scope v4 source for context derivation. This path is not claimed as an official upstream URL."
+  },
+  {
+    "apiId": "TMF644",
+    "major": "v5",
+    "targetSha256": "e104a780af666dc8f233891c215384c2609ad48a166c7b06bae20bc1b7f3f18c",
+    "referenceMajor": "v4",
+    "referenceSha256": "071d5facb66893b2b5764d90a8a52a9c71606d37f772ae75f15c93130f3dc43f",
+    "reason": "Upstream v5 server omits its context path. Use the verified v4 context path with the version segment changed to v5, as requested by the maintainer."
+  },
+  {
+    "apiId": "TMF666",
+    "major": "v5",
+    "targetSha256": "a0cfbd1497fea9648bb7a204e2a32fe6351267e3f7ed9bf99f17cb6ea08c997b",
+    "referenceMajor": "v4",
+    "referenceSha256": "36ea91d1a267a63ad4d15afb96304d64135b13ffae6ba9b0189ad0bb777e8fa4",
+    "reason": "Upstream v5 server omits its context path. Use the verified v4 context path with the version segment changed to v5, as requested by the maintainer."
+  },
+  {
+    "apiId": "TMF669",
+    "major": "v5",
+    "targetSha256": "bcd250ef6a3337ef063e572198da1d2c9e7aa1fdd2c0ab8eba87d9fb92dd8645",
+    "referenceMajor": "v4",
+    "referenceSha256": "76de706c1abdb6d8870e585a003a9e2af2d2e88ef84b92be425fe8683c492f5c",
+    "reason": "Upstream v5 server omits its context path. Use the verified v4 context path with the version segment changed to v5, as requested by the maintainer."
+  },
+  {
+    "apiId": "TMF678",
+    "major": "v5",
+    "targetSha256": "661587c5d236e364199218046a6db4266c639ca443b9a4f312ab89f2c8c6c181",
+    "referenceMajor": "v4",
+    "referenceSha256": "c1cb4d44c0fd5939a5696f6de5d4358a7b6a054771fea7fe8468029f3b19c364",
+    "reason": "Upstream v5 server omits its context path. Use the verified v4 context path with the version segment changed to v5, as requested by the maintainer."
+  },
+  {
+    "apiId": "TMF683",
+    "major": "v5",
+    "targetSha256": "e9a22119793701f1c83d167f80d4fd3c6e612eddaceed2d59ac56a552dc0415d",
+    "referenceMajor": "v4",
+    "referenceSha256": "05fb70f7bc8808d54704c861ac6c45166e4adce14aeb25b7e8439ef055013aee",
+    "reason": "Upstream v5 server omits its context path. Use the verified v4 context path with the version segment changed to v5, as requested by the maintainer."
+  },
+  {
+    "apiId": "TMF735",
+    "major": "v5",
+    "targetSha256": "e9956ffc57c54b54c8ef9f2b67c62081e9c331bf82a3609f2e42c9130669eabf",
+    "contextPath": "/tmf-api/cdrTransactionManagement/v5",
+    "reason": "Maintainer-authorized project convention: v5 omits its context and no v4 context is available in discovered sources. This path is not claimed as an official upstream URL."
+  },
+  {
+    "apiId": "TMF736",
+    "major": "v5",
+    "targetSha256": "5f0d8dd2ff1029a33bf51a6c9800ad6875bafaf9d5e91af55ffaebf47f90c853",
+    "contextPath": "/tmf-api/revenueSharingAlgorithmManagement/v5",
+    "reason": "Maintainer-authorized project convention: v5 omits its context and no v4 context is available in discovered sources. This path is not claimed as an official upstream URL."
+  },
+  {
+    "apiId": "TMF737",
+    "major": "v5",
+    "targetSha256": "8362b2b0bd069feea35bdd1a4761675fc625260029533a09c0ffa7e8b595ee81",
+    "contextPath": "/tmf-api/revenueSharingReportManagement/v5",
+    "reason": "Maintainer-authorized project convention: v5 omits its context and no v4 context is available in discovered sources. This path is not claimed as an official upstream URL."
+  },
+  {
+    "apiId": "TMF738",
+    "major": "v5",
+    "targetSha256": "8c2a485c0408e7763cbe98805fdcf4588267a01b2bce3c81c98abc50adbbd272",
+    "contextPath": "/tmf-api/revenueSharingModelManagement/v5",
+    "reason": "Maintainer-authorized project convention: v5 omits its context and no v4 context is available in discovered sources. This path is not claimed as an official upstream URL."
+  },
+  {
+    "apiId": "TMF760",
+    "major": "v5",
+    "targetSha256": "d5acb0b1adc0427a1be1f5c64d79bc455b43f3a18a35746c0e047fbd50050b94",
+    "contextPath": "/tmf-api/productConfigurationManagement/v5",
+    "reason": "Maintainer-authorized project convention: v5 omits its context and no v4 context is available in discovered sources. This path is not claimed as an official upstream URL."
+  }
+]

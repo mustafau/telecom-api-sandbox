@@ -1,0 +1,54 @@
+{
+  "name": "telecom-api-sandbox",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "scripts": {
+    "catalog:check": "node --import tsx tools/catalog-check.ts",
+    "sources:discover": "node --import tsx tools/discover.ts",
+    "sources:check": "node --import tsx tools/check-upstream.ts",
+    "sources:lock": "node --import tsx tools/lock.ts",
+    "sources:audit": "node --import tsx tools/audit.ts",
+    "specs:compile": "node --import tsx tools/compile.ts",
+    "fixtures:validate": "node --import tsx tools/verify.ts",
+    "coverage": "node --import tsx tools/verify.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "build": "npm run catalog:check && npm run sources:audit && npm run build:prepare && npm run specs:compile && npm run scenarios:build && npm run artifacts:pack && npm run fixtures:validate",
+    "dev": "wrangler dev",
+    "deploy:dry": "wrangler deploy --dry-run --outdir dist",
+    "deploy": "node tools/deploy-guard.mjs",
+    "sources:review": "node --import tsx tools/review-candidates.ts",
+    "sources:fallback": "node --import tsx tools/fallback.ts",
+    "scenarios:build": "node --import tsx tools/seed.ts",
+    "dev:node": "node --import tsx tools/dev-node.ts",
+    "artifacts:pack": "node --import tsx tools/pack.ts",
+    "smoke:http": "node --import tsx tools/http-smoke.ts",
+    "coverage:baseline": "node --import tsx tools/coverage-baseline.ts",
+    "build:prepare": "node --import tsx tools/prepare.ts",
+    "verify:runtime": "node --import tsx tools/runtime-check.ts",
+    "lint": "biome check apps tools tests package.json tsconfig.json biome.json wrangler.jsonc",
+    "format": "biome check --write apps tools tests package.json tsconfig.json biome.json wrangler.jsonc"
+  },
+  "dependencies": {
+    "hono": "4.13.13"
+  },
+  "devDependencies": {
+    "@apidevtools/swagger-parser": "12.1.0",
+    "@biomejs/biome": "2.6.2",
+    "@cloudflare/workers-types": "5.20261022.1",
+    "@types/node": "26.6.5",
+    "@types/swagger2openapi": "7.0.4",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "openapi-sampler": "1.7.9",
+    "swagger2openapi": "7.0.8",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "wrangler": "4.152.0",
+    "yaml": "2.9.1"
+  }
+}

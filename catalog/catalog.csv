@@ -1,0 +1,105 @@
+category,api_id,name,directory_major_versions,spec_status,needs_special_review
+Marketing Sales,TMF699,Sales Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF646,Appointment Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF678,Customer Bill Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF629,Customer Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF717,Customer360 Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF770,Fraud Managment API,v5,UNVERIFIED,False
+Customer,TMF676,Payment Management API,"v1,v4",UNVERIFIED,False
+Customer,TMF670,Payment Method Management API,v4,UNVERIFIED,False
+Customer,TMF654,Prepay Balance Management API,v4,UNVERIFIED,False
+Customer,TMF760,Product Configuration Management API,v5,UNVERIFIED,False
+Customer,TMF622,Product Ordering Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF648,Quote Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF680,Recommendation Management API,"v2,v4",UNVERIFIED,False
+Customer,TMF696,Risk Management API,"v4,v5",UNVERIFIED,False
+Customer,TMF663,Shopping Cart Management API,"v4,v5",UNVERIFIED,False
+Product,TMF658,Loyalty Management API,"v4,v5",UNVERIFIED,False
+Product,TMF936,Open Gateway Product Catalog API,v5,UNVERIFIED,True
+Product,TMF937,Open Gateway Product Usage API,v5,UNVERIFIED,True
+Product,TMF620,Product Catalog Management API,"v4,v5",UNVERIFIED,False
+Product,TMF637,Product Inventory Management API,"v4,v5",UNVERIFIED,False
+Product,TMF679,Product Offering Qualification Management API,"v4,v5",UNVERIFIED,False
+Product,TMF767,Product Usage Catalog Management API,v5,UNVERIFIED,False
+Product,TMF635,Product Usage Management API,"v4,v5",UNVERIFIED,False
+Product,TMF671,Promotion Management API,"v4,v5",UNVERIFIED,False
+Product,TMF677,Usage Consumption Management API,v5,UNVERIFIED,False
+Service,TMF924,DCS 5GSlice Service Activation API,v4,UNVERIFIED,True
+Service,TMF914,IoT Service Management API,v4,UNVERIFIED,False
+Service,TMF909,Network as a Service Management API,"v3,v4",UNVERIFIED,False
+Service,TMF777,Outage Management API,v5,UNVERIFIED,False
+Service,TMF640,Service Activation Management API,"v4,v5",UNVERIFIED,False
+Service,TMF633,Service Catalog Management API,"v3,v4",UNVERIFIED,False
+Service,TMF638,Service Inventory Management API,v5,UNVERIFIED,False
+Service,TMF641,Service Ordering Management API,"v4,v5",UNVERIFIED,False
+Service,TMF656,Service Problem Management API,v5,UNVERIFIED,False
+Service,TMF645,Service Qualification Management API,"v4,v5",UNVERIFIED,False
+Service,TMF657,Service Quality Management Management API,"v1,v4",UNVERIFIED,False
+Service,TMF653,Service Test Management API,"v4,v5",UNVERIFIED,False
+Service,TMF727,Service Usage Management API,"v4,v5",UNVERIFIED,False
+Resource,TMF642,Alarm Management API,"v4,v5",UNVERIFIED,False
+Resource,TMF908,IoT Agent and Device Management API,v4,UNVERIFIED,False
+Resource,TMF759,Private Optimized Binding,v5,UNVERIFIED,True
+Resource,TMF702,Resource Activation Management API,"v4,v5",UNVERIFIED,False
+Resource,TMF634,Resource Catalog Management API,"v4,v5",UNVERIFIED,False
+Resource,TMF664,Resource Function Activation Management API,"v4,v5",UNVERIFIED,False
+Resource,TMF639,Resource Inventory Management API,"v4,v5",UNVERIFIED,False
+Resource,TMF652,Resource Order Management API,"v4,v5",UNVERIFIED,False
+Resource,TMF685,Resource Pool Management API,"v3,v5",UNVERIFIED,False
+Resource,TMF689,Resource Portability API,v5,UNVERIFIED,False
+Resource,TMF761,Resource Qualification API,v5,UNVERIFIED,False
+Resource,TMF716,Resource Reservation,v4,UNVERIFIED,False
+Resource,TMF768,Resource Role API,v5,UNVERIFIED,False
+Resource,TMF771,Resource Usage API,v5,UNVERIFIED,False
+Resource,TMF730,Software And Compute Management API,v4,UNVERIFIED,False
+Resource,TMF687,Stock Management API,"v4,v5",UNVERIFIED,False
+Business Partner,TMF666,Account Management API,"v4,v5",UNVERIFIED,False
+Business Partner,TMF651,Agreement Management API,v4,UNVERIFIED,False
+Business Partner,TMF668,Partnership Management API,"v3,v4",UNVERIFIED,False
+Business Partner,TMF683,Party Interaction Management API,"v4,v5",UNVERIFIED,False
+Business Partner,TMF632,Party Management API,"v4,v5",UNVERIFIED,False
+Business Partner,TMF669,Party Role Management API,"v4,v5",UNVERIFIED,False
+Business Partner,TMF644,Privacy Management API,"v4,v5",UNVERIFIED,False
+Business Partner,TMF736,Revenue Sharing Algorithm Management API,v5,UNVERIFIED,False
+Business Partner,TMF738,Revenue Sharing Model Management,v5,UNVERIFIED,False
+Business Partner,TMF737,Revenue Sharing Report Management API,v5,UNVERIFIED,False
+Business Partner,TMF711,Shipment Management Management API,"v4,v5",UNVERIFIED,False
+Business Partner,TMF684,Shipment Tracking Management API,v1,UNVERIFIED,False
+Business Partner,TMF700,Shipping Order Management API,v4,UNVERIFIED,False
+Business Partner,TMF623,SLA Management API,v2,UNVERIFIED,False
+Business Partner,TMF713,Work Management,"v4,v5",UNVERIFIED,False
+Common,TMF915,AI Management API,v4,UNVERIFIED,False
+Common,TMF735,CDR Transaction Management API,v5,UNVERIFIED,False
+Common,TMF655,Change Management API,"v3,v4",UNVERIFIED,False
+Common,TMF681,Communication Management API,"v3,v4",UNVERIFIED,False
+Common,TMF764,Cost Management API,v5,UNVERIFIED,False
+Common,TMF720,Digital Identity Management API,"v4,v5",UNVERIFIED,False
+Common,TMF667,Document Management API,"v4,v5",UNVERIFIED,False
+Common,TMF728,Dunning Case Management,"v4,v5",UNVERIFIED,False
+Common,TMF662,Entity Catalog Management API,"v3,v4",UNVERIFIED,False
+Common,TMF703,Entity Inventory Management API,v4,UNVERIFIED,False
+Common,TMF688,Event Management API,v4,UNVERIFIED,False
+Common,TMF691,Federated ID Management API,"v4,v5",UNVERIFIED,False
+Common,TMF710,General Test Artifact Management API,v4,UNVERIFIED,False
+Common,TMF673,Geographic Address Management API,"v4,v5",UNVERIFIED,False
+Common,TMF675,Geographic Location Management API,"v1,v4",UNVERIFIED,False
+Common,TMF674,Geographic Site Management API,"v4,v5",UNVERIFIED,False
+Common,TMF724,Incident Management API,v4,UNVERIFIED,False
+Common,TMF921,Intent Management API,"v4,v5",UNVERIFIED,False
+Common,TMF725,Metadata Catalog Management API,v4,UNVERIFIED,False
+Common,TMF931,Open Gateway Onboarding and Ordering Component Suite,v5,UNVERIFIED,True
+Common,TMF628,Performance Management API,v5,UNVERIFIED,False
+Common,TMF649,Performance Thresholding Management API,"v4,v5",UNVERIFIED,False
+Common,TMF701,Process Management API,"v4,v5",UNVERIFIED,False
+Common,TMF910,Self Care Management API,v1,UNVERIFIED,False
+Common,TMF704,Test Case Management API,v4,UNVERIFIED,False
+Common,TMF706,Test Data Management API,v4,UNVERIFIED,False
+Common,TMF705,Test Environment Management API,v4,UNVERIFIED,False
+Common,TMF708,Test Execution Management API,v4,UNVERIFIED,False
+Common,TMF707,Test Result Management API,v4,UNVERIFIED,False
+Common,TMF709,Test Scenario Management API,v4,UNVERIFIED,False
+Common,TMF686,Topology Management API,v4,UNVERIFIED,False
+Common,TMF621,Trouble Ticket Management API,"v4,v5",UNVERIFIED,False
+Common,TMF672,User Role Permission Management API,v5,UNVERIFIED,False
+Common,TMF715,Warranty Management,v4,UNVERIFIED,False
+Common,TMF714,Work Qualification Management,v4,UNVERIFIED,False

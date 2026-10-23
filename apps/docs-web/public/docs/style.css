@@ -1,0 +1,153 @@
+:root {
+  font:
+    16px / 1.6 system-ui,
+    sans-serif;
+  color: #dbe8f4;
+  background: #0c1421;
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header,
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+header {
+  padding-top: 4rem;
+  border-bottom: 1px solid #2c3c51;
+}
+.eyebrow {
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  color: #62ded0;
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 1rem 0;
+}
+h2 {
+  font-size: 1.3rem;
+}
+.notice {
+  max-width: 800px;
+  color: #9eafc4;
+  font-size: 0.85rem;
+}
+section {
+  margin: 2rem 0;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+a {
+  color: #70e1d5;
+}
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.65rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #475a71;
+  background: #142238;
+  color: inherit;
+}
+input,
+select {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+}
+button {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+button:hover {
+  border-color: #70e1d5;
+}
+label {
+  font-size: 0.9rem;
+  color: #b6c5d6;
+}
+.table {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+th,
+td {
+  text-align: left;
+  padding: 0.8rem;
+  border-bottom: 1px solid #29394f;
+}
+th {
+  color: #91a8bf;
+}
+.version {
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #44576e;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+.good {
+  color: #77e5bd;
+  border-color: #327c65;
+}
+.blocked {
+  color: #ffbd97;
+}
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #142238;
+  border: 1px solid #293c55;
+  padding: 1rem;
+  border-radius: 6px;
+  max-height: 550px;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.stat {
+  flex: 1;
+  min-width: 140px;
+  padding: 1rem;
+  background: #142238;
+  border-radius: 6px;
+}
+.stat b {
+  font-size: 1.7rem;
+  display: block;
+  color: #70e1d5;
+}
+.stat span {
+  font-size: 0.85rem;
+  color: #afc1d3;
+}
+#reason {
+  color: #ffbd97;
+}
+#explorer {
+  border: 1px solid #344963;
+  padding: 1.5rem;
+  border-radius: 8px;
+}

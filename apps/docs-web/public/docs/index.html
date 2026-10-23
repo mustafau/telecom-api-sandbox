@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Telecom API Sandbox</title>
+    <link rel="stylesheet" href="/docs/style.css">
+  </head>
+  <body>
+    <header>
+      <span class="eyebrow">SYNTHETIC DATA · PUBLIC CONTRACT MOCKS</span>
+      <h1>Telecom API Sandbox</h1>
+      <p>Explore pinned telecom contracts, predictable responses, and honest coverage.</p>
+      <p class="notice">
+        Independent mock implementation of selected TM Forum Open API specifications. Not affiliated
+        with, endorsed by, or certified by TM Forum.
+      </p>
+    </header>
+    <main>
+      <section id="summary" aria-live="polite">Loading coverage…</section>
+      <nav>
+        <a href="/coverage">Coverage JSON</a><a href="/catalog">Catalog JSON</a
+        ><a href="/scenarios">Scenarios</a><a href="/third-party-notices.txt">Attribution</a>
+      </nav>
+      <section>
+        <h2>Find a contract</h2>
+        <label for="search">API ID, name, or category</label>
+        <input id="search" type="search" placeholder="Try TMF629 or Customer">
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>API</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Versions and support</th>
+              </tr>
+            </thead>
+            <tbody id="apis"></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="explorer" hidden>
+        <h2 id="selected">Contract details</h2>
+        <p id="details"></p>
+        <p id="reason"></p>
+        <a id="spec" href="/catalog">Download bundled OpenAPI</a
+        ><label for="operation">Operation</label><select id="operation"></select>
+        <pre id="curl"></pre>
+        <button id="copy" type="button">Copy curl</button
+        ><button id="try" type="button">Send mock request</button>
+        <pre id="response" aria-live="polite"></pre>
+      </section>
+      <section>
+        <h2>What the responses mean</h2>
+        <p>
+          Contract mode serves fixed, schema checked examples. POST, PATCH, PUT, and DELETE return
+          immutable mock results and do not persist changes. A contract mock does not simulate
+          business workflows or deliver notifications.
+        </p>
+        <p>
+          Each API uses its own context path. Missing v5 contexts use reviewed v4 paths or
+          documented sandbox conventions. The downloadable specs show these routing overrides.
+        </p>
+        <p>
+          Generic detail routes return an example for any path ID. Seeded scenarios list their
+          supported IDs separately. Query support is limited to declared offset and limit
+          pagination. Other query behavior returns an explicit error. Public requests require no
+          authentication.
+        </p>
+        <p>
+          Exact upstream versions, unavailable pairs, schema exceptions, and responses without
+          schemas appear in the coverage report. Source specifications may contain original licensed
+          upstream examples; demo scenarios use synthetic data.
+        </p>
+      </section>
+    </main>
+    <script src="/docs/app.js" defer></script>
+  </body>
+</html>

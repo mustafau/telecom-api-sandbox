@@ -1,0 +1,584 @@
+[
+  {
+    "fullName": "tmforum-apis/TMF641_ServiceOrder",
+    "url": "https://github.com/tmforum-apis/TMF641_ServiceOrder",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF641_ServiceOrder.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF638_ServiceInventory",
+    "url": "https://github.com/tmforum-apis/TMF638_ServiceInventory",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF638_ServiceInventory.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF676_PaymentManagement",
+    "url": "https://github.com/tmforum-apis/TMF676_PaymentManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF676_PaymentManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF684_ShipmentTracking",
+    "url": "https://github.com/tmforum-apis/TMF684_ShipmentTracking",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF684_ShipmentTracking.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF645_ServiceQualification",
+    "url": "https://github.com/tmforum-apis/TMF645_ServiceQualification",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF645_ServiceQualification.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF646_AppointmentManagement",
+    "url": "https://github.com/tmforum-apis/TMF646_AppointmentManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF646_AppointmentManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF622_ProductOrder",
+    "url": "https://github.com/tmforum-apis/TMF622_ProductOrder",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF622_ProductOrder.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF677_UsageConsumption",
+    "url": "https://github.com/tmforum-apis/TMF677_UsageConsumption",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF677_UsageConsumption.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF679_ProductOfferingQualification",
+    "url": "https://github.com/tmforum-apis/TMF679_ProductOfferingQualification",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF679_ProductOfferingQualification.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF672_UserRolesPermissions",
+    "url": "https://github.com/tmforum-apis/TMF672_UserRolesPermissions",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF672_UserRolesPermissions.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF674_GeographicSite",
+    "url": "https://github.com/tmforum-apis/TMF674_GeographicSite",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF674_GeographicSite.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF678_CustomerBill",
+    "url": "https://github.com/tmforum-apis/TMF678_CustomerBill",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF678_CustomerBill.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF635_UsageManagement",
+    "url": "https://github.com/tmforum-apis/TMF635_UsageManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF635_UsageManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF629_CustomerManagement",
+    "url": "https://github.com/tmforum-apis/TMF629_CustomerManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF629_CustomerManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF666_AccountManagement",
+    "url": "https://github.com/tmforum-apis/TMF666_AccountManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF666_AccountManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF651_AgreementManagement",
+    "url": "https://github.com/tmforum-apis/TMF651_AgreementManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF651_AgreementManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF669_PartyRole",
+    "url": "https://github.com/tmforum-apis/TMF669_PartyRole",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF669_PartyRole.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF668_PartnershipType",
+    "url": "https://github.com/tmforum-apis/TMF668_PartnershipType",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF668_PartnershipType.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF653_ServiceTestManagement",
+    "url": "https://github.com/tmforum-apis/TMF653_ServiceTestManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF653_ServiceTestManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF655_ChangeManagement",
+    "url": "https://github.com/tmforum-apis/TMF655_ChangeManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF655_ChangeManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF657_ServiceQualityManagement",
+    "url": "https://github.com/tmforum-apis/TMF657_ServiceQualityManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF657_ServiceQualityManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF671_Promotion",
+    "url": "https://github.com/tmforum-apis/TMF671_Promotion",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF671_Promotion.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF680_Recommendation",
+    "url": "https://github.com/tmforum-apis/TMF680_Recommendation",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF680_Recommendation.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF681_Communication",
+    "url": "https://github.com/tmforum-apis/TMF681_Communication",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF681_Communication.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF691_FederatedIdentity",
+    "url": "https://github.com/tmforum-apis/TMF691_FederatedIdentity",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF691_FederatedIdentity.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF632_PartyManagement",
+    "url": "https://github.com/tmforum-apis/TMF632_PartyManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF632_PartyManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF675_GeographicLocation",
+    "url": "https://github.com/tmforum-apis/TMF675_GeographicLocation",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF675_GeographicLocation.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF673_GeographicAddress",
+    "url": "https://github.com/tmforum-apis/TMF673_GeographicAddress",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF673_GeographicAddress.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF648_QuoteManagement",
+    "url": "https://github.com/tmforum-apis/TMF648_QuoteManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF648_QuoteManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF620_ProductCatalog",
+    "url": "https://github.com/tmforum-apis/TMF620_ProductCatalog",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF620_ProductCatalog.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF633_ServiceCatalog",
+    "url": "https://github.com/tmforum-apis/TMF633_ServiceCatalog",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF633_ServiceCatalog.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF637_ProductInventory",
+    "url": "https://github.com/tmforum-apis/TMF637_ProductInventory",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF637_ProductInventory.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF662_EntityCatalog",
+    "url": "https://github.com/tmforum-apis/TMF662_EntityCatalog",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF662_EntityCatalog.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF634_ResourceCatalog",
+    "url": "https://github.com/tmforum-apis/TMF634_ResourceCatalog",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF634_ResourceCatalog.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF658_LoyaltyManagement",
+    "url": "https://github.com/tmforum-apis/TMF658_LoyaltyManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF658_LoyaltyManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF621_TroubleTicket",
+    "url": "https://github.com/tmforum-apis/TMF621_TroubleTicket",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF621_TroubleTicket.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF663_ShoppingCart",
+    "url": "https://github.com/tmforum-apis/TMF663_ShoppingCart",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF663_ShoppingCart.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF683_PartyInteraction",
+    "url": "https://github.com/tmforum-apis/TMF683_PartyInteraction",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF683_PartyInteraction.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF670_PaymentMethods",
+    "url": "https://github.com/tmforum-apis/TMF670_PaymentMethods",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF670_PaymentMethods.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF639_ResourceInventory",
+    "url": "https://github.com/tmforum-apis/TMF639_ResourceInventory",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF639_ResourceInventory.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF652_ResourceOrderManagement",
+    "url": "https://github.com/tmforum-apis/TMF652_ResourceOrderManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF652_ResourceOrderManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF685_ResourcePool",
+    "url": "https://github.com/tmforum-apis/TMF685_ResourcePool",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF685_ResourcePool.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF654_PrepayBalanceManagement",
+    "url": "https://github.com/tmforum-apis/TMF654_PrepayBalanceManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF654_PrepayBalanceManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF656_ServiceProblemManagement",
+    "url": "https://github.com/tmforum-apis/TMF656_ServiceProblemManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF656_ServiceProblemManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF640_ActivationConfiguration",
+    "url": "https://github.com/tmforum-apis/TMF640_ActivationConfiguration",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF640_ActivationConfiguration.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF699_Sales",
+    "url": "https://github.com/tmforum-apis/TMF699_Sales",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF699_Sales.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF701_ProcessFlow",
+    "url": "https://github.com/tmforum-apis/TMF701_ProcessFlow",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF701_ProcessFlow.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF909_NaaSComponentSuite",
+    "url": "https://github.com/tmforum-apis/TMF909_NaaSComponentSuite",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF909_NaaSComponentSuite.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF644_Privacy",
+    "url": "https://github.com/tmforum-apis/TMF644_Privacy",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF644_Privacy.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF667_Document",
+    "url": "https://github.com/tmforum-apis/TMF667_Document",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF667_Document.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF702-ResourceActivationConfiguration",
+    "url": "https://github.com/tmforum-apis/TMF702-ResourceActivationConfiguration",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF702-ResourceActivationConfiguration.git",
+    "defaultBranch": "master"
+  },
+  {
+    "fullName": "tmforum-apis/TMF688-Event",
+    "url": "https://github.com/tmforum-apis/TMF688-Event",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF688-Event.git",
+    "defaultBranch": "master"
+  },
+  {
+    "fullName": "tmforum-apis/TMF908_IoTAgentAndDeviceComponentSuite",
+    "url": "https://github.com/tmforum-apis/TMF908_IoTAgentAndDeviceComponentSuite",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF908_IoTAgentAndDeviceComponentSuite.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF704_TestCase",
+    "url": "https://github.com/tmforum-apis/TMF704_TestCase",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF704_TestCase.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF705_TestEnvironment",
+    "url": "https://github.com/tmforum-apis/TMF705_TestEnvironment",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF705_TestEnvironment.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF706_TestData",
+    "url": "https://github.com/tmforum-apis/TMF706_TestData",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF706_TestData.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF707_TestResult",
+    "url": "https://github.com/tmforum-apis/TMF707_TestResult",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF707_TestResult.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF708_TestExecution",
+    "url": "https://github.com/tmforum-apis/TMF708_TestExecution",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF708_TestExecution.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF709_TestScenario",
+    "url": "https://github.com/tmforum-apis/TMF709_TestScenario",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF709_TestScenario.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF710_GeneralTestArtifact",
+    "url": "https://github.com/tmforum-apis/TMF710_GeneralTestArtifact",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF710_GeneralTestArtifact.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF642_AlarmManagement",
+    "url": "https://github.com/tmforum-apis/TMF642_AlarmManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF642_AlarmManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF664_ResourceFunctionActivationConfiguration",
+    "url": "https://github.com/tmforum-apis/TMF664_ResourceFunctionActivationConfiguration",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF664_ResourceFunctionActivationConfiguration.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/Open_Api_And_Data_Model",
+    "url": "https://github.com/tmforum-apis/Open_Api_And_Data_Model",
+    "cloneUrl": "https://github.com/tmforum-apis/Open_Api_And_Data_Model.git",
+    "defaultBranch": "master"
+  },
+  {
+    "fullName": "tmforum-apis/TMF696_RiskManagement",
+    "url": "https://github.com/tmforum-apis/TMF696_RiskManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF696_RiskManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF703_EntityInventory",
+    "url": "https://github.com/tmforum-apis/TMF703_EntityInventory",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF703_EntityInventory.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF915_AIManagementSuite",
+    "url": "https://github.com/tmforum-apis/TMF915_AIManagementSuite",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF915_AIManagementSuite.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF910_SelfCareComponentSuite",
+    "url": "https://github.com/tmforum-apis/TMF910_SelfCareComponentSuite",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF910_SelfCareComponentSuite.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/OpenAPI-diagram-generator",
+    "url": "https://github.com/tmforum-apis/OpenAPI-diagram-generator",
+    "cloneUrl": "https://github.com/tmforum-apis/OpenAPI-diagram-generator.git",
+    "defaultBranch": "master"
+  },
+  {
+    "fullName": "tmforum-apis/TMF687_StockManagement",
+    "url": "https://github.com/tmforum-apis/TMF687_StockManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF687_StockManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF628_Performance",
+    "url": "https://github.com/tmforum-apis/TMF628_Performance",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF628_Performance.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF914_IoTServiceComponentSuite",
+    "url": "https://github.com/tmforum-apis/TMF914_IoTServiceComponentSuite",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF914_IoTServiceComponentSuite.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/APITestEngineStaticCTK",
+    "url": "https://github.com/tmforum-apis/APITestEngineStaticCTK",
+    "cloneUrl": "https://github.com/tmforum-apis/APITestEngineStaticCTK.git",
+    "defaultBranch": "master"
+  },
+  {
+    "fullName": "tmforum-apis/TMF700_ShippingOrder",
+    "url": "https://github.com/tmforum-apis/TMF700_ShippingOrder",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF700_ShippingOrder.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF720_DigitalIdentity",
+    "url": "https://github.com/tmforum-apis/TMF720_DigitalIdentity",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF720_DigitalIdentity.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF697_Work_Order",
+    "url": "https://github.com/tmforum-apis/TMF697_Work_Order",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF697_Work_Order.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/Intent_Repository",
+    "url": "https://github.com/tmforum-apis/Intent_Repository",
+    "cloneUrl": "https://github.com/tmforum-apis/Intent_Repository.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/oas2puml",
+    "url": "https://github.com/tmforum-apis/oas2puml",
+    "cloneUrl": "https://github.com/tmforum-apis/oas2puml.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/ipdr",
+    "url": "https://github.com/tmforum-apis/ipdr",
+    "cloneUrl": "https://github.com/tmforum-apis/ipdr.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/tmf-api-commons",
+    "url": "https://github.com/tmforum-apis/tmf-api-commons",
+    "cloneUrl": "https://github.com/tmforum-apis/tmf-api-commons.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF921_Intent",
+    "url": "https://github.com/tmforum-apis/TMF921_Intent",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF921_Intent.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF123_Template",
+    "url": "https://github.com/tmforum-apis/TMF123_Template",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF123_Template.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF702_ResourceActivationManagement",
+    "url": "https://github.com/tmforum-apis/TMF702_ResourceActivationManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF702_ResourceActivationManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF716_ResourceReservation",
+    "url": "https://github.com/tmforum-apis/TMF716_ResourceReservation",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF716_ResourceReservation.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF724_IncidentManagement",
+    "url": "https://github.com/tmforum-apis/TMF724_IncidentManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF724_IncidentManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF730_SoftwareAndComputeManagement",
+    "url": "https://github.com/tmforum-apis/TMF730_SoftwareAndComputeManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF730_SoftwareAndComputeManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF735_CDRTransactionManagement",
+    "url": "https://github.com/tmforum-apis/TMF735_CDRTransactionManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF735_CDRTransactionManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF736_RevenueSharingAlgorithmManagement",
+    "url": "https://github.com/tmforum-apis/TMF736_RevenueSharingAlgorithmManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF736_RevenueSharingAlgorithmManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF737_RevenueSharingReportManagement",
+    "url": "https://github.com/tmforum-apis/TMF737_RevenueSharingReportManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF737_RevenueSharingReportManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF738_RevenueSharingModelManagement",
+    "url": "https://github.com/tmforum-apis/TMF738_RevenueSharingModelManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF738_RevenueSharingModelManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF760_ProductConfigurationManagement",
+    "url": "https://github.com/tmforum-apis/TMF760_ProductConfigurationManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF760_ProductConfigurationManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF771_ResourceUsage",
+    "url": "https://github.com/tmforum-apis/TMF771_ResourceUsage",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF771_ResourceUsage.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF931_OpenGatewayOnboardingAndOrderingComponentSuite",
+    "url": "https://github.com/tmforum-apis/TMF931_OpenGatewayOnboardingAndOrderingComponentSuite",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF931_OpenGatewayOnboardingAndOrderingComponentSuite.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF936_OperateProductCatalog",
+    "url": "https://github.com/tmforum-apis/TMF936_OperateProductCatalog",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF936_OperateProductCatalog.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF649_PerformanceThresholding",
+    "url": "https://github.com/tmforum-apis/TMF649_PerformanceThresholding",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF649_PerformanceThresholding.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF937_OpenGatewayProductUsage",
+    "url": "https://github.com/tmforum-apis/TMF937_OpenGatewayProductUsage",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF937_OpenGatewayProductUsage.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF767_ProductUsageCatalogManagement",
+    "url": "https://github.com/tmforum-apis/TMF767_ProductUsageCatalogManagement",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF767_ProductUsageCatalogManagement.git",
+    "defaultBranch": "main"
+  },
+  {
+    "fullName": "tmforum-apis/TMF717_Customer360Management",
+    "url": "https://github.com/tmforum-apis/TMF717_Customer360Management",
+    "cloneUrl": "https://github.com/tmforum-apis/TMF717_Customer360Management.git",
+    "defaultBranch": "main"
+  }
+]

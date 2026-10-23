@@ -1,0 +1,709 @@
+[
+  {
+    "apiId": "TMF620",
+    "major": "v4",
+    "exactVersion": "4.1.0",
+    "sha256": "e4d73a59e906fc5daf379273d923cc0874305634b1cee8bc52275b8d6cac354a",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF620_ProductCatalog",
+        "path": "TMF620_Product_Catalog_Management_API_v4.1.0_swagger.json",
+        "sha256": "e4d73a59e906fc5daf379273d923cc0874305634b1cee8bc52275b8d6cac354a"
+      },
+      {
+        "repo": "tmforum-apis/TMF620_ProductCatalog",
+        "path": "TMF620-ProductCatalog-v4.1.0.swagger.json",
+        "sha256": "10db69222fcdbeb7e99b423af3e83953bcacc832278af944016cdc05a5ed60cc"
+      }
+    ],
+    "semanticHash": "f466b58b4ea278544f993fbb06ea56a0168be27a48aa03d74efdc3b5d1bb3c4b"
+  },
+  {
+    "apiId": "TMF622",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "c4272dcf9ee9e405e1049f2a0b69a0a3149e7328fb172b7f69b77f7f197950ef",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF622_ProductOrder",
+        "path": "TMF622_Product_Ordering_Management_API_v4.0.0_swagger.json",
+        "sha256": "c4272dcf9ee9e405e1049f2a0b69a0a3149e7328fb172b7f69b77f7f197950ef"
+      },
+      {
+        "repo": "tmforum-apis/TMF622_ProductOrder",
+        "path": "TMF622-ProductOrder-v4.0.0.swagger.json",
+        "sha256": "b2435fed622d58c9f6c2dd339045659dbfdb531430ce92ce1b36dc4a357c08cd"
+      }
+    ],
+    "semanticHash": "10a7531fca091295efb8675d030cccc4a9e9aeccae99490dd4b0a6df67762f8a"
+  },
+  {
+    "apiId": "TMF632",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "63012f7d5e4d6a3d96bcdb0aacd48e6fee07d62155e42da36e799577c10fd560",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF632_PartyManagement",
+        "path": "TMF632_Party_Management_API_v4.0.0_swagger.json",
+        "sha256": "63012f7d5e4d6a3d96bcdb0aacd48e6fee07d62155e42da36e799577c10fd560"
+      },
+      {
+        "repo": "tmforum-apis/TMF632_PartyManagement",
+        "path": "TMF632-Party-v4.0.0.swagger.json",
+        "sha256": "866d72c02e3dc1e4baffb8db733b99fd2554ddc822bee6a020287037c33240af"
+      }
+    ],
+    "semanticHash": "d24645651f087b2de2778347d9a9355f436c331cbd2016e4ca23cac1502781bb"
+  },
+  {
+    "apiId": "TMF634",
+    "major": "v4",
+    "exactVersion": "4.1.0",
+    "sha256": "c53d927d517bd34af9aad93baced1460330111bdff714553b1a44398a5b2fa27",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF634_ResourceCatalog",
+        "path": "TMF634_Resource_Catalog_Management_API_v4.1.0_swagger.json",
+        "sha256": "c53d927d517bd34af9aad93baced1460330111bdff714553b1a44398a5b2fa27"
+      },
+      {
+        "repo": "tmforum-apis/TMF634_ResourceCatalog",
+        "path": "TMF634-ResourceCatalog-v4.1.0.swagger.json",
+        "sha256": "adbacd40f8aa0445a5296cf8cc21ba22c68bc6001e194a389591b7f6364b45ba"
+      }
+    ],
+    "semanticHash": "fce04e41a86d8043f36de4ecce1611e7e4cbc9ca93b9e22af7ebd6fbb4378bb4"
+  },
+  {
+    "apiId": "TMF635",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "e0d607c44b51078311de70cbc6b96429af21016cd6ff09ace4549e4f2d3ce14c",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF635_UsageManagement",
+        "path": "TMF635_Usage_Management_API_v4.0.0_swagger.json",
+        "sha256": "e0d607c44b51078311de70cbc6b96429af21016cd6ff09ace4549e4f2d3ce14c"
+      },
+      {
+        "repo": "tmforum-apis/TMF635_UsageManagement",
+        "path": "TMF635-UsageManagement-v4.0.0.swagger.json",
+        "sha256": "d579ea6fea8ef4243a3a49b86b94b3fed4b6971ea8305468b47fa671eeb8b47f"
+      }
+    ],
+    "semanticHash": "adf2a931fc56a92d7acf128455587b2f2ee61e0454371a82dc0f8699ffdac8c6"
+  },
+  {
+    "apiId": "TMF640",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "18fdbc492af1a2d7d83b532c5f112adb759dcee60f3273871556851de8e7df44",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF640_ActivationConfiguration",
+        "path": "TMF640_Service_Activation_Management_API_v4.0.0_swagger.json",
+        "sha256": "18fdbc492af1a2d7d83b532c5f112adb759dcee60f3273871556851de8e7df44"
+      },
+      {
+        "repo": "tmforum-apis/TMF640_ActivationConfiguration",
+        "path": "TMF640-ServiceActivation-v4.0.0.swagger.json",
+        "sha256": "9ed4d93bad94fde358aa646e04f0c412e3fcdc8f56e22dc2bf5b7f9a4e39c930"
+      }
+    ],
+    "semanticHash": "26b9eadafe012ff2ece8ae35852f57b9efe687cff60c8fca2fb2cb210a64c83c"
+  },
+  {
+    "apiId": "TMF652",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "61b8c7894209515436f7b1b63d377fb86add18bdc57ac7e566bb14c605a1df44",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF652_ResourceOrderManagement",
+        "path": "TMF652_Resource_Order_Management_API_v4.0.0_swagger.json",
+        "sha256": "61b8c7894209515436f7b1b63d377fb86add18bdc57ac7e566bb14c605a1df44"
+      },
+      {
+        "repo": "tmforum-apis/TMF652_ResourceOrderManagement",
+        "path": "TMF652-ResourceOrder-v4.0.0.swagger.json",
+        "sha256": "e2a0bfb566069dc79f5a3d09e3b02a6bfeffce85de3745fbfdaa275e90e9a6a4"
+      }
+    ],
+    "semanticHash": "a896c40eba52b2722840dfbbb06d84054f518149d8b640090e2b78177a88b9de"
+  },
+  {
+    "apiId": "TMF654",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "223f52c053b196a6921de2ad13cd17b7fd01967b3e226e80ee1683a229156236",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF654_PrepayBalanceManagement",
+        "path": "TMF654_Prepay_Balance_Management_API_v4.0.0_swagger.json",
+        "sha256": "223f52c053b196a6921de2ad13cd17b7fd01967b3e226e80ee1683a229156236"
+      },
+      {
+        "repo": "tmforum-apis/TMF654_PrepayBalanceManagement",
+        "path": "TMF654-PrepayBalance-v4.0.0.swagger.json",
+        "sha256": "f397aea173cffeedb0bad4d7dd89ea3e469b881ed6e350828325c3ffa2751920"
+      }
+    ],
+    "semanticHash": "bb328c860d325a0d28f759399be6e4963003d47a6eaea48dbdfeb1a059a51337"
+  },
+  {
+    "apiId": "TMF662",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "b096888c89d6067273de072bc7360bbeb247a29b14729b9d0915f1b6a00bea45",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF662_EntityCatalog",
+        "path": "TMF662_Entity_Catalog_Management_API_v4.0.0_swagger.json",
+        "sha256": "b096888c89d6067273de072bc7360bbeb247a29b14729b9d0915f1b6a00bea45"
+      },
+      {
+        "repo": "tmforum-apis/TMF662_EntityCatalog",
+        "path": "TMF662-EntityCatalog-v4.0.0.swagger.json",
+        "sha256": "735fc1e678f7d8dfbf5bd8ca2642d0aaaf2578715048c6e172280c7bdfa4667a"
+      }
+    ],
+    "semanticHash": "c896f284a7724e536ddc7cd49d367530dc9c23aa8da819c0e98d8cec3e147fe2"
+  },
+  {
+    "apiId": "TMF668",
+    "major": "v4",
+    "exactVersion": "4.0",
+    "sha256": "c1c55e40fee422d68dd6bf1e8e5ed04460c073c1147e333cd8a729011f4409ad",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF668_PartnershipType",
+        "path": "TMF668_Partnership_Type_v4.0.0_swagger.json",
+        "sha256": "c1c55e40fee422d68dd6bf1e8e5ed04460c073c1147e333cd8a729011f4409ad"
+      },
+      {
+        "repo": "tmforum-apis/TMF668_PartnershipType",
+        "path": "TMF668-PartnershipType-v4.0.0.swagger.json",
+        "sha256": "a0c94c0b18d18a5cf8088a53d7973cfe356a5d014ccdcd6ee76b1e003a1ceb90"
+      }
+    ],
+    "semanticHash": "d3f46f55ff53baf6ef98e1e0316863b6cd94f9ac606cb4ef0cde4dc75406b774"
+  },
+  {
+    "apiId": "TMF673",
+    "major": "v4",
+    "exactVersion": "4.0.1",
+    "sha256": "5d7a2ef4b5cea9a9b6bd1957356930c880974c5ec0c9d6911c60b5a004891f0d",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF673_GeographicAddress",
+        "path": "TMF673_Geographic_Address_Management_API_v4.0.0_swagger.json",
+        "sha256": "5d7a2ef4b5cea9a9b6bd1957356930c880974c5ec0c9d6911c60b5a004891f0d"
+      },
+      {
+        "repo": "tmforum-apis/TMF673_GeographicAddress",
+        "path": "TMF673-GeographicAddress-v4.0.1.swagger.json",
+        "sha256": "b50dc5bae04d792462979e23090c2fc33177c51a873999cbddd3389e1de126b7"
+      }
+    ],
+    "semanticHash": "3caa816b14afd7ea4b4686a7848e0df4af372612ca282928b93f1af7879ba169"
+  },
+  {
+    "apiId": "TMF678",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "c1cb4d44c0fd5939a5696f6de5d4358a7b6a054771fea7fe8468029f3b19c364",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF678_CustomerBill",
+        "path": "TMF678_Customer_Bill_Management_API_v4.0.0_swagger.json",
+        "sha256": "c1cb4d44c0fd5939a5696f6de5d4358a7b6a054771fea7fe8468029f3b19c364"
+      },
+      {
+        "repo": "tmforum-apis/TMF678_CustomerBill",
+        "path": "TMF678-CustomerBill-v4.0.0.swagger.json",
+        "sha256": "b51339eb36607466caca0e6e337cb1bbf76cf7525b736e4e594e4f3ec59b1a70"
+      }
+    ],
+    "semanticHash": "faa7abb0e25648800078b974cb8cc623f9afbd0b88716ac2bc2a9469fca92100"
+  },
+  {
+    "apiId": "TMF680",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "9828162436380deb746011d14ed74f64ece4666d01f944ceaa7deb33adca6caa",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF680_Recommendation",
+        "path": "TMF680_Recommendation_Management_API_v4.0.0_swagger.json",
+        "sha256": "9828162436380deb746011d14ed74f64ece4666d01f944ceaa7deb33adca6caa"
+      },
+      {
+        "repo": "tmforum-apis/TMF680_Recommendation",
+        "path": "TMF680-Recommendation-v4.0.0.swagger.json",
+        "sha256": "0a499572400f7d646227a31d4437e8a897330057f8e4555f96babe453fb25698"
+      }
+    ],
+    "semanticHash": "3d5a4ceed25751fc2c75782d02df949ccba411c55eec3e0f7a35a1e14824bd47"
+  },
+  {
+    "apiId": "TMF687",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "85163de48d396a01d22fb6519687195da8e591126f37e81d7772bb4f7e67b249",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF687_StockManagement",
+        "path": "TMF687_Stock_Management_API_v4.0.0_swagger.json",
+        "sha256": "85163de48d396a01d22fb6519687195da8e591126f37e81d7772bb4f7e67b249"
+      },
+      {
+        "repo": "tmforum-apis/TMF687_StockManagement",
+        "path": "TMF687-Stock-v4.0.0.swagger.json",
+        "sha256": "feff63e91e0d6e895e6625672a40e117868b8b31c65378c88bcfb88b3d44ebf8"
+      }
+    ],
+    "semanticHash": "d438ddcff98d9170556b72d8ba70d5031225bbb9933bc6bc4a730d251308f03d"
+  },
+  {
+    "apiId": "TMF699",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "fc83bd86d604159a8b1984fa6adfac949c682b6d4d0684f110a6921f5a225c66",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF699_Sales",
+        "path": "TMF699_Sales_Management_API_v4.0.0_swagger.json",
+        "sha256": "fc83bd86d604159a8b1984fa6adfac949c682b6d4d0684f110a6921f5a225c66"
+      },
+      {
+        "repo": "tmforum-apis/TMF699_Sales",
+        "path": "TMF699-Sales-v4.0.0.swagger.json",
+        "sha256": "23a366e300ab4493d44bb16e962c3ce442353567b03fd0c06ca1d96ce669d6eb"
+      }
+    ],
+    "semanticHash": "b74c3c78b85917c8d48bdb7ceee112ff367ee61b6d847d44fa89c3e2fc486cdf"
+  },
+  {
+    "apiId": "TMF702",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "07277850c03a9e936cee72c973b25fa5631a1527795456a809e98abeaaf7dcb7",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF702_ResourceActivationManagement",
+        "path": "TMF702_Resource_Activation_Management_API_v4.0.0_swagger.json",
+        "sha256": "07277850c03a9e936cee72c973b25fa5631a1527795456a809e98abeaaf7dcb7"
+      },
+      {
+        "repo": "tmforum-apis/TMF702-ResourceActivationConfiguration",
+        "path": "TMF702-ResourceActivation-v4.0.0.swagger.json",
+        "sha256": "5c0dd890d2b768d36355be5ca4a5e1b369cc4864e2fafb4730a5507ec1433fd6"
+      }
+    ],
+    "semanticHash": "63674419702dc2f3977f053070d429fce75349bba71c3a2ccde82ab6733849c6"
+  },
+  {
+    "apiId": "TMF704",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "1de4409fb6ecbfa8c9e30c0026021070fe0b3ffa31e63fdf2d6fe9cf36215793",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF704_TestCase",
+        "path": "TMF704_Test_Case_Management_API_v4.0.0_swagger.json",
+        "sha256": "1de4409fb6ecbfa8c9e30c0026021070fe0b3ffa31e63fdf2d6fe9cf36215793"
+      },
+      {
+        "repo": "tmforum-apis/TMF704_TestCase",
+        "path": "TMF704-TestCase-v4.0.0.swagger.json",
+        "sha256": "d3f5161620d605aacc649082c5b71ec2a7ba7ef854a8568d97ac3915daf89eb3"
+      }
+    ],
+    "semanticHash": "8fa5b74cf5347c6abb5621a32d5fde2f91ddbf4c2b84eb0b6c134a6a6ce26f53"
+  },
+  {
+    "apiId": "TMF705",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "697469d06670759cbc79c69530befe32a5ca1f467785e9c372473bb6aaed3ff0",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF705_TestEnvironment",
+        "path": "TMF705_Test_Environment_Management_API_v4.0.0_swagger.json",
+        "sha256": "697469d06670759cbc79c69530befe32a5ca1f467785e9c372473bb6aaed3ff0"
+      },
+      {
+        "repo": "tmforum-apis/TMF705_TestEnvironment",
+        "path": "TMF705-TestEnvironment-v4.0.0.swagger.json",
+        "sha256": "c9be44d1753b3a6db8bc4cd63f401d4112db62273eddcb2854541c43aaa9eedb"
+      }
+    ],
+    "semanticHash": "43a39e60a40395d7ea28a747ef0fd86ad08a4d6f65747cd67d93747da6451a92"
+  },
+  {
+    "apiId": "TMF706",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "e8ce07b291360d1a9a62da1ebf13979e520f5622a466bb4bbc1ede79971f8b91",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF706_TestData",
+        "path": "TMF706_Test_Data_Management_API_v4.0.0_swagger.json",
+        "sha256": "e8ce07b291360d1a9a62da1ebf13979e520f5622a466bb4bbc1ede79971f8b91"
+      },
+      {
+        "repo": "tmforum-apis/TMF706_TestData",
+        "path": "TMF706-TestData-v4.0.0.swagger.json",
+        "sha256": "2d80ff27a619a0bd7ffbf31156854816e2ccde460026ba4444fa65ab408bba31"
+      }
+    ],
+    "semanticHash": "c5f9203e13d4a00c9553fd9b5d1302312affa236c223e9337f14efd7e824f46f"
+  },
+  {
+    "apiId": "TMF707",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "e5b1c01007a64dcc743fb89cd245a9054d17ad6594b2b2e955513c0a4601e083",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF707_TestResult",
+        "path": "TMF707_Test_Result_Management_API_v4.0.0_swagger.json",
+        "sha256": "e5b1c01007a64dcc743fb89cd245a9054d17ad6594b2b2e955513c0a4601e083"
+      },
+      {
+        "repo": "tmforum-apis/TMF707_TestResult",
+        "path": "TMF707-TestResult-v4.0.0.swagger.json",
+        "sha256": "b310d7b207edc420920223970ac6852b7f45b839d75065cb0acb1df73cedf4bc"
+      }
+    ],
+    "semanticHash": "b703412c2c5606371cef31bab587e99610f2997d791b5beb9c38010f73fafdf8"
+  },
+  {
+    "apiId": "TMF709",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "ec6698e896ff8e8f14b0ccec4ddba5793ee35304be0ff3d4a2b2da8a802a1eec",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF709_TestScenario",
+        "path": "TMF709_Test_Scenario_Management_API_v4.0.0_swagger.json",
+        "sha256": "ec6698e896ff8e8f14b0ccec4ddba5793ee35304be0ff3d4a2b2da8a802a1eec"
+      },
+      {
+        "repo": "tmforum-apis/TMF709_TestScenario",
+        "path": "TMF709-TestScenario-v4.0.0.swagger.json",
+        "sha256": "3ba4de888bb1ffde28220d67b61d9da430c1e7e367fe2830ce2f8b5653370bed"
+      }
+    ],
+    "semanticHash": "aa030defbc66a0b7eebc1d8beb464ab2063f2fc86471767682d23fecde2cf6ec"
+  },
+  {
+    "apiId": "TMF710",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "4ef161bc734b5eb6f1191e8544428d76d835f3ba937873f834ab068f9ce3e76f",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF710_GeneralTestArtifact",
+        "path": "TMF710_General_Test_Artifact_Management_API_v4.0.0_swagger.json",
+        "sha256": "4ef161bc734b5eb6f1191e8544428d76d835f3ba937873f834ab068f9ce3e76f"
+      },
+      {
+        "repo": "tmforum-apis/TMF710_GeneralTestArtifact",
+        "path": "TMF710-GeneralTestArtifact-v4.0.0.swagger.json",
+        "sha256": "75275c6201372a5ad573b4fd6a3f7ecb47091bb8286d65ef133f36a559967e68"
+      }
+    ],
+    "semanticHash": "154f28c22824f9c59740c941a06c2b3056e305e7e350bedc8fc50b65e6382364"
+  },
+  {
+    "apiId": "TMF915",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "0603e7f381502fd7c427bb443275273988651694d3dc83ef79d6fc18e9437021",
+    "rationale": "Compared parsed documents after sorting object keys and excluding presentation annotations (description, summary, title, example(s), externalDocs). Routing and schema semantics are identical. Deterministic filename ordering selects exact bytes.",
+    "equivalentCandidates": [
+      {
+        "repo": "tmforum-apis/TMF915_AIManagementSuite",
+        "path": "TMF915_AI_Management_API_v4.0.0_swagger.json",
+        "sha256": "0603e7f381502fd7c427bb443275273988651694d3dc83ef79d6fc18e9437021"
+      },
+      {
+        "repo": "tmforum-apis/TMF915_AIManagementSuite",
+        "path": "TMF915-AIManagement-v4.0.0.swagger.json",
+        "sha256": "87707e19e7063d12ad5a2dc5fd4c8e09e0ddd39322eaec1ce68c4ff9d8b0d0b6"
+      }
+    ],
+    "semanticHash": "d997ee3d42493137f5e40ca3f1f8d81a98e00d1a63c7b815e8059b27f10fa289"
+  },
+  {
+    "apiId": "TMF675",
+    "major": "v1",
+    "exactVersion": "1.0.0",
+    "sha256": "ad4970c61c71e469a85c955e95850aff4ab91f486c0c1f751608f4f6c6a0b539",
+    "rationale": "Explicit legacy review: GeographicLocation.regular.swagger.json is the sole v1 Swagger contract in the actual TMF675 repository tree; info.version is 1.0.0. Repository README identifies these resources as the Apache-2.0 official API mirror. Only its declared operations are included; no admin semantics inferred."
+  },
+  {
+    "apiId": "TMF684",
+    "major": "v1",
+    "exactVersion": "1.0.0",
+    "sha256": "b47098ffb316419350f2036dc9baa1b2c44530557a6df41b6ec774111ed62377",
+    "rationale": "The repository contains two info.version 1.0.0 documents, one explicitly prefixed OLD_. Pin the non-OLD file marked SwaggerValidatorPassed, already parsed as Swagger 2.0. Retain the OLD edition as an alternative in discovery; do not merge its schemas.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/TMF684_ShipmentTracking",
+        "path": "OLD_shipmentTrackingTMF.json",
+        "version": "1.0.0",
+        "sha256": "3c36cf075ee5111eaad3b90c9c4fb3b347013efc0c3ef834e82b24a7acd2953b"
+      },
+      {
+        "repo": "tmforum-apis/TMF684_ShipmentTracking",
+        "path": "shipmentTracking_v10_Jan18_SwaggerValidatorPassed.json",
+        "version": "1.0.0",
+        "sha256": "b47098ffb316419350f2036dc9baa1b2c44530557a6df41b6ec774111ed62377"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF670",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "5ded812d813c4f1e0cd4dda259722569d7b14d70b2cedd27f2be37fe7fc92ec9",
+    "rationale": "Same-version editions differ in required payment-subtype fields and polymorphic attributes. Pin the descriptive API edition with explicit subtype requirements. Alternative bytes are not interchangeable; this lock promises only the selected edition.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/TMF670_PaymentMethods",
+        "path": "TMF670_Payment_Method_Management_API_v4.0.0_swagger.json",
+        "version": "4.0.0",
+        "sha256": "5ded812d813c4f1e0cd4dda259722569d7b14d70b2cedd27f2be37fe7fc92ec9"
+      },
+      {
+        "repo": "tmforum-apis/TMF670_PaymentMethods",
+        "path": "TMF670-PaymentMethod-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "437961b3c1b3f0d5ca4986d84fa913514695941f3552226d48d248183cd3a7dd"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF645",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "4bc2641e160fe3bc27b5cd4ac785667aac679dd594017d17554c3b0e9ac1d8da",
+    "rationale": "The file labelled v4.0.1 still declares info.version 4.0.0. It and the descriptive API edition return QueryServiceQualification for the query operation; the other v4.0.0 file incorrectly references CheckServiceQualification. Preserve actual info.version 4.0.0 and disclose the filename mismatch.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/Open_Api_And_Data_Model",
+        "path": "apis/TMF645_Service_Qualification/swaggers/TMF645-ServiceQualification-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "3fef760f5d5ca980017f2776a11a5a6f9f4ffc2ace252e025abe03d881c7e04e"
+      },
+      {
+        "repo": "tmforum-apis/Open_Api_And_Data_Model",
+        "path": "apis/TMF645_Service_Qualification/swaggers/TMF645-ServiceQualification-v4.0.1.swagger.json",
+        "version": "4.0.0",
+        "sha256": "98d40b92e46222873a6e6501c48c3c86650719b150c05e9cc631963810b74e8f"
+      },
+      {
+        "repo": "tmforum-apis/TMF645_ServiceQualification",
+        "path": "TMF645_Service_Qualification_Management_API_v4.0.0_swagger.json",
+        "version": "4.0.0",
+        "sha256": "98d40b92e46222873a6e6501c48c3c86650719b150c05e9cc631963810b74e8f"
+      },
+      {
+        "repo": "tmforum-apis/TMF645_ServiceQualification",
+        "path": "TMF645-ServiceQualification-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "9d8708bbf883bfd43a7a6054303de490dcc91f3f5973716cb772281513a406df"
+      },
+      {
+        "repo": "tmforum-apis/TMF645_ServiceQualification",
+        "path": "TMF645-ServiceQualification-v4.0.1.swagger.json",
+        "version": "4.0.0",
+        "sha256": "4bc2641e160fe3bc27b5cd4ac785667aac679dd594017d17554c3b0e9ac1d8da"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF664",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "569e8131de031a6a776b00866681ef0f6c9ea9bafb28c3b7e0ff85ee5ba230b2",
+    "rationale": "Same-version editions differ in URI/base64 constraints and endpoint representation. Pin the descriptive API edition with explicit URI and base64 constraints; do not merge its schemas with the other edition.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/Open_Api_And_Data_Model",
+        "path": "apis/TMF664_Resource_Function_Activation/swaggers/TMF664-ResourceFunctionActivation-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "8c2dbe4bccf19a1eb84664eed33840377aa46dd8e6e747549b233a199a742605"
+      },
+      {
+        "repo": "tmforum-apis/TMF664_ResourceFunctionActivationConfiguration",
+        "path": "TMF664_Resource_Function_Activation_Management_API_v4.0.0_swagger.json",
+        "version": "4.0.0",
+        "sha256": "569e8131de031a6a776b00866681ef0f6c9ea9bafb28c3b7e0ff85ee5ba230b2"
+      },
+      {
+        "repo": "tmforum-apis/TMF664_ResourceFunctionActivationConfiguration",
+        "path": "TMF664-ResourceFunctionActivation-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "c1fda073412682f04f520f3289817eb0631118fc0be141446381a8537b34b9d5"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF639",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "0de53c1e550fade78b89c4172a9cb83217fa8d05341a2f61fc1719603e88fc62",
+    "rationale": "Same-version editions differ in declared resources. Pin the edition explicitly declaring resource, physicalResource and logicalResource operations. Include all of those operations; preserve the alternative edition in source-candidates rather than merging payloads.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/Open_Api_And_Data_Model",
+        "path": "apis/TMF639_Resource_Inventory/swaggers/TMF639-ResourceInventory-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "896b3b36d441cb5091d5663a51b36a9a1947750f2660eb21fb3a07c05a19b54e"
+      },
+      {
+        "repo": "tmforum-apis/TMF639_ResourceInventory",
+        "path": "TMF639_Resource_Inventory_Management_API_v4.0.0_swagger.json",
+        "version": "4.0.0",
+        "sha256": "ec000fbcd157aa650d7816f87eab8e42343f3385301d9a64241f73ef08d47d32"
+      },
+      {
+        "repo": "tmforum-apis/TMF639_ResourceInventory",
+        "path": "TMF639-ResourceInventory-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "0de53c1e550fade78b89c4172a9cb83217fa8d05341a2f61fc1719603e88fc62"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF644",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "071d5facb66893b2b5764d90a8a52a9c71606d37f772ae75f15c93130f3dc43f",
+    "rationale": "Same-version editions differ in engagedParty versus engagedPartyRole and URI constraints. Pin the descriptive API edition using engagedParty; this is an explicit edition selection, not a claim that both contracts have identical semantics.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/Open_Api_And_Data_Model",
+        "path": "apis/TMF644_Privacy/swaggers/TMF644-Privacy-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "071d5facb66893b2b5764d90a8a52a9c71606d37f772ae75f15c93130f3dc43f"
+      },
+      {
+        "repo": "tmforum-apis/TMF644_Privacy",
+        "path": "TMF644_Privacy_Management_API_v4.0.0_swagger.json",
+        "version": "4.0.0",
+        "sha256": "071d5facb66893b2b5764d90a8a52a9c71606d37f772ae75f15c93130f3dc43f"
+      },
+      {
+        "repo": "tmforum-apis/TMF644_Privacy",
+        "path": "TMF644-Privacy-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "b712ea450a0e85bfdabc582d0e544c4a1e691247677ae140031da35786425103"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF720",
+    "major": "v4",
+    "exactVersion": "4.0.0",
+    "sha256": "5da6605e7f486ea972ebda1ff46f5922dbcd5ba043c7bffd1f3cfcc3a0c24ace",
+    "rationale": "Same-version editions differ in extension attributes and URI constraints. Pin the edition with explicit href URI formats; preserve its entity definitions without merging the alternative edition.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/TMF720_DigitalIdentity",
+        "path": "TMF720_Digital_Identity_Management_API_v4.0.0_swagger.json",
+        "version": "4.0.0",
+        "sha256": "6121a6b076227707c42fff3e68e02115f80b8e334aa48de7fca2b88a95e830ed"
+      },
+      {
+        "repo": "tmforum-apis/TMF720_DigitalIdentity",
+        "path": "TMF720-DigitalIdentity-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "sha256": "5da6605e7f486ea972ebda1ff46f5922dbcd5ba043c7bffd1f3cfcc3a0c24ace"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF680",
+    "major": "v2",
+    "exactVersion": "2.0",
+    "sha256": "cfa1de0c3bf2be3c75c7c14e1e0fef27f57090b0c854bdd3a57a696cdbf548cb",
+    "rationale": "Explicit legacy variant review: this is the sole v2 contract in the actual repository tree, title Recommendation Management and info.version 2.0. It is an admin variant and is surfaced as such. All declared operations are immutable mock responses; no administrative action is performed.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/TMF680_Recommendation",
+        "path": "Recommendation_Management.admin.swagger.json",
+        "version": "2.0",
+        "sha256": "cfa1de0c3bf2be3c75c7c14e1e0fef27f57090b0c854bdd3a57a696cdbf548cb"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF936",
+    "major": "v5",
+    "exactVersion": "5.0.0",
+    "sha256": "bd11e826555ff462eb8f821787d59780f690731061d65d21dd10fc251a72bd9a",
+    "rationale": "Explicit Open Gateway review: the repository contains one Swagger/OpenAPI document for Product Catalog, info.version 5.0.0. Enumerate every path and operation in that document; the directory badge alone is not coverage evidence.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/TMF936_OperateProductCatalog",
+        "path": "TMF936-Open_Gateway_Operate_API_-_Product_Catalog-v5.0.0.oas.yaml",
+        "version": "5.0.0",
+        "sha256": "bd11e826555ff462eb8f821787d59780f690731061d65d21dd10fc251a72bd9a"
+      }
+    ]
+  },
+  {
+    "apiId": "TMF931",
+    "major": "v5",
+    "exactVersion": "5.2.1",
+    "sha256": "f058f129fa9e78f1050a1ee14996c4b2c09abb9aae60bc6431f7cadc1d699cc9",
+    "rationale": "Explicit suite review: the repository exposes one combined OpenAPI document per patch, not a ZIP of invented interfaces. Pin the newest parsed major-5 document, info.version 5.2.1, and enumerate all its declared operations. No claim is made about additional suite assets outside that document.",
+    "alternativeFiles": [
+      {
+        "repo": "tmforum-apis/TMF931_OpenGatewayOnboardingAndOrderingComponentSuite",
+        "path": "TMF931-Open_Gateway_Operate_API_-_Onboarding_and_Ordering-v5.0.0.oas.yaml",
+        "version": "5.0.0",
+        "sha256": "3f3f043eeceb1a2b613d821839744f3aa8670eb88aa9acfe25ec9a73b18e9685"
+      },
+      {
+        "repo": "tmforum-apis/TMF931_OpenGatewayOnboardingAndOrderingComponentSuite",
+        "path": "TMF931-Open_Gateway_Operate_API_Onboarding_and_Ordering-v5.1.2.oas.yaml",
+        "version": "5.1.2",
+        "sha256": "f237211dd3b068460630cc232f5a3fcb2a3997c5ff9c9b2d25536c117dadcff7"
+      },
+      {
+        "repo": "tmforum-apis/TMF931_OpenGatewayOnboardingAndOrderingComponentSuite",
+        "path": "TMF931-Open_Gateway_Operate_API_Onboarding_and_Ordering-v5.2.1.oas.yaml",
+        "version": "5.2.1",
+        "sha256": "f058f129fa9e78f1050a1ee14996c4b2c09abb9aae60bc6431f7cadc1d699cc9"
+      }
+    ]
+  }
+]

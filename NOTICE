@@ -1,0 +1,7 @@
+Telecom API Sandbox is an independent mock implementation of selected TM Forum Open API specifications. Not affiliated with, endorsed by, or certified by TM Forum.
+
+Specifications under upstream/ originate from the tmforum-apis GitHub organization. Each redistributed source retains its original license and applicable NOTICE files beside it. catalog/spec-lock.json records exact commits, SHA256 hashes, versions, and license evidence. Generated fixture and specification assets derive from those licensed sources.
+
+catalog/context-path-overrides.json records reviewed routing modifications, including explicitly identified project conventions where no in-scope v4 context is available. These paths are sandbox conventions, not official upstream URL claims.
+
+TM Forum trademarks belong to their respective owners. No certification or endorsement is implied.

@@ -1,0 +1,42 @@
+[
+  {
+    "apiId": null,
+    "major": null,
+    "maturity": null,
+    "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+    "status": 403,
+    "observedAt": "2026-10-22T23:41:11.010Z",
+    "sourceLinks": [],
+    "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED"
+  },
+  {
+    "apiId": "TMF641",
+    "major": "v5",
+    "maturity": "PREVIEW",
+    "url": "https://www.tmforum.org/open-digital-architecture/open-apis/service-ordering-management-api-TMF641/v5.0",
+    "status": 403,
+    "observedAt": "2026-10-22T23:41:11.004Z",
+    "sourceLinks": [],
+    "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED"
+  },
+  {
+    "apiId": "TMF777",
+    "major": "v5",
+    "maturity": "PREVIEW",
+    "url": "https://www.tmforum.org/open-digital-architecture/open-apis/outage-management-api-TMF777/v5.0",
+    "status": 403,
+    "observedAt": "2026-10-22T23:41:11.132Z",
+    "sourceLinks": [],
+    "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED"
+  },
+  {
+    "apiId": "TMF770",
+    "major": "v5",
+    "maturity": "STABLE",
+    "url": "https://www.tmforum.org/open-digital-architecture/open-apis/fraud-management-api-TMF770/v5.0",
+    "status": 403,
+    "observedAt": "2026-10-22T23:41:11.136Z",
+    "sourceLinks": [],
+    "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED"
+  }
+]

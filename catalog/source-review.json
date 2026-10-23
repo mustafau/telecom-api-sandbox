@@ -1,0 +1,328 @@
+[
+  {
+    "apiId": "TMF646",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF717",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF770",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF648",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF696",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF658",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF658",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF937",
+    "major": "v5",
+    "special": true,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF671",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF924",
+    "major": "v4",
+    "special": true,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF909",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF777",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF640",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF641",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF657",
+    "major": "v1",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF727",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF727",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF759",
+    "major": "v5",
+    "special": true,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF702",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF664",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF652",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF685",
+    "major": "v3",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF685",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF689",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF761",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF768",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF687",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF668",
+    "major": "v3",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF711",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF711",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF623",
+    "major": "v2",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF713",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF713",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF655",
+    "major": "v3",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF681",
+    "major": "v3",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF764",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF720",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF667",
+    "major": "v4",
+    "special": false,
+    "candidates": [
+      {
+        "repo": "tmforum-apis/Open_Api_And_Data_Model",
+        "file": "apis/TMF667_Document/swaggers/TMF667-Document-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "license": null
+      },
+      {
+        "repo": "tmforum-apis/TMF667_Document",
+        "file": "TMF667_Document_Management_API_v4.0.0_swagger.json",
+        "version": "4.0.0",
+        "license": null
+      },
+      {
+        "repo": "tmforum-apis/TMF667_Document",
+        "file": "TMF667-Document-v4.0.0.swagger.json",
+        "version": "4.0.0",
+        "license": null
+      }
+    ]
+  },
+  {
+    "apiId": "TMF667",
+    "major": "v5",
+    "special": false,
+    "candidates": [
+      {
+        "repo": "tmforum-apis/TMF667_Document",
+        "file": "TMF667-Document_Management-v5.0.0.oas.yaml",
+        "version": "5.0.0",
+        "license": null
+      }
+    ]
+  },
+  {
+    "apiId": "TMF728",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF728",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF662",
+    "major": "v3",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF691",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF673",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF725",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF628",
+    "major": "v5",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF649",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF686",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF715",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  },
+  {
+    "apiId": "TMF714",
+    "major": "v4",
+    "special": false,
+    "candidates": []
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "support-fiber-outage",
+  "synthetic": true,
+  "referenceTime": "2026-10-22T10:00:00Z",
+  "party": { "id": "party-001", "givenName": "Example", "familyName": "Subscriber" },
+  "customer": { "id": "customer-001", "name": "Example Fiber Household", "partyId": "party-001" },
+  "offering": { "id": "product-offering-001", "name": "Example Fiber 500" },
+  "product": { "id": "product-001", "name": "Example Fiber Subscription", "customerId": "customer-001", "offeringId": "product-offering-001", "serviceId": "service-001" },
+  "service": { "id": "service-001", "name": "Example Home Fiber", "resourceId": "resource-001" },
+  "resource": { "id": "resource-001", "name": "Example Fiber Access Port", "description": "Synthetic access port affected by a fiber cut" },
+  "ticket": { "id": "trouble-ticket-001", "name": "Example fiber connectivity outage", "description": "Synthetic fiber cut affects service-001 and resource-001. Consult the outage playbook for the fixed restoration estimate.", "serviceId": "service-001", "resourceId": "resource-001" },
+  "order": { "id": "service-order-001", "description": "Synthetic restoration work for service-001", "serviceId": "service-001" },
+  "outage": { "id": "outage-001", "estimatedRestoration": "2026-10-22T14:00:00Z", "source": "Synthetic scenario facts; no TMF777 contract is available." }
+}

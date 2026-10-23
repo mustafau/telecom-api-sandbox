@@ -1,0 +1,656 @@
+[
+  {
+    "apiId": "TMF699",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "fc83bd86d604159a8b1984fa6adfac949c682b6d4d0684f110a6921f5a225c66"
+  },
+  {
+    "apiId": "TMF699",
+    "major": "v5",
+    "declaredOperations": 21,
+    "sha256": "0e0cb7fed35a4a8cdc9f6dbe5c01bdd17ac38ba1f8801be9c80b30c2a8c8194a"
+  },
+  {
+    "apiId": "TMF646",
+    "major": "v4",
+    "declaredOperations": 20,
+    "sha256": "9f253597a5b45b5ec2004d3474df5b242c89979752aa229a52fd70dbb68de2b5"
+  },
+  {
+    "apiId": "TMF678",
+    "major": "v4",
+    "declaredOperations": 10,
+    "sha256": "c1cb4d44c0fd5939a5696f6de5d4358a7b6a054771fea7fe8468029f3b19c364"
+  },
+  {
+    "apiId": "TMF678",
+    "major": "v5",
+    "declaredOperations": 16,
+    "sha256": "661587c5d236e364199218046a6db4266c639ca443b9a4f312ab89f2c8c6c181"
+  },
+  {
+    "apiId": "TMF629",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "108415e583c89be2668a1259ceafcdf42009c88fb07c1203581d1ec0397d3b8c"
+  },
+  {
+    "apiId": "TMF629",
+    "major": "v5",
+    "declaredOperations": 12,
+    "sha256": "fb55f75e317af1ed6e51e484d126e57399e6e1587ad655eda0d47a7f9365a737"
+  },
+  {
+    "apiId": "TMF717",
+    "major": "v5",
+    "declaredOperations": 8,
+    "sha256": "7977f16372ca879c7f89511d24fe529b4cbceab0989585facbe042a01b069d32"
+  },
+  {
+    "apiId": "TMF676",
+    "major": "v1",
+    "declaredOperations": 6,
+    "sha256": "6706a715340745c47a45e7638e63ef6e85d67df442d8845cde20a85adee71da9"
+  },
+  {
+    "apiId": "TMF676",
+    "major": "v4",
+    "declaredOperations": 16,
+    "sha256": "a7d048d200716e3b91ae8badd3d895d12d9f74a6cec5493e1c1deea565eda0d5"
+  },
+  {
+    "apiId": "TMF670",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "5ded812d813c4f1e0cd4dda259722569d7b14d70b2cedd27f2be37fe7fc92ec9"
+  },
+  {
+    "apiId": "TMF654",
+    "major": "v4",
+    "declaredOperations": 40,
+    "sha256": "223f52c053b196a6921de2ad13cd17b7fd01967b3e226e80ee1683a229156236"
+  },
+  {
+    "apiId": "TMF760",
+    "major": "v5",
+    "declaredOperations": 16,
+    "sha256": "d5acb0b1adc0427a1be1f5c64d79bc455b43f3a18a35746c0e047fbd50050b94"
+  },
+  {
+    "apiId": "TMF622",
+    "major": "v4",
+    "declaredOperations": 18,
+    "sha256": "c4272dcf9ee9e405e1049f2a0b69a0a3149e7328fb172b7f69b77f7f197950ef"
+  },
+  {
+    "apiId": "TMF622",
+    "major": "v5",
+    "declaredOperations": 21,
+    "sha256": "833d15f23c6e79c43594e68a236821669f1257426dedf51111e98fccdf30a3ba"
+  },
+  {
+    "apiId": "TMF648",
+    "major": "v4",
+    "declaredOperations": 12,
+    "sha256": "c5548cb2ff62fdf4bfd5dfbe3f5f9ce97132f843d51488fb5a4a37334eac039b"
+  },
+  {
+    "apiId": "TMF680",
+    "major": "v2",
+    "declaredOperations": 4,
+    "sha256": "cfa1de0c3bf2be3c75c7c14e1e0fef27f57090b0c854bdd3a57a696cdbf548cb"
+  },
+  {
+    "apiId": "TMF680",
+    "major": "v4",
+    "declaredOperations": 7,
+    "sha256": "9828162436380deb746011d14ed74f64ece4666d01f944ceaa7deb33adca6caa"
+  },
+  {
+    "apiId": "TMF696",
+    "major": "v4",
+    "declaredOperations": 37,
+    "sha256": "fd7988c19251676c2551d6a86510ac9b7502cf65734627fcfb25bbb1c28c9695"
+  },
+  {
+    "apiId": "TMF663",
+    "major": "v4",
+    "declaredOperations": 10,
+    "sha256": "08ef12fdbdf7e57cc519154c19a0c6e92b703da1ebc80c8ca796e208e359f27a"
+  },
+  {
+    "apiId": "TMF663",
+    "major": "v5",
+    "declaredOperations": 10,
+    "sha256": "3042eac7d61cd50db5451a600888dbe5bcdd779f5696906983983957f3643d77"
+  },
+  {
+    "apiId": "TMF936",
+    "major": "v5",
+    "declaredOperations": 11,
+    "sha256": "bd11e826555ff462eb8f821787d59780f690731061d65d21dd10fc251a72bd9a"
+  },
+  {
+    "apiId": "TMF620",
+    "major": "v4",
+    "declaredOperations": 56,
+    "sha256": "e4d73a59e906fc5daf379273d923cc0874305634b1cee8bc52275b8d6cac354a"
+  },
+  {
+    "apiId": "TMF620",
+    "major": "v5",
+    "declaredOperations": 59,
+    "sha256": "a84bc2e456b611c5f2fe3cb82a7f5d6b68e9589a43bcdbe8b5c0a0c3a7429351"
+  },
+  {
+    "apiId": "TMF637",
+    "major": "v4",
+    "declaredOperations": 12,
+    "sha256": "ab24403bf2b9fa6f122acad55042bb3cde0112ca2c84c614d74c6133708feded"
+  },
+  {
+    "apiId": "TMF637",
+    "major": "v5",
+    "declaredOperations": 12,
+    "sha256": "e3904d0788266b7005d63fce826e0cd07551d7611fc11e15ed42cd414d27c977"
+  },
+  {
+    "apiId": "TMF679",
+    "major": "v4",
+    "declaredOperations": 12,
+    "sha256": "1681ae0c391576be3a5f9cac843134bca4f89ec8184168063edab0a315906ed4"
+  },
+  {
+    "apiId": "TMF679",
+    "major": "v5",
+    "declaredOperations": 21,
+    "sha256": "244cd3534e414f553857327e0a9cf8d783ee1a9b248048480ed7cb7a27a77485"
+  },
+  {
+    "apiId": "TMF767",
+    "major": "v5",
+    "declaredOperations": 12,
+    "sha256": "7aadf399fa917444bccc83f3d07cf504f03f9a79f2ddecc2427332699130e060"
+  },
+  {
+    "apiId": "TMF635",
+    "major": "v4",
+    "declaredOperations": 19,
+    "sha256": "e0d607c44b51078311de70cbc6b96429af21016cd6ff09ace4549e4f2d3ce14c"
+  },
+  {
+    "apiId": "TMF635",
+    "major": "v5",
+    "declaredOperations": 15,
+    "sha256": "8fb4f765dc66ba5383a6ce9ea240e54e521a68c3485b53199929c2db98ae58be"
+  },
+  {
+    "apiId": "TMF671",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "1b81e3b7bd708eb10caf2ab395145131d2bb535c730c05e0c1950f1d0cca78c1"
+  },
+  {
+    "apiId": "TMF677",
+    "major": "v5",
+    "declaredOperations": 16,
+    "sha256": "f6e7ce4eef63916eaf87b49c306bbb577ffd3bc339517aaeeab4c0af83503503"
+  },
+  {
+    "apiId": "TMF914",
+    "major": "v4",
+    "declaredOperations": 101,
+    "sha256": "b445634d1a0017d8c0a14617e54012dcf4ea6e48d179a958215a2968cbc9d467"
+  },
+  {
+    "apiId": "TMF909",
+    "major": "v3",
+    "declaredOperations": 94,
+    "sha256": "7526c269d39d0542d5f8184843f57398b8223a204a1fe6b41662bffe22227089"
+  },
+  {
+    "apiId": "TMF640",
+    "major": "v4",
+    "declaredOperations": 17,
+    "sha256": "18fdbc492af1a2d7d83b532c5f112adb759dcee60f3273871556851de8e7df44"
+  },
+  {
+    "apiId": "TMF633",
+    "major": "v3",
+    "declaredOperations": 43,
+    "sha256": "4ab264a076db1b15016559bef2cac5301b09ab85b3efc0d7688b04bc3571a287"
+  },
+  {
+    "apiId": "TMF633",
+    "major": "v4",
+    "declaredOperations": 43,
+    "sha256": "b3cfdcb277b3adfa08b4a00f8ca3050a7e7529a54fe2ce2f062b945e5a5484f3"
+  },
+  {
+    "apiId": "TMF638",
+    "major": "v5",
+    "declaredOperations": 12,
+    "sha256": "faec2d4b3e551db65cf4a4c1a803534e876f28649f2a2d92ed8297968070a551"
+  },
+  {
+    "apiId": "TMF641",
+    "major": "v4",
+    "declaredOperations": 29,
+    "sha256": "a76fc1b8dcda2630f1a3f97d33b3c649a5506b4815cf3f8769d2be751b88696d"
+  },
+  {
+    "apiId": "TMF656",
+    "major": "v5",
+    "declaredOperations": 27,
+    "sha256": "16a4038fac18fabb55223428997bd2450474889e1874ade9e92f473a9daf2e7a"
+  },
+  {
+    "apiId": "TMF645",
+    "major": "v4",
+    "declaredOperations": 20,
+    "sha256": "4bc2641e160fe3bc27b5cd4ac785667aac679dd594017d17554c3b0e9ac1d8da"
+  },
+  {
+    "apiId": "TMF645",
+    "major": "v5",
+    "declaredOperations": 21,
+    "sha256": "dda49cfc6e5039d500cd9c50d891fc7bf1b406fce08604b649cdf9c3999ff7f7"
+  },
+  {
+    "apiId": "TMF657",
+    "major": "v4",
+    "declaredOperations": 18,
+    "sha256": "a47dcbe438ee869d5d9d5d2f454f3d46c283cda1be2de3736b0020f967d0f7b0"
+  },
+  {
+    "apiId": "TMF653",
+    "major": "v4",
+    "declaredOperations": 19,
+    "sha256": "296fabad7bc8d02e1e6f8ef02cdd5b5fe6d54a05f9d5570099da55bcdc3aad81"
+  },
+  {
+    "apiId": "TMF653",
+    "major": "v5",
+    "declaredOperations": 27,
+    "sha256": "2e12c2c7bca685a3aeb4dd781ce7d7c97df9ac39cd47bd1d42b85546becfa336"
+  },
+  {
+    "apiId": "TMF642",
+    "major": "v4",
+    "declaredOperations": 41,
+    "sha256": "8b5ad3853b19531ec56d2f702b36fc856a6908aab5df889822586e65610e4729"
+  },
+  {
+    "apiId": "TMF642",
+    "major": "v5",
+    "declaredOperations": 42,
+    "sha256": "821c35c1783a2eedf191556eef983c9cccd3af3c274199efda537da2dafa46ca"
+  },
+  {
+    "apiId": "TMF908",
+    "major": "v4",
+    "declaredOperations": 44,
+    "sha256": "7da813f9a88421abe6c810340caa6cd8d80eeb3a2336bbcfc40a2d3fa61e7ed4"
+  },
+  {
+    "apiId": "TMF702",
+    "major": "v4",
+    "declaredOperations": 17,
+    "sha256": "07277850c03a9e936cee72c973b25fa5631a1527795456a809e98abeaaf7dcb7"
+  },
+  {
+    "apiId": "TMF634",
+    "major": "v4",
+    "declaredOperations": 46,
+    "sha256": "c53d927d517bd34af9aad93baced1460330111bdff714553b1a44398a5b2fa27"
+  },
+  {
+    "apiId": "TMF634",
+    "major": "v5",
+    "declaredOperations": 52,
+    "sha256": "1816898b7a26f2dd97b2f1eadd3598a4e25de9320a662d671b4f58380049c89e"
+  },
+  {
+    "apiId": "TMF664",
+    "major": "v4",
+    "declaredOperations": 38,
+    "sha256": "569e8131de031a6a776b00866681ef0f6c9ea9bafb28c3b7e0ff85ee5ba230b2"
+  },
+  {
+    "apiId": "TMF639",
+    "major": "v4",
+    "declaredOperations": 26,
+    "sha256": "0de53c1e550fade78b89c4172a9cb83217fa8d05341a2f61fc1719603e88fc62"
+  },
+  {
+    "apiId": "TMF639",
+    "major": "v5",
+    "declaredOperations": 12,
+    "sha256": "60f1bd928326d8cf50bbfe6f6fada952005588c2598f63d72ae8c07d2048b881"
+  },
+  {
+    "apiId": "TMF652",
+    "major": "v4",
+    "declaredOperations": 18,
+    "sha256": "61b8c7894209515436f7b1b63d377fb86add18bdc57ac7e566bb14c605a1df44"
+  },
+  {
+    "apiId": "TMF716",
+    "major": "v4",
+    "declaredOperations": 18,
+    "sha256": "9a7f7698d719215dbdc108ff38f0ac156cef350e46c44e8bc1bd0afcf563ab69"
+  },
+  {
+    "apiId": "TMF771",
+    "major": "v5",
+    "declaredOperations": 19,
+    "sha256": "fe2438241b21902420b20b30613ad754161f1d9afd2e8dbcad2157745b8f86c7"
+  },
+  {
+    "apiId": "TMF730",
+    "major": "v4",
+    "declaredOperations": 19,
+    "sha256": "95e7f71b9727b8970a3b555312762e2600ba844fd8f53a1c99831f949b4edfda"
+  },
+  {
+    "apiId": "TMF687",
+    "major": "v4",
+    "declaredOperations": 40,
+    "sha256": "85163de48d396a01d22fb6519687195da8e591126f37e81d7772bb4f7e67b249"
+  },
+  {
+    "apiId": "TMF666",
+    "major": "v4",
+    "declaredOperations": 47,
+    "sha256": "36ea91d1a267a63ad4d15afb96304d64135b13ffae6ba9b0189ad0bb777e8fa4"
+  },
+  {
+    "apiId": "TMF666",
+    "major": "v5",
+    "declaredOperations": 65,
+    "sha256": "a0cfbd1497fea9648bb7a204e2a32fe6351267e3f7ed9bf99f17cb6ea08c997b"
+  },
+  {
+    "apiId": "TMF651",
+    "major": "v4",
+    "declaredOperations": 20,
+    "sha256": "b55f1514d566c7dee1b08b2a81a3b6e2292f9da079041bc3a3ca12eb2a0fb88a"
+  },
+  {
+    "apiId": "TMF668",
+    "major": "v4",
+    "declaredOperations": 18,
+    "sha256": "c1c55e40fee422d68dd6bf1e8e5ed04460c073c1147e333cd8a729011f4409ad"
+  },
+  {
+    "apiId": "TMF683",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "05fb70f7bc8808d54704c861ac6c45166e4adce14aeb25b7e8439ef055013aee"
+  },
+  {
+    "apiId": "TMF683",
+    "major": "v5",
+    "declaredOperations": 11,
+    "sha256": "e9a22119793701f1c83d167f80d4fd3c6e612eddaceed2d59ac56a552dc0415d"
+  },
+  {
+    "apiId": "TMF632",
+    "major": "v4",
+    "declaredOperations": 20,
+    "sha256": "63012f7d5e4d6a3d96bcdb0aacd48e6fee07d62155e42da36e799577c10fd560"
+  },
+  {
+    "apiId": "TMF632",
+    "major": "v5",
+    "declaredOperations": 20,
+    "sha256": "629e0236773c10ddade53598bd3d3c254f0e097e6e5c178aa51eeb8b297aecc2"
+  },
+  {
+    "apiId": "TMF669",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "76de706c1abdb6d8870e585a003a9e2af2d2e88ef84b92be425fe8683c492f5c"
+  },
+  {
+    "apiId": "TMF669",
+    "major": "v5",
+    "declaredOperations": 20,
+    "sha256": "bcd250ef6a3337ef063e572198da1d2c9e7aa1fdd2c0ab8eba87d9fb92dd8645"
+  },
+  {
+    "apiId": "TMF644",
+    "major": "v4",
+    "declaredOperations": 29,
+    "sha256": "071d5facb66893b2b5764d90a8a52a9c71606d37f772ae75f15c93130f3dc43f"
+  },
+  {
+    "apiId": "TMF644",
+    "major": "v5",
+    "declaredOperations": 29,
+    "sha256": "e104a780af666dc8f233891c215384c2609ad48a166c7b06bae20bc1b7f3f18c"
+  },
+  {
+    "apiId": "TMF736",
+    "major": "v5",
+    "declaredOperations": 11,
+    "sha256": "5f0d8dd2ff1029a33bf51a6c9800ad6875bafaf9d5e91af55ffaebf47f90c853"
+  },
+  {
+    "apiId": "TMF738",
+    "major": "v5",
+    "declaredOperations": 11,
+    "sha256": "8c2a485c0408e7763cbe98805fdcf4588267a01b2bce3c81c98abc50adbbd272"
+  },
+  {
+    "apiId": "TMF737",
+    "major": "v5",
+    "declaredOperations": 11,
+    "sha256": "8362b2b0bd069feea35bdd1a4761675fc625260029533a09c0ffa7e8b595ee81"
+  },
+  {
+    "apiId": "TMF684",
+    "major": "v1",
+    "declaredOperations": 6,
+    "sha256": "b47098ffb316419350f2036dc9baa1b2c44530557a6df41b6ec774111ed62377"
+  },
+  {
+    "apiId": "TMF700",
+    "major": "v4",
+    "declaredOperations": 12,
+    "sha256": "de979b7326e01f825ce1ce5a18f542ef387b3a47e857da6c06329c03956e1836"
+  },
+  {
+    "apiId": "TMF915",
+    "major": "v4",
+    "declaredOperations": 81,
+    "sha256": "0603e7f381502fd7c427bb443275273988651694d3dc83ef79d6fc18e9437021"
+  },
+  {
+    "apiId": "TMF735",
+    "major": "v5",
+    "declaredOperations": 11,
+    "sha256": "e9956ffc57c54b54c8ef9f2b67c62081e9c331bf82a3609f2e42c9130669eabf"
+  },
+  {
+    "apiId": "TMF655",
+    "major": "v4",
+    "declaredOperations": 12,
+    "sha256": "a3f8514380f4658426217532188cd70ca2bdbc5992729d49461e0f8f401ad201"
+  },
+  {
+    "apiId": "TMF681",
+    "major": "v4",
+    "declaredOperations": 7,
+    "sha256": "6c97c723110b6cc167d34de16936775619c920e07ad4012969fb95dd5b5dec8c"
+  },
+  {
+    "apiId": "TMF720",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "5da6605e7f486ea972ebda1ff46f5922dbcd5ba043c7bffd1f3cfcc3a0c24ace"
+  },
+  {
+    "apiId": "TMF662",
+    "major": "v4",
+    "declaredOperations": 53,
+    "sha256": "b096888c89d6067273de072bc7360bbeb247a29b14729b9d0915f1b6a00bea45"
+  },
+  {
+    "apiId": "TMF703",
+    "major": "v4",
+    "declaredOperations": 18,
+    "sha256": "3cb62dc6e0f9a2a96343f7c0f0cbb4fb06311bf62230d61c03d776d5dd31b6ff"
+  },
+  {
+    "apiId": "TMF688",
+    "major": "v4",
+    "declaredOperations": 16,
+    "sha256": "802dc890a003cc3fcb334b9ac8d43419c3346a17989544e4c600604053ab96a9"
+  },
+  {
+    "apiId": "TMF691",
+    "major": "v4",
+    "declaredOperations": 4,
+    "sha256": "7a34b87ebb56895dc1a0fbb72c88f69c7cde39c84d1981aabef32fcf3a3ce806"
+  },
+  {
+    "apiId": "TMF710",
+    "major": "v4",
+    "declaredOperations": 12,
+    "sha256": "4ef161bc734b5eb6f1191e8544428d76d835f3ba937873f834ab068f9ce3e76f"
+  },
+  {
+    "apiId": "TMF673",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "5d7a2ef4b5cea9a9b6bd1957356930c880974c5ec0c9d6911c60b5a004891f0d"
+  },
+  {
+    "apiId": "TMF675",
+    "major": "v1",
+    "declaredOperations": 10,
+    "sha256": "ad4970c61c71e469a85c955e95850aff4ab91f486c0c1f751608f4f6c6a0b539"
+  },
+  {
+    "apiId": "TMF675",
+    "major": "v4",
+    "declaredOperations": 10,
+    "sha256": "80bb863aed3d2858f7dc59fb7c0d5f665467875782f308cbdbab426927fea2b3"
+  },
+  {
+    "apiId": "TMF674",
+    "major": "v4",
+    "declaredOperations": 11,
+    "sha256": "215eece03a3721499cf34fb96c2310418361f7520609e9412ada79f3e12322d2"
+  },
+  {
+    "apiId": "TMF674",
+    "major": "v5",
+    "declaredOperations": 12,
+    "sha256": "5da9e5b8c9e5c4b962ccbed900125545342ac84120ba0442471a4e1737401c7c"
+  },
+  {
+    "apiId": "TMF724",
+    "major": "v4",
+    "declaredOperations": 17,
+    "sha256": "ba741562f81438e01743e45a0a62e550d70cb25c9569815ab8a36d683ae21ad0"
+  },
+  {
+    "apiId": "TMF921",
+    "major": "v4",
+    "declaredOperations": 16,
+    "sha256": "2ec6c804168b9b5c914cc41897ce73343668c9a2c1fe9bf55d9e72ea28a1c749"
+  },
+  {
+    "apiId": "TMF921",
+    "major": "v5",
+    "declaredOperations": 26,
+    "sha256": "29745fdc5c9490f69ccc664763071c21fb5d4bb62d3ed7381701480279ff2b57"
+  },
+  {
+    "apiId": "TMF931",
+    "major": "v5",
+    "declaredOperations": 28,
+    "sha256": "f058f129fa9e78f1050a1ee14996c4b2c09abb9aae60bc6431f7cadc1d699cc9"
+  },
+  {
+    "apiId": "TMF649",
+    "major": "v5",
+    "declaredOperations": 28,
+    "sha256": "be396ce2abb567ce436e2f0fdccf506a0c82e70bfc2a9138ca7306b9640d551a"
+  },
+  {
+    "apiId": "TMF701",
+    "major": "v4",
+    "declaredOperations": 18,
+    "sha256": "9bd1f854f4f99adf4e6df7206553b9dd08a389d723bb9c67e867d90a43fd5d57"
+  },
+  {
+    "apiId": "TMF701",
+    "major": "v5",
+    "declaredOperations": 40,
+    "sha256": "d753d31dcea0d4639797115d5e1f63b9128606e3589b201756ddf0e1ad633583"
+  },
+  {
+    "apiId": "TMF910",
+    "major": "v1",
+    "declaredOperations": 13,
+    "sha256": "de270f2ed6f1dfb519228e7d76180ca99e47173f5782aac4b5998f3897301ee9"
+  },
+  {
+    "apiId": "TMF704",
+    "major": "v4",
+    "declaredOperations": 32,
+    "sha256": "1de4409fb6ecbfa8c9e30c0026021070fe0b3ffa31e63fdf2d6fe9cf36215793"
+  },
+  {
+    "apiId": "TMF706",
+    "major": "v4",
+    "declaredOperations": 22,
+    "sha256": "e8ce07b291360d1a9a62da1ebf13979e520f5622a466bb4bbc1ede79971f8b91"
+  },
+  {
+    "apiId": "TMF705",
+    "major": "v4",
+    "declaredOperations": 42,
+    "sha256": "697469d06670759cbc79c69530befe32a5ca1f467785e9c372473bb6aaed3ff0"
+  },
+  {
+    "apiId": "TMF708",
+    "major": "v4",
+    "declaredOperations": 37,
+    "sha256": "981077f53afd7a1ceafd921731392afb9fcfcd978e83757d8c195af9cfabdc9f"
+  },
+  {
+    "apiId": "TMF707",
+    "major": "v4",
+    "declaredOperations": 26,
+    "sha256": "e5b1c01007a64dcc743fb89cd245a9054d17ad6594b2b2e955513c0a4601e083"
+  },
+  {
+    "apiId": "TMF709",
+    "major": "v4",
+    "declaredOperations": 12,
+    "sha256": "ec6698e896ff8e8f14b0ccec4ddba5793ee35304be0ff3d4a2b2da8a802a1eec"
+  },
+  {
+    "apiId": "TMF621",
+    "major": "v4",
+    "declaredOperations": 13,
+    "sha256": "84c58dbfb6b9818684509ea1332fb76a0d28108cd56770da69bdb0a72827ffed"
+  },
+  {
+    "apiId": "TMF621",
+    "major": "v5",
+    "declaredOperations": 23,
+    "sha256": "dd3d242c643d132833c9a883c562bb56401ad3ef9e79c942a1f987e950be5017"
+  },
+  {
+    "apiId": "TMF672",
+    "major": "v5",
+    "declaredOperations": 32,
+    "sha256": "7c414020293bc76d12ad8035ac2af8da7dae5766ec78de066e6c9854a21592dd"
+  }
+]

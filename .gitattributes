@@ -1,0 +1,4 @@
+* text=auto eol=lf
+upstream/** -text linguist-vendored
+catalog/*.json linguist-generated
+catalog/catalog.csv linguist-generated

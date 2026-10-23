@@ -1,0 +1,21 @@
+name: Source contract or coverage gap
+description: Propose a verifiable upstream specification or explain a coverage issue.
+body:
+  - type: input
+    attributes:
+      label: API ID and major
+      placeholder: TMF641 v5
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Official source URL
+      description: Link to the actual repository file or official release asset. Respect access restrictions.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Version, provenance, and license evidence
+      description: Include info.version, immutable commit or reference, and the applicable license. A directory badge is not a contract file.
+    validations:
+      required: true

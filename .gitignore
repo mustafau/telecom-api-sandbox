@@ -1,0 +1,17 @@
+node_modules/
+.wrangler/
+dist/
+.cache/
+.env*
+!.env.example
+*.log
+/generated/
+/public/
+artifacts/
+.DS_Store
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
+*.p12

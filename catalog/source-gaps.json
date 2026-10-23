@@ -1,0 +1,824 @@
+[
+  {
+    "apiId": "TMF646",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF646",
+        "major": "v3",
+        "exactVersion": "3.0.4",
+        "repo": "tmforum-apis/TMF646_AppointmentManagement",
+        "path": "Appointment.regular.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF717",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF770",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis/fraud-management-api-TMF770/v5.0",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF648",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF648",
+        "major": "v2",
+        "exactVersion": "2.0.0",
+        "repo": "tmforum-apis/TMF648_QuoteManagement",
+        "path": "Quote_Management.regular.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF696",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF658",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF658",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF658_LoyaltyManagement",
+        "path": "Loyalty_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF658",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF658",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF658_LoyaltyManagement",
+        "path": "Loyalty_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF937",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF671",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF671",
+        "major": "v2",
+        "exactVersion": "2.0",
+        "repo": "tmforum-apis/TMF671_Promotion",
+        "path": "Promotion_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF924",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF909",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF777",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis/outage-management-api-TMF777/v5.0",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF640",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF640",
+        "major": "v3",
+        "exactVersion": "3.0.0",
+        "repo": "tmforum-apis/TMF640_ActivationConfiguration",
+        "path": "TMF640-ServiceActivationConfiguration-3.0.0.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF641",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF641",
+        "major": "v3",
+        "exactVersion": "3.0.0",
+        "repo": "tmforum-apis/TMF641_ServiceOrder",
+        "path": "Service_Ordering_Management.regular.swagger.json"
+      },
+      {
+        "apiId": "TMF641",
+        "major": "v3",
+        "exactVersion": "3.0.0",
+        "repo": "tmforum-apis/TMF641_ServiceOrder",
+        "path": "TMF641-ServiceOrdering-3.0.0.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis/service-ordering-management-api-TMF641/v5.0",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF657",
+    "major": "v1",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF657",
+        "major": "v2",
+        "exactVersion": "2.0",
+        "repo": "tmforum-apis/TMF657_ServiceQualityManagement",
+        "path": "Service_Quality_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF727",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF727",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF759",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF702",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF664",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF652",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF652",
+        "major": "v2",
+        "exactVersion": "2.0",
+        "repo": "tmforum-apis/TMF652_ResourceOrderManagement",
+        "path": "Resource_Ordering_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF685",
+    "major": "v3",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF685",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF685_ResourcePool",
+        "path": "Resource_Pool_Management.admin.swagger.json"
+      },
+      {
+        "apiId": "TMF685",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF685_ResourcePool",
+        "path": "Resource_Pool_Management.regular.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF685",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF685",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF685_ResourcePool",
+        "path": "Resource_Pool_Management.admin.swagger.json"
+      },
+      {
+        "apiId": "TMF685",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF685_ResourcePool",
+        "path": "Resource_Pool_Management.regular.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF689",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF761",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF768",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF687",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF668",
+    "major": "v3",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF668",
+        "major": "v2",
+        "exactVersion": "2.0",
+        "repo": "tmforum-apis/TMF668_PartnershipType",
+        "path": "Partnership_Type_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF711",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF711",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF623",
+    "major": "v2",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF713",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF713",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF655",
+    "major": "v3",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF655",
+        "major": "v2",
+        "exactVersion": "2.0",
+        "repo": "tmforum-apis/TMF655_ChangeManagement",
+        "path": "Change_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF681",
+    "major": "v3",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF681",
+        "major": "v2",
+        "exactVersion": "2.0",
+        "repo": "tmforum-apis/TMF681_Communication",
+        "path": "Communication_Management.admin.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF764",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF720",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF667",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "LICENSE_OR_VARIANT_REVIEW_REQUIRED",
+    "detail": "tmforum-apis/Open_Api_And_Data_Model:apis/TMF667_Document/swaggers/TMF667-Document-v4.0.0.swagger.json; tmforum-apis/TMF667_Document:TMF667_Document_Management_API_v4.0.0_swagger.json; tmforum-apis/TMF667_Document:TMF667-Document-v4.0.0.swagger.json",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF667",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "LICENSE_OR_VARIANT_REVIEW_REQUIRED",
+    "detail": "tmforum-apis/TMF667_Document:TMF667-Document_Management-v5.0.0.oas.yaml",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF728",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF728",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF662",
+    "major": "v3",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF662",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF662_EntityCatalog",
+        "path": "EntityCatalog_Management.admin.swagger.json"
+      },
+      {
+        "apiId": "TMF662",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF662_EntityCatalog",
+        "path": "EntityCatalog_Management.regular.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF691",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF691",
+        "major": "v1",
+        "exactVersion": "1.0",
+        "repo": "tmforum-apis/TMF691_FederatedIdentity",
+        "path": "FederatedId_v11draft2_14thJune14_SwaggerValidatorPassed.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF673",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF673",
+        "major": "v1",
+        "exactVersion": "1.0.0",
+        "repo": "tmforum-apis/TMF673_GeographicAddress",
+        "path": "GeographicAddress_Management.regular.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF725",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF628",
+    "major": "v5",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [
+      {
+        "apiId": "TMF628",
+        "major": "v4",
+        "exactVersion": "4.0.0",
+        "repo": "tmforum-apis/TMF628_Performance",
+        "path": "TMF628-Performance-v4.0.0.swagger.json"
+      }
+    ],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF649",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF686",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF715",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  },
+  {
+    "apiId": "TMF714",
+    "major": "v4",
+    "state": "BLOCKED",
+    "reason": "SOURCE_NOT_FOUND",
+    "detail": "No matching contract in enumerated public mirror trees; official directory fallback required.",
+    "otherUpstreamVersions": [],
+    "officialFallback": {
+      "url": "https://www.tmforum.org/open-digital-architecture/open-apis",
+      "result": "HTTP_403; ACCESS_RESTRICTIONS_RESPECTED",
+      "sourceLinks": []
+    }
+  }
+]

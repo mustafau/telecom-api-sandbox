@@ -1,0 +1,4592 @@
+openapi: 3.0.1
+info:
+  title: Performance Thresholding
+  description: >-
+    **TMF API Reference : TMF - 649 Performance Threshold**
+
+    Performance Threshold Management is about identifying exceptional behavior of monitored
+    performance indicators. Threshold Management is built as an additional layer on top of standard
+    Performance Monitoring. A PM Producing application that is already producing indicators is asked
+    to set a Threshold over a Performance Indicator and raise an alarm when this Threshold is
+    crossed. When the indicator returns to its normal behavior an alarm clear alarm event is sent.
+
+    Possible actions are:
+
+    *creating, retrieving, modifying and deleting threshold rules
+
+    *creating, retrieving, modifying and deleting thresholds
+
+    *creating, retrieving, modifying and deleting thresholdjobs
+
+    The Performance Thresholding API provides a standardized client interface to Service and
+    Resource Performance Management Systems for manipulating (create/update/delete)
+    threshold/violation/exception rules. It enables alarms/notifications on exceptions and
+    scheduling of threshold/violation/exception evaluation.
+  version: 5.0.0
+  x-generation-tooling-version: v8.6.4
+  x-generation-data-model-version: unknown
+  x-generation-date: '2026-03-30T14:57:22.635Z'
+  x-api-id: TMF649
+  license:
+    name: Apache License 2.0
+    url: 'https://www.apache.org/licenses/LICENSE-2.0'
+servers:
+  - url: '{apiRoot}'
+    variables:
+      apiRoot:
+        default: 'https://serverRoot/tmf-api/performanceThresholding/v5'
+        enum:
+          - 'https://serverRoot/tmf-api/performanceThresholding/v5'
+tags:
+  - name: threshold
+    description: Operations for Threshold Resource
+  - name: thresholdRule
+    description: Operations for ThresholdRule Resource
+  - name: thresholdJob
+    description: Operations for ThresholdJob Resource
+  - name: notification listener
+    description: Notifications for Resource Lifecycle and event notifications
+  - name: events subscription
+    description: Endpoints to register and terminate an Event Listener
+paths:
+  /hub:
+    post:
+      operationId: createHub
+      summary: Create a subscription (hub) to receive Events
+      description: Sets the communication endpoint to receive Events.
+      tags:
+        - events subscription
+      requestBody:
+        $ref: '#/components/requestBodies/Hub_FVO'
+      responses:
+        '201':
+          $ref: '#/components/responses/Hub'
+        default:
+          $ref: '#/components/responses/Error'
+  '/hub/{id}':
+    get:
+      operationId: hubGet
+      summary: Retrieve a subscription (hub)
+      description: This operation retrieves the subscription to receive Events.
+      tags:
+        - events subscription
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '200':
+          $ref: '#/components/responses/Hub'
+        default:
+          $ref: '#/components/responses/Error'
+    delete:
+      operationId: hubDelete
+      summary: Remove a subscription (hub) to receive Events
+      description: This operation removes the subscription to receive Events.
+      tags:
+        - events subscription
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '204':
+          description: Deleted
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdAttributeValueChangeEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdAttributeValueChangeEvent
+      description: >-
+        Example of a client listener for receiving the notification
+        ThresholdAttributeValueChangeEvent
+      operationId: thresholdAttributeValueChangeEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdAttributeValueChangeEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdCreateEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdCreateEvent
+      description: Example of a client listener for receiving the notification ThresholdCreateEvent
+      operationId: thresholdCreateEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdCreateEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdDeleteEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdDeleteEvent
+      description: Example of a client listener for receiving the notification ThresholdDeleteEvent
+      operationId: thresholdDeleteEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdDeleteEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdJobAttributeValueChangeEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdJobAttributeValueChangeEvent
+      description: >-
+        Example of a client listener for receiving the notification
+        ThresholdJobAttributeValueChangeEvent
+      operationId: thresholdJobAttributeValueChangeEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdJobAttributeValueChangeEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdJobCreateEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdJobCreateEvent
+      description: Example of a client listener for receiving the notification ThresholdJobCreateEvent
+      operationId: thresholdJobCreateEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdJobCreateEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdJobDeleteEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdJobDeleteEvent
+      description: Example of a client listener for receiving the notification ThresholdJobDeleteEvent
+      operationId: thresholdJobDeleteEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdJobDeleteEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdJobStateChangeEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdJobStateChangeEvent
+      description: Example of a client listener for receiving the notification ThresholdJobStateChangeEvent
+      operationId: thresholdJobStateChangeEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdJobStateChangeEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdRuleAttributeValueChangeEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdRuleAttributeValueChangeEvent
+      description: >-
+        Example of a client listener for receiving the notification
+        ThresholdRuleAttributeValueChangeEvent
+      operationId: thresholdRuleAttributeValueChangeEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdRuleAttributeValueChangeEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdRuleCreateEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdRuleCreateEvent
+      description: Example of a client listener for receiving the notification ThresholdRuleCreateEvent
+      operationId: thresholdRuleCreateEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdRuleCreateEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /listener/thresholdRuleDeleteEvent:
+    post:
+      tags:
+        - notification listener
+      summary: Client listener for entity ThresholdRuleDeleteEvent
+      description: Example of a client listener for receiving the notification ThresholdRuleDeleteEvent
+      operationId: thresholdRuleDeleteEvent
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdRuleDeleteEvent'
+      responses:
+        '204':
+          description: Notified
+        default:
+          $ref: '#/components/responses/Error'
+  /threshold:
+    get:
+      tags:
+        - threshold
+      summary: List or find Threshold objects
+      description: List or find Threshold objects
+      operationId: listThreshold
+      parameters:
+        - $ref: '#/components/parameters/Fields'
+        - $ref: '#/components/parameters/Offset'
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/Sort'
+        - $ref: '#/components/parameters/Filter'
+      responses:
+        '200':
+          $ref: '#/components/responses/200ThresholdArray'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    post:
+      tags:
+        - threshold
+      summary: Creates a Threshold
+      description: This operation creates a Threshold entity.
+      operationId: createThreshold
+      parameters:
+        - $ref: '#/components/parameters/Fields'
+      requestBody:
+        $ref: '#/components/requestBodies/Threshold_FVO'
+      responses:
+        '201':
+          $ref: '#/components/responses/201Threshold'
+        '202':
+          description: Accepted
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+  '/threshold/{id}':
+    get:
+      tags:
+        - threshold
+      summary: Retrieves a Threshold by ID
+      description: >-
+        This operation retrieves a Threshold entity. Attribute selection enabled for all first level
+        attributes.
+      operationId: retrieveThreshold
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - $ref: '#/components/parameters/Fields'
+      responses:
+        '200':
+          $ref: '#/components/responses/200Threshold_Get'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    patch:
+      tags:
+        - threshold
+      summary: Updates partially a Threshold
+      description: This operation updates partially a Threshold entity.
+      operationId: patchThreshold
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - $ref: '#/components/parameters/Fields'
+      requestBody:
+        $ref: '#/components/requestBodies/Threshold_MVO'
+      responses:
+        '200':
+          $ref: '#/components/responses/200Threshold_Patch'
+        '202':
+          description: Accepted
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    delete:
+      tags:
+        - threshold
+      summary: Deletes a Threshold
+      description: This operation deletes a Threshold entity.
+      operationId: deleteThreshold
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '202':
+          $ref: '#/components/responses/202'
+        '204':
+          $ref: '#/components/responses/204'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+  /thresholdJob:
+    get:
+      tags:
+        - thresholdJob
+      summary: List or find ThresholdJob objects
+      description: List or find ThresholdJob objects
+      operationId: listThresholdJob
+      parameters:
+        - $ref: '#/components/parameters/Fields'
+        - $ref: '#/components/parameters/Offset'
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/Sort'
+        - $ref: '#/components/parameters/Filter'
+      responses:
+        '200':
+          $ref: '#/components/responses/200ThresholdJobArray'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    post:
+      tags:
+        - thresholdJob
+      summary: Creates a ThresholdJob
+      description: This operation creates a ThresholdJob entity.
+      operationId: createThresholdJob
+      parameters:
+        - $ref: '#/components/parameters/Fields'
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdJob_FVO'
+      responses:
+        '201':
+          $ref: '#/components/responses/201ThresholdJob'
+        '202':
+          description: Accepted
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+  '/thresholdJob/{id}':
+    get:
+      tags:
+        - thresholdJob
+      summary: Retrieves a ThresholdJob by ID
+      description: >-
+        This operation retrieves a ThresholdJob entity. Attribute selection enabled for all first
+        level attributes.
+      operationId: retrieveThresholdJob
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - $ref: '#/components/parameters/Fields'
+      responses:
+        '200':
+          $ref: '#/components/responses/200ThresholdJob_Get'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    patch:
+      tags:
+        - thresholdJob
+      summary: Updates partially a ThresholdJob
+      description: This operation updates partially a ThresholdJob entity.
+      operationId: patchThresholdJob
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - $ref: '#/components/parameters/Fields'
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdJob_MVO'
+      responses:
+        '200':
+          $ref: '#/components/responses/200ThresholdJob_Patch'
+        '202':
+          description: Accepted
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    delete:
+      tags:
+        - thresholdJob
+      summary: Deletes a ThresholdJob
+      description: This operation deletes a ThresholdJob entity.
+      operationId: deleteThresholdJob
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '202':
+          $ref: '#/components/responses/202'
+        '204':
+          $ref: '#/components/responses/204'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+  /thresholdRule:
+    get:
+      tags:
+        - thresholdRule
+      summary: List or find ThresholdRule objects
+      description: List or find ThresholdRule objects
+      operationId: listThresholdRule
+      parameters:
+        - $ref: '#/components/parameters/Fields'
+        - $ref: '#/components/parameters/Offset'
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Before'
+        - $ref: '#/components/parameters/After'
+        - $ref: '#/components/parameters/Sort'
+        - $ref: '#/components/parameters/Filter'
+      responses:
+        '200':
+          $ref: '#/components/responses/200ThresholdRuleArray'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    post:
+      tags:
+        - thresholdRule
+      summary: Creates a ThresholdRule
+      description: This operation creates a ThresholdRule entity.
+      operationId: createThresholdRule
+      parameters:
+        - $ref: '#/components/parameters/Fields'
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdRule_FVO'
+      responses:
+        '201':
+          $ref: '#/components/responses/201ThresholdRule'
+        '202':
+          description: Accepted
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+  '/thresholdRule/{id}':
+    get:
+      tags:
+        - thresholdRule
+      summary: Retrieves a ThresholdRule by ID
+      description: >-
+        This operation retrieves a ThresholdRule entity. Attribute selection enabled for all first
+        level attributes.
+      operationId: retrieveThresholdRule
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - $ref: '#/components/parameters/Fields'
+      responses:
+        '200':
+          $ref: '#/components/responses/200ThresholdRule_Get'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    patch:
+      tags:
+        - thresholdRule
+      summary: Updates partially a ThresholdRule
+      description: This operation updates partially a ThresholdRule entity.
+      operationId: patchThresholdRule
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - $ref: '#/components/parameters/Fields'
+      requestBody:
+        $ref: '#/components/requestBodies/ThresholdRule_MVO'
+      responses:
+        '200':
+          $ref: '#/components/responses/200ThresholdRule_Patch'
+        '202':
+          description: Accepted
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+    delete:
+      tags:
+        - thresholdRule
+      summary: Deletes a ThresholdRule
+      description: This operation deletes a ThresholdRule entity.
+      operationId: deleteThresholdRule
+      parameters:
+        - $ref: '#/components/parameters/Id'
+      responses:
+        '202':
+          $ref: '#/components/responses/202'
+        '204':
+          $ref: '#/components/responses/204'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+        '409':
+          $ref: '#/components/responses/409'
+        '500':
+          $ref: '#/components/responses/500'
+        '501':
+          $ref: '#/components/responses/501'
+        '503':
+          $ref: '#/components/responses/503'
+components:
+  schemas:
+    Addressable:
+      type: object
+      description: Base schema for addressable entities
+      properties:
+        href:
+          type: string
+          description: Hyperlink reference
+        id:
+          type: string
+          description: unique identifier
+    AdminStateEnum:
+      enum:
+        - LOCKED
+        - UNLOCKED
+        - SHUTTING_DOWN
+      type: string
+      description: >-
+        Enumeration of administrative states of a resource. Possible values indicate whether the
+        resource is locked, unlocked, or shutting down.
+    AlgorithmThresholdRule:
+      allOf:
+        - $ref: '#/components/schemas/ThresholdRule'
+        - type: object
+          description: A threshold rule that is a reference to an algorithm
+          properties:
+            algorithmParams:
+              type: array
+              description: Collection of algorithm Params
+              items:
+                $ref: '#/components/schemas/Characteristic'
+            algorithmRef:
+              type: string
+              description: The href of the algorithm for threshold rule
+    AlgorithmThresholdRule_FVO:
+      allOf:
+        - $ref: '#/components/schemas/ThresholdRule_FVO'
+        - type: object
+          description: A threshold rule that is a reference to an algorithm
+          properties:
+            algorithmParams:
+              type: array
+              description: Collection of algorithm Params
+              items:
+                $ref: '#/components/schemas/Characteristic_FVO'
+            algorithmRef:
+              type: string
+              description: The href of the algorithm for threshold rule
+    BooleanArrayCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is an array of Boolean(s).
+          properties:
+            value:
+              type: array
+              description: A characteristic which value is an array of Boolean(s).
+              items:
+                type: boolean
+                description: Characteristic item boolean value
+    BooleanArrayCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is an array of Boolean(s).
+          properties:
+            value:
+              type: array
+              description: A characteristic which value is an array of Boolean(s).
+              items:
+                type: boolean
+                description: Characteristic item boolean value
+          required:
+            - value
+    BooleanCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is a Boolean.
+          properties:
+            value:
+              type: boolean
+              description: Value of the characteristic
+    BooleanCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is a Boolean.
+          properties:
+            value:
+              type: boolean
+              description: Value of the characteristic
+          required:
+            - value
+    Characteristic:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: >-
+            Describes a given characteristic of an object or entity through a name/value pair. This
+            is an abstract base class, the actual value is in one of the strongly-typed subclasses :
+            StringCharacteristic, ObjectCharacteristic, FloatCharacteristic, BooleanCharacteristic,
+            NumberCharacteristic, IntegerCharacteristic, StringArrayCharacteristic,
+            ObjectArrayCharacteristic, BooleanArrayCharacteristic, NumberArrayCharacteristic,
+            IntegerArrayCharacteristic...
+          properties:
+            id:
+              type: string
+              description: Unique identifier of the characteristic
+            name:
+              type: string
+              description: Name of the characteristic
+            valueType:
+              type: string
+              description: Data type of the value of the characteristic
+            characteristicRelationship:
+              type: array
+              description: Collection of characteristic relationships
+              items:
+                $ref: '#/components/schemas/CharacteristicRelationship'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          BooleanArrayCharacteristic: '#/components/schemas/BooleanArrayCharacteristic'
+          BooleanCharacteristic: '#/components/schemas/BooleanCharacteristic'
+          Characteristic: '#/components/schemas/Characteristic'
+          FloatCharacteristic: '#/components/schemas/FloatCharacteristic'
+          IntegerArrayCharacteristic: '#/components/schemas/IntegerArrayCharacteristic'
+          IntegerCharacteristic: '#/components/schemas/IntegerCharacteristic'
+          NumberArrayCharacteristic: '#/components/schemas/NumberArrayCharacteristic'
+          NumberCharacteristic: '#/components/schemas/NumberCharacteristic'
+          ObjectArrayCharacteristic: '#/components/schemas/ObjectArrayCharacteristic'
+          ObjectCharacteristic: '#/components/schemas/ObjectCharacteristic'
+          StringArrayCharacteristic: '#/components/schemas/StringArrayCharacteristic'
+          StringCharacteristic: '#/components/schemas/StringCharacteristic'
+    Characteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: >-
+            Describes a given characteristic of an object or entity through a name/value pair. This
+            is an abstract base class, the actual value is in one of the strongly-typed subclasses :
+            StringCharacteristic, ObjectCharacteristic, FloatCharacteristic, BooleanCharacteristic,
+            NumberCharacteristic, IntegerCharacteristic, StringArrayCharacteristic,
+            ObjectArrayCharacteristic, BooleanArrayCharacteristic, NumberArrayCharacteristic,
+            IntegerArrayCharacteristic...
+          properties:
+            id:
+              type: string
+              description: Unique identifier of the characteristic
+            name:
+              type: string
+              description: Name of the characteristic
+            valueType:
+              type: string
+              description: Data type of the value of the characteristic
+            characteristicRelationship:
+              type: array
+              description: Collection of characteristic relationships
+              items:
+                $ref: '#/components/schemas/CharacteristicRelationship_FVO'
+          required:
+            - name
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          BooleanArrayCharacteristic: '#/components/schemas/BooleanArrayCharacteristic_FVO'
+          BooleanCharacteristic: '#/components/schemas/BooleanCharacteristic_FVO'
+          Characteristic: '#/components/schemas/Characteristic_FVO'
+          FloatCharacteristic: '#/components/schemas/FloatCharacteristic_FVO'
+          IntegerArrayCharacteristic: '#/components/schemas/IntegerArrayCharacteristic_FVO'
+          IntegerCharacteristic: '#/components/schemas/IntegerCharacteristic_FVO'
+          NumberArrayCharacteristic: '#/components/schemas/NumberArrayCharacteristic_FVO'
+          NumberCharacteristic: '#/components/schemas/NumberCharacteristic_FVO'
+          ObjectArrayCharacteristic: '#/components/schemas/ObjectArrayCharacteristic_FVO'
+          ObjectCharacteristic: '#/components/schemas/ObjectCharacteristic_FVO'
+          StringArrayCharacteristic: '#/components/schemas/StringArrayCharacteristic_FVO'
+          StringCharacteristic: '#/components/schemas/StringCharacteristic_FVO'
+    CharacteristicRelationship:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: Another Characteristic that is related to the current Characteristic;
+          properties:
+            id:
+              type: string
+              description: Unique identifier of the characteristic
+            relationshipType:
+              type: string
+              description: The type of relationship
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          CharacteristicRelationship: '#/components/schemas/CharacteristicRelationship'
+    CharacteristicRelationship_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: Another Characteristic that is related to the current Characteristic;
+          properties:
+            id:
+              type: string
+              description: Unique identifier of the characteristic
+            relationshipType:
+              type: string
+              description: The type of relationship
+          required:
+            - id
+            - relationshipType
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          CharacteristicRelationship: '#/components/schemas/CharacteristicRelationship_FVO'
+    Consequence:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: >-
+            A threshold crossing or a threshold ceased to be crossing results in a Performance
+            consequence.
+          properties:
+            description:
+              type: string
+              description: A description of a Consequence
+            name:
+              type: string
+              description: >-
+                A word, term, or phrase by which a Consequence is known and distinguished from other
+                measurements
+            prescribedAction:
+              type: string
+              description: The suggested action
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          Consequence: '#/components/schemas/Consequence'
+    DayOfMonthRecurrence:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: Specifies recurrence on particular days of the month (1–31).
+          properties:
+            days:
+              type: array
+              items:
+                type: integer
+                minimum: 1
+                maximum: 31
+              uniqueItems: true
+              description: List of days in the month on which recurrence occurs.
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          DayOfMonthRecurrence: '#/components/schemas/DayOfMonthRecurrence'
+    DayOfWeekRecurrence:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: ''
+          properties:
+            days:
+              type: array
+              items:
+                type: integer
+                minimum: 1
+                maximum: 7
+              uniqueItems: true
+              description: List of days in the week on which recurrence occurs.
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          DayOfWeekRecurrence: '#/components/schemas/DayOfWeekRecurrence'
+    Entity:
+      type: object
+      description: Base entity schema for use in TM Forum Open APIs. Property.
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - $ref: '#/components/schemas/Addressable'
+    EntityRef:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - $ref: '#/components/schemas/Addressable'
+        - type: object
+          description: Entity reference schema to be use for all entityRef class.
+          properties:
+            id:
+              type: string
+              description: The identifier of the referred entity.
+            href:
+              type: string
+              description: The URI of the referred entity.
+            name:
+              type: string
+              description: Name of the referred entity.
+            '@referredType':
+              type: string
+              description: The actual type of the target instance when needed for disambiguation.
+          required:
+            - id
+    Event:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: event with common attributes.
+          properties:
+            href:
+              type: string
+              description: Hyperlink reference
+            id:
+              type: string
+              description: unique identifier
+            correlationId:
+              type: string
+              description: The correlation id for this event.
+            domain:
+              type: string
+              description: The domain of the event.
+            title:
+              type: string
+              description: The title of the event.
+            description:
+              type: string
+              description: An explanation of the event.
+            priority:
+              type: string
+              description: A priority.
+            timeOccurred:
+              type: string
+              format: date-time
+              description: The time the event occurred.
+            source:
+              $ref: '#/components/schemas/EntityRef'
+            reportingSystem:
+              $ref: '#/components/schemas/EntityRef'
+            relatedParty:
+              type: array
+              description: Collection of related parties
+              items:
+                $ref: '#/components/schemas/RelatedPartyRefOrPartyRoleRef'
+            analyticCharacteristic:
+              type: array
+              description: Collection of analytic characteristics
+              items:
+                $ref: '#/components/schemas/Characteristic'
+            eventId:
+              type: string
+              description: The identifier of the notification.
+            eventTime:
+              type: string
+              format: date-time
+              description: Time of the event occurrence.
+            eventType:
+              type: string
+              description: The type of the notification.
+            event:
+              description: The event linked to the involved resource object
+              type: object
+    Extensible:
+      type: object
+      description: >-
+        Base Extensible schema for use in TMForum Open-APIs - When used for in a schema it means
+        that the Entity described by the schema  MUST be extended with the @type
+      properties:
+        '@type':
+          type: string
+          description: 'When sub-classing, this defines the sub-class Extensible name'
+        '@baseType':
+          type: string
+          description: 'When sub-classing, this defines the super-class'
+        '@schemaLocation':
+          type: string
+          description: A URI to a JSON-Schema file that defines additional attributes and relationships
+      required:
+        - '@type'
+    FloatCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is a Float.
+          properties:
+            value:
+              type: number
+              format: float
+              description: Value of the characteristic
+    FloatCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is a Float.
+          properties:
+            value:
+              type: number
+              format: float
+              description: Value of the characteristic
+          required:
+            - value
+    HourRange:
+      type: object
+      description: >-
+        Represents a range of hours within a single day. The range can have only a start time, only
+        an end time, or both. Times must be specified in 24-hour HH:mm format.
+      properties:
+        startHour:
+          description: >-
+            The beginning of the hour range, expressed in 24-hour HH:mm format (e.g., 09:00 for 9
+            AM, 17:30 for 5:30 PM).
+          type: string
+          pattern: '^([01]\d|2[0-3]):([0-5]\d)$'
+          example: '09:00'
+        endHour:
+          description: >-
+            The end of the hour range, expressed in 24-hour HH:mm format (e.g., 12:00 for noon,
+            23:59 for one minute before midnight).
+          type: string
+          pattern: '^([01]\d|2[0-3]):([0-5]\d)$'
+          example: '12:00'
+    IntegerArrayCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is an array of Integer(s).
+          properties:
+            value:
+              type: array
+              description: A characteristic which value is an array of Integer(s).
+              items:
+                type: integer
+                description: Characteristic value
+    IntegerArrayCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is an array of Integer(s).
+          properties:
+            value:
+              type: array
+              description: A characteristic which value is an array of Integer(s).
+              items:
+                type: integer
+                description: Characteristic value
+          required:
+            - value
+    IntegerCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is a Integer.
+          properties:
+            value:
+              type: integer
+              description: Value of the characteristic
+    IntegerCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is a Integer.
+          properties:
+            value:
+              type: integer
+              description: Value of the characteristic
+          required:
+            - value
+    MonitoredObjectsCriteria:
+      type: object
+      description: Monitored objects are specified by the MonitoredObjectsCriteria.
+      properties:
+        monitoredObjectFilter:
+          description: >-
+            A filter that can be used in conjunction with the monitored object class for specifying
+            the set of instances that are referenced
+          type: string
+    MonthlyScheduleDayOfWeekDefinition:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          properties:
+            dayOfMonthRecurrence:
+              type: array
+              items:
+                $ref: '#/components/schemas/DayOfMonthRecurrence'
+            recurringDaySequence:
+              type: string
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          MonthlyScheduleDayOfWeekDefinition: '#/components/schemas/MonthlyScheduleDayOfWeekDefinition'
+    NumberArrayCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is an array of Number(s).
+          properties:
+            value:
+              type: array
+              description: A characteristic which value is an array of Number(s).
+              items:
+                type: number
+                description: Characteristic value
+    NumberArrayCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is an array of Number(s).
+          properties:
+            value:
+              type: array
+              description: A characteristic which value is an array of Number(s).
+              items:
+                type: number
+                description: Characteristic value
+          required:
+            - value
+    NumberCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is a Number.
+          properties:
+            value:
+              type: number
+              description: Value of the characteristic
+    NumberCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is a Number.
+          properties:
+            value:
+              type: number
+              description: Value of the characteristic
+          required:
+            - value
+    ObjectArrayCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is an array of Object(s).
+          properties:
+            value:
+              type: array
+              description: Collection of characteristic values
+              items:
+                type: object
+                description: Characteristic value
+    ObjectArrayCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is an array of Object(s).
+          properties:
+            value:
+              type: array
+              description: Collection of characteristic values
+              items:
+                type: object
+                description: Characteristic value
+          required:
+            - value
+    ObjectCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is a Object.
+          properties:
+            value:
+              type: object
+              description: Value of the characteristic
+    ObjectCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is a Object.
+          properties:
+            value:
+              type: object
+              description: Value of the characteristic
+          required:
+            - value
+    PartyRef:
+      allOf:
+        - $ref: '#/components/schemas/EntityRef'
+        - type: object
+          description: A Party reference
+          properties:
+            '@type':
+              type: string
+              enum:
+                - PartyRef
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          PartyRef: '#/components/schemas/PartyRef'
+    PartyRefOrPartyRoleRef:
+      type: object
+      description: ''
+      oneOf:
+        - $ref: '#/components/schemas/PartyRef'
+        - $ref: '#/components/schemas/PartyRoleRef'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          PartyRef: '#/components/schemas/PartyRef'
+          PartyRoleRef: '#/components/schemas/PartyRoleRef'
+    PartyRoleRef:
+      allOf:
+        - $ref: '#/components/schemas/EntityRef'
+        - type: object
+          description: >-
+            Party role reference. A party role represents the part played by a party in a given
+            context.
+          properties:
+            '@type':
+              type: string
+              enum:
+                - PartyRoleRef
+            partyId:
+              type: string
+              description: The identifier of the engaged party that is linked to the PartyRole object.
+            partyName:
+              type: string
+              description: The name of the engaged party that is linked to the PartyRole object.
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          PartyRoleRef: '#/components/schemas/PartyRoleRef'
+    PerformanceAlarmSpecification:
+      type: object
+      description: >-
+        The specification of how to populate the alarm fields when generating a threshold crossing
+        alarm
+      properties:
+        perfAlarmSpecAdditionalText:
+          type: string
+          description: >-
+            A value for the AdditionalText attribute as part of a threshold crossing alarm
+            definition.
+        perfAlarmSpecAlarmType:
+          type: string
+          description: A value for the AlarmType attribute as part of a threshold crossing alarm definition.
+        perfAlarmSpecSeverity:
+          type: string
+          description: >-
+            A value for the Severity attribute as part of a threshold crossing alarm definition.
+            Examples are CRITICAL,MAJOR,MINOR,WARNING,INTERMEDIATE
+        perfAlarmSpecSpecificProblem:
+          type: string
+          description: >-
+            A value for the SpecificProblem attribute as part of a threshold crossing alarm
+            definition
+        perfAlarmProbableCause:
+          type: string
+          description: >-
+            A value for the ProbableCause attribute as part of a threshold crossing alarm
+            definition.
+    PerformanceMeasurementRef:
+      allOf:
+        - $ref: '#/components/schemas/EntityRef'
+        - type: object
+          description: >-
+            PerformanceMeasurement reference: A PerformanceMeasurement is the observed value(s) of
+            some PerformanceIndicatorSpecification.
+          properties:
+            version:
+              type: string
+              description: Version of the PerformanceMeasurement
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          PerformanceMeasurementRef: '#/components/schemas/PerformanceMeasurementRef'
+    RelatedPartyRefOrPartyRoleRef:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: >-
+            RelatedParty reference. A related party defines party or party role or its reference,
+            linked to a specific entity
+          properties:
+            role:
+              description: >-
+                Role played by the related party or party role in the context of the specific entity
+                it is linked to. Such as 'initiator', 'customer',  'salesAgent', 'user'
+              type: string
+            partyOrPartyRole:
+              $ref: '#/components/schemas/PartyRefOrPartyRoleRef'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          RelatedPartyRefOrPartyRoleRef: '#/components/schemas/RelatedPartyRefOrPartyRoleRef'
+    ScheduleDefinition:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: The schedule definition for running jobs.
+          properties:
+            id:
+              type: string
+              description: 'Identifier of the schedule definition, it should be locally unique'
+            validFor:
+              $ref: '#/components/schemas/TimePeriod'
+            recurringFrequency:
+              description: >-
+                A recurring frequency to run a job within day that is included in schedule
+                definition, for example: every 5 minutes, 15 minute, 30 minutes, 1 hour
+              type: string
+            excludedDate:
+              description: A list of specific dates that should be excluded from the Schedule Definition.
+              type: array
+              items:
+                type: string
+                format: date-time
+            scheduleDefinitionHourRange:
+              description: >-
+                A list of time ranges within a specific day that the schedule will be active on, for
+                example 08:00-12:00, 16:00-19:00.
+              type: array
+              items:
+                $ref: '#/components/schemas/HourRange'
+            weeklyScheduleDefinition:
+              description: >-
+                The weekly schedule is used to define a schedule that is based on the days of the
+                week, e.g. a schedule that will be active only on Monday and Tuesday.
+              type: array
+              items:
+                $ref: '#/components/schemas/DayOfWeekRecurrence'
+            monthlyScheduleDayOfMonthDefinition:
+              description: The schedule definition for running the threshold job
+              type: array
+              items:
+                type: string
+                format: date-time
+            monthlyScheduleDayOfWeekDefinition:
+              $ref: '#/components/schemas/MonthlyScheduleDayOfWeekDefinition'
+            dateScheduleDefinition:
+              description: >-
+                The date schedule is used to define a schedule that is based on specific dates and
+                times. Each value must be a valid IETF RFC 3339 date-time string (e.g.,
+                '2015-12-31T23:59:59Z', '2013-02-28T09:00:00-05:00').
+              type: array
+              items:
+                type: string
+                format: date-time
+              example:
+                - '2015-12-31T23:59:59Z'
+                - '2013-02-28T09:00:00-05:00'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ScheduleDefinition: '#/components/schemas/ScheduleDefinition'
+    ScheduleDefinition_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          description: The schedule definition for running jobs.
+          properties:
+            id:
+              type: string
+              description: 'Identifier of the schedule definition, it should be locally unique'
+            validFor:
+              $ref: '#/components/schemas/TimePeriod'
+            recurringFrequency:
+              description: >-
+                A recurring frequency to run a job within day that is included in schedule
+                definition, for example: every 5 minutes, 15 minute, 30 minutes, 1 hour
+              type: string
+            excludedDate:
+              description: A list of specific dates that should be excluded from the Schedule Definition.
+              type: array
+              items:
+                type: string
+                format: date-time
+            scheduleDefinitionHourRange:
+              description: >-
+                A list of time ranges within a specific day that the schedule will be active on, for
+                example 08:00-12:00, 16:00-19:00.
+              type: array
+              items:
+                $ref: '#/components/schemas/HourRange'
+            weeklyScheduleDefinition:
+              description: >-
+                The weekly schedule is used to define a schedule that is based on the days of the
+                week, e.g. a schedule that will be active only on Monday and Tuesday.
+              type: array
+              items:
+                $ref: '#/components/schemas/DayOfWeekRecurrence'
+            monthlyScheduleDayOfMonthDefinition:
+              description: The schedule definition for running the threshold job
+              type: array
+              items:
+                type: string
+                format: date-time
+            monthlyScheduleDayOfWeekDefinition:
+              $ref: '#/components/schemas/MonthlyScheduleDayOfWeekDefinition'
+            dateScheduleDefinition:
+              description: >-
+                The date schedule is used to define a schedule that is based on specific dates and
+                times. Each value must be a valid IETF RFC 3339 date-time string (e.g.,
+                '2015-12-31T23:59:59Z', '2013-02-28T09:00:00-05:00').
+              type: array
+              items:
+                type: string
+                format: date-time
+              example:
+                - '2015-12-31T23:59:59Z'
+                - '2013-02-28T09:00:00-05:00'
+          required:
+            - id
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ScheduleDefinition: '#/components/schemas/ScheduleDefinition_FVO'
+    SimpleThresholdRule:
+      allOf:
+        - $ref: '#/components/schemas/ThresholdRule'
+        - type: object
+          description: >-
+            A threshold rule that is based on explicit definition of attributes that represent a
+            Boolean JsonLdExpression
+          properties:
+            conformanceComparatorLower:
+              type: string
+              description: >-
+                An operator that when applied on a value (of conformanceTargetLower) specifies
+                whether a Performance threshold rule is crossed or ceased to be crossed. Supported
+                Conformance Operators are as follows: 'GT' for Greater than, 'GE' for Greater or
+                equal, 'EQ' for Equal, 'NEQ' for Not Equal, and 'LE' for Less or equal.
+            conformanceComparatorUpper:
+              type: string
+              description: >-
+                An operator that when applied on a value (of conformanceTargetUpper) specifies
+                whether a Performance threshold rule is crossed or ceased to be crossed. Supported
+                Conformance Operators are as follows: 'GT' for Greater than, 'GE' for Greater or
+                equal, 'EQ' for Equal, 'NEQ' for Not Equal, and 'LE' for Less or equal.
+            conformancePeriod:
+              $ref: '#/components/schemas/TimePeriod'
+            conformanceTargetLower:
+              type: integer
+              description: >-
+                A value used to determine if the Performance threshold is crossed or ceased to be
+                crossed, serving as an lower value
+            conformanceTargetUpper:
+              type: integer
+              format: int64
+              description: >-
+                A value used to determine if the Performance threshold is crossed or ceased to be
+                crossed, serving as an upper value
+            gracePeriods:
+              type: integer
+              format: int32
+              description: >-
+                The number of times an objective can remain un-updated in reference to the
+                conformancePeriod without a Performance threshold Consequence being initiated
+            thresholdTarget:
+              type: integer
+              format: int64
+              description: >-
+                A percent that is used to specify when a warning should be used that indicates a
+                Performance threshold is in danger of not being met.
+            tolerancePeriod:
+              $ref: '#/components/schemas/TimePeriod'
+    SimpleThresholdRule_FVO:
+      allOf:
+        - $ref: '#/components/schemas/ThresholdRule_FVO'
+        - type: object
+          description: >-
+            A threshold rule that is based on explicit definition of attributes that represent a
+            Boolean JsonLdExpression
+          properties:
+            conformanceComparatorLower:
+              type: string
+              description: >-
+                An operator that when applied on a value (of conformanceTargetLower) specifies
+                whether a Performance threshold rule is crossed or ceased to be crossed. Supported
+                Conformance Operators are as follows: 'GT' for Greater than, 'GE' for Greater or
+                equal, 'EQ' for Equal, 'NEQ' for Not Equal, and 'LE' for Less or equal.
+            conformanceComparatorUpper:
+              type: string
+              description: >-
+                An operator that when applied on a value (of conformanceTargetUpper) specifies
+                whether a Performance threshold rule is crossed or ceased to be crossed. Supported
+                Conformance Operators are as follows: 'GT' for Greater than, 'GE' for Greater or
+                equal, 'EQ' for Equal, 'NEQ' for Not Equal, and 'LE' for Less or equal.
+            conformancePeriod:
+              $ref: '#/components/schemas/TimePeriod'
+            conformanceTargetLower:
+              type: integer
+              description: >-
+                A value used to determine if the Performance threshold is crossed or ceased to be
+                crossed, serving as an lower value
+            conformanceTargetUpper:
+              type: integer
+              format: int64
+              description: >-
+                A value used to determine if the Performance threshold is crossed or ceased to be
+                crossed, serving as an upper value
+            gracePeriods:
+              type: integer
+              format: int32
+              description: >-
+                The number of times an objective can remain un-updated in reference to the
+                conformancePeriod without a Performance threshold Consequence being initiated
+            thresholdTarget:
+              type: integer
+              format: int64
+              description: >-
+                A percent that is used to specify when a warning should be used that indicates a
+                Performance threshold is in danger of not being met.
+            tolerancePeriod:
+              $ref: '#/components/schemas/TimePeriod'
+    StringArrayCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is an array of String(s).
+          properties:
+            value:
+              type: array
+              description: Collection of string characteristics
+              items:
+                type: string
+                description: Characteristic value
+    StringArrayCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is an array of String(s).
+          properties:
+            value:
+              type: array
+              description: Collection of string characteristics
+              items:
+                type: string
+                description: Characteristic value
+          required:
+            - value
+    StringCharacteristic:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic'
+        - type: object
+          description: A characteristic which value is a String.
+          properties:
+            value:
+              type: string
+              description: Value of the characteristic
+    StringCharacteristic_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Characteristic_FVO'
+        - type: object
+          description: A characteristic which value is a String.
+          properties:
+            value:
+              type: string
+              description: Value of the characteristic
+          required:
+            - value
+    Threshold:
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - type: object
+          description: A threshold base entity containing threshold rules.
+          properties:
+            description:
+              type: string
+              description: A description of the threshold
+            name:
+              type: string
+              description: >-
+                A word, term, or phrase by which a Performance threshold is known and distinguished
+                from other thresholds.
+            thresholdRule:
+              type: array
+              items:
+                $ref: '#/components/schemas/ThresholdRuleRef'
+              description: >-
+                A Performance Threshold contains a set of Performance threshold rules of different
+                conditions (Raise, Clear) and different severities
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          Threshold: '#/components/schemas/Threshold'
+    Threshold_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - type: object
+          description: A threshold base entity containing threshold rules.
+          properties:
+            description:
+              type: string
+              description: A description of the threshold
+            name:
+              type: string
+              description: >-
+                A word, term, or phrase by which a Performance threshold is known and distinguished
+                from other thresholds.
+            thresholdRule:
+              type: array
+              items:
+                $ref: '#/components/schemas/ThresholdRuleRef'
+              description: >-
+                A Performance Threshold contains a set of Performance threshold rules of different
+                conditions (Raise, Clear) and different severities
+          required:
+            - name
+            - thresholdRule
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          Threshold: '#/components/schemas/Threshold_FVO'
+    Threshold_RES:
+      type: object
+      description: Response object for Threshold
+      allOf:
+        - $ref: '#/components/schemas/Threshold'
+      required:
+        - id
+        - href
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          Threshold: '#/components/schemas/Threshold'
+    ThresholdAttributeValueChangeEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdChange generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdAttributeValueChangeEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdAttributeValueChangeEvent: '#/components/schemas/ThresholdAttributeValueChangeEvent'
+    ThresholdAttributeValueChangeEventPayload:
+      type: object
+      description: ThresholdAttributeValueChangeEventPayload generic structure
+      properties:
+        threshold:
+          $ref: '#/components/schemas/Threshold'
+    ThresholdCreateEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdCreateEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdCreateEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdCreateEvent: '#/components/schemas/ThresholdCreateEvent'
+    ThresholdCreateEventPayload:
+      type: object
+      description: ThresholdCreateEventPayload generic structure
+      properties:
+        threshold:
+          $ref: '#/components/schemas/Threshold'
+    ThresholdDeleteEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdDeleteEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdDeleteEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdDeleteEvent: '#/components/schemas/ThresholdDeleteEvent'
+    ThresholdDeleteEventPayload:
+      type: object
+      description: ThresholdDeleteEventPayload generic structure
+      properties:
+        threshold:
+          $ref: '#/components/schemas/Threshold'
+    ThresholdJob:
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - type: object
+          description: >-
+            The Threshold Job is the operational entity to execute a threshold (a set of threshold
+            rules). As part of the definition of a Threshold Job, a scope of monitored objects is
+            provided and a schedule for the threshold evaluation is determined.
+          properties:
+            adminState:
+              $ref: '#/components/schemas/AdminStateEnum'
+            creationDate:
+              type: string
+              format: date-time
+              description: >-
+                Timestamp indicating when the Threshold Job was originally created in the
+                Performance Management system.
+            executionState:
+              type: string
+              description: >-
+                The current runtime state of the Threshold Job. Supported states: 'Active' - The job
+                is currently active and executing threshold evaluation. 'Suspended' - The job is
+                temporarily stopped but can be resumed. 'Failed' - The job stopped due to a failure.
+                'Completed' - The job has finished its execution successfully and is no longer
+                active.
+            granularity:
+              type: string
+              description: >-
+                Defines the evaluation granularity of the Threshold Job (e.g., G_5MN, G_15MN,
+                G_30MN, G_1H). It specifies the periodic time interval at which KPIs are assessed
+                against threshold rules.
+            id:
+              type: string
+              description: >-
+                Unique identifier of the Threshold Job, used to reference and manage it within the
+                Threshold Management system.
+            jobPriority:
+              type: integer
+              format: int32
+              description: >-
+                Relative priority level assigned to the Threshold Job. Higher priority jobs may be
+                executed or scheduled ahead of lower priority jobs.
+            lastUpdate:
+              type: string
+              format: date-time
+              description: Timestamp of the most recent update or modification to the Threshold Job definition.
+            monitoredObjectsCriteria:
+              type: array
+              items:
+                $ref: '#/components/schemas/MonitoredObjectsCriteria'
+              description: >-
+                Criteria that define the scope of monitored objects (resources, services, or
+                customers) to which the Threshold Job applies.
+            performanceThreshold:
+              $ref: '#/components/schemas/ThresholdRef'
+            scheduleDefinition:
+              $ref: '#/components/schemas/ScheduleDefinition'
+            trackingRecord:
+              type: string
+              description: >-
+                Optional field to store tracking or correlation information related to the Threshold
+                Job (e.g., audit trails, external references, or operator notes).
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJob: '#/components/schemas/ThresholdJob'
+    ThresholdJob_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - type: object
+          description: >-
+            The Threshold Job is the operational entity to execute a threshold (a set of threshold
+            rules). As part of the definition of a Threshold Job, a scope of monitored objects is
+            provided and a schedule for the threshold evaluation is determined.
+          properties:
+            adminState:
+              $ref: '#/components/schemas/AdminStateEnum'
+            creationDate:
+              type: string
+              format: date-time
+              description: >-
+                Timestamp indicating when the Threshold Job was originally created in the
+                Performance Management system.
+            executionState:
+              type: string
+              description: >-
+                The current runtime state of the Threshold Job. Supported states: 'Active' - The job
+                is currently active and executing threshold evaluation. 'Suspended' - The job is
+                temporarily stopped but can be resumed. 'Failed' - The job stopped due to a failure.
+                'Completed' - The job has finished its execution successfully and is no longer
+                active.
+            granularity:
+              type: string
+              description: >-
+                Defines the evaluation granularity of the Threshold Job (e.g., G_5MN, G_15MN,
+                G_30MN, G_1H). It specifies the periodic time interval at which KPIs are assessed
+                against threshold rules.
+            id:
+              type: string
+              description: >-
+                Unique identifier of the Threshold Job, used to reference and manage it within the
+                Threshold Management system.
+            jobPriority:
+              type: integer
+              format: int32
+              description: >-
+                Relative priority level assigned to the Threshold Job. Higher priority jobs may be
+                executed or scheduled ahead of lower priority jobs.
+            lastUpdate:
+              type: string
+              format: date-time
+              description: Timestamp of the most recent update or modification to the Threshold Job definition.
+            monitoredObjectsCriteria:
+              type: array
+              items:
+                $ref: '#/components/schemas/MonitoredObjectsCriteria'
+              description: >-
+                Criteria that define the scope of monitored objects (resources, services, or
+                customers) to which the Threshold Job applies.
+            performanceThreshold:
+              $ref: '#/components/schemas/ThresholdRef'
+            scheduleDefinition:
+              $ref: '#/components/schemas/ScheduleDefinition_FVO'
+            trackingRecord:
+              type: string
+              description: >-
+                Optional field to store tracking or correlation information related to the Threshold
+                Job (e.g., audit trails, external references, or operator notes).
+          required:
+            - granularity
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJob: '#/components/schemas/ThresholdJob_FVO'
+    ThresholdJob_MVO:
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - type: object
+          description: >-
+            The Threshold Job is the operational entity to execute a threshold (a set of threshold
+            rules). As part of the definition of a Threshold Job, a scope of monitored objects is
+            provided and a schedule for the threshold evaluation is determined.
+          properties:
+            adminState:
+              $ref: '#/components/schemas/AdminStateEnum'
+            creationDate:
+              type: string
+              format: date-time
+              description: >-
+                Timestamp indicating when the Threshold Job was originally created in the
+                Performance Management system.
+            executionState:
+              type: string
+              description: >-
+                The current runtime state of the Threshold Job. Supported states: 'Active' - The job
+                is currently active and executing threshold evaluation. 'Suspended' - The job is
+                temporarily stopped but can be resumed. 'Failed' - The job stopped due to a failure.
+                'Completed' - The job has finished its execution successfully and is no longer
+                active.
+            granularity:
+              type: string
+              description: >-
+                Defines the evaluation granularity of the Threshold Job (e.g., G_5MN, G_15MN,
+                G_30MN, G_1H). It specifies the periodic time interval at which KPIs are assessed
+                against threshold rules.
+            jobPriority:
+              type: integer
+              format: int32
+              description: >-
+                Relative priority level assigned to the Threshold Job. Higher priority jobs may be
+                executed or scheduled ahead of lower priority jobs.
+            lastUpdate:
+              type: string
+              format: date-time
+              description: Timestamp of the most recent update or modification to the Threshold Job definition.
+            monitoredObjectsCriteria:
+              type: array
+              items:
+                $ref: '#/components/schemas/MonitoredObjectsCriteria'
+              description: >-
+                Criteria that define the scope of monitored objects (resources, services, or
+                customers) to which the Threshold Job applies.
+            performanceThreshold:
+              $ref: '#/components/schemas/ThresholdRef'
+            scheduleDefinition:
+              $ref: '#/components/schemas/ScheduleDefinition'
+            trackingRecord:
+              type: string
+              description: >-
+                Optional field to store tracking or correlation information related to the Threshold
+                Job (e.g., audit trails, external references, or operator notes).
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJob: '#/components/schemas/ThresholdJob_MVO'
+    ThresholdJob_RES:
+      type: object
+      description: Response object for ThresholdJob
+      allOf:
+        - $ref: '#/components/schemas/ThresholdJob'
+      required:
+        - id
+        - href
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJob: '#/components/schemas/ThresholdJob'
+    ThresholdJobAttributeValueChangeEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdJobAttributeValueChangeEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdJobAttributeValueChangeEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJobAttributeValueChangeEvent: '#/components/schemas/ThresholdJobAttributeValueChangeEvent'
+    ThresholdJobAttributeValueChangeEventPayload:
+      type: object
+      description: ThresholdJobAttributeValueChangeEventPayload generic structure
+      properties:
+        thresholdJob:
+          $ref: '#/components/schemas/ThresholdJob'
+    ThresholdJobCreateEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdJobCreateEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdJobCreateEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJobCreateEvent: '#/components/schemas/ThresholdJobCreateEvent'
+    ThresholdJobCreateEventPayload:
+      type: object
+      description: ThresholdJobCreateEventPayload generic structure
+      properties:
+        thresholdJob:
+          $ref: '#/components/schemas/ThresholdJob'
+    ThresholdJobDeleteEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdJobDeleteEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdJobDeleteEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJobDeleteEvent: '#/components/schemas/ThresholdJobDeleteEvent'
+    ThresholdJobDeleteEventPayload:
+      type: object
+      description: ThresholdJobDeleteEventPayload generic structure
+      properties:
+        thresholdJob:
+          $ref: '#/components/schemas/ThresholdJob'
+    ThresholdJobStateChangeEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdJobStateChangeEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdJobStateChangeEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdJobStateChangeEvent: '#/components/schemas/ThresholdJobStateChangeEvent'
+    ThresholdJobStateChangeEventPayload:
+      type: object
+      description: ThresholdJobStateChangeEventPayload generic structure
+      properties:
+        thresholdJob:
+          $ref: '#/components/schemas/ThresholdJob'
+    ThresholdRef:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/EntityRef'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdRef: '#/components/schemas/ThresholdRef'
+    ThresholdRule:
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - type: object
+          description: >-
+            ThresholdRule A base entity for concrete definition of thresholds. This datatype is
+            abstract
+          properties:
+            measurement:
+              $ref: '#/components/schemas/PerformanceMeasurementRef'
+            consequence:
+              type: array
+              items:
+                $ref: '#/components/schemas/Consequence'
+              description: >-
+                A threshold crossing or a threshold ceased to be crossing results in a Performance
+                consequence.
+            perfAlarmSpecThresholdCrossingDescription:
+              type: string
+              description: >-
+                Defines the specification for threshold crossing alarms, including severity, type,
+                probable cause, and additional context used when generating alarms.
+            performanceAlarmSpecification:
+              $ref: '#/components/schemas/PerformanceAlarmSpecification'
+            condition:
+              type: string
+              description: >-
+                A concrete threshold may have two possible values: 'Raise' - a threshold was crossed
+                or 'Clear' - a threshold ceased crossing
+            name:
+              type: string
+              description: >-
+                A word, term, or phrase by which a Performance threshold rule is known and
+                distinguished from other threshold rules
+            severity:
+              type: string
+              description: >-
+                A threshold can be generated in different severity levels. A crossing for each level
+                may require a different condition and possibly trigger a different consequence. The
+                supported severity levels are equivalent to the possible severity level of alarms.
+                Examples are CRITICAL,MAJOR,MINOR,WARNING,INTERMEDIATE
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          AlgorithmThresholdRule: '#/components/schemas/AlgorithmThresholdRule'
+          SimpleThresholdRule: '#/components/schemas/SimpleThresholdRule'
+          ThresholdRule: '#/components/schemas/ThresholdRule'
+    ThresholdRule_FVO:
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - type: object
+          description: >-
+            ThresholdRule A base entity for concrete definition of thresholds. This datatype is
+            abstract
+          properties:
+            measurement:
+              $ref: '#/components/schemas/PerformanceMeasurementRef'
+            consequence:
+              type: array
+              items:
+                $ref: '#/components/schemas/Consequence'
+              description: >-
+                A threshold crossing or a threshold ceased to be crossing results in a Performance
+                consequence.
+            perfAlarmSpecThresholdCrossingDescription:
+              type: string
+              description: >-
+                Defines the specification for threshold crossing alarms, including severity, type,
+                probable cause, and additional context used when generating alarms.
+            performanceAlarmSpecification:
+              $ref: '#/components/schemas/PerformanceAlarmSpecification'
+            condition:
+              type: string
+              description: >-
+                A concrete threshold may have two possible values: 'Raise' - a threshold was crossed
+                or 'Clear' - a threshold ceased crossing
+            name:
+              type: string
+              description: >-
+                A word, term, or phrase by which a Performance threshold rule is known and
+                distinguished from other threshold rules
+            severity:
+              type: string
+              description: >-
+                A threshold can be generated in different severity levels. A crossing for each level
+                may require a different condition and possibly trigger a different consequence. The
+                supported severity levels are equivalent to the possible severity level of alarms.
+                Examples are CRITICAL,MAJOR,MINOR,WARNING,INTERMEDIATE
+          required:
+            - name
+            - condition
+            - severity
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          AlgorithmThresholdRule: '#/components/schemas/AlgorithmThresholdRule_FVO'
+          SimpleThresholdRule: '#/components/schemas/SimpleThresholdRule_FVO'
+          ThresholdRule: '#/components/schemas/ThresholdRule_FVO'
+    ThresholdRule_RES:
+      type: object
+      description: Response object for ThresholdRule
+      allOf:
+        - $ref: '#/components/schemas/ThresholdRule'
+      required:
+        - id
+        - href
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          AlgorithmThresholdRule: '#/components/schemas/AlgorithmThresholdRule'
+          SimpleThresholdRule: '#/components/schemas/SimpleThresholdRule'
+          ThresholdRule: '#/components/schemas/ThresholdRule'
+    ThresholdRuleAttributeValueChangeEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdRuleAttributeValueChangeEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdRuleAttributeValueChangeEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdRuleAttributeValueChangeEvent: '#/components/schemas/ThresholdRuleAttributeValueChangeEvent'
+    ThresholdRuleAttributeValueChangeEventPayload:
+      type: object
+      description: ThresholdRuleAttributeValueChangeEventPayload generic structure
+      properties:
+        thresholdRule:
+          $ref: '#/components/schemas/ThresholdRule'
+    ThresholdRuleCreateEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdRuleCreateEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdRuleCreateEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdRuleCreateEvent: '#/components/schemas/ThresholdRuleCreateEvent'
+    ThresholdRuleCreateEventPayload:
+      type: object
+      description: ThresholdRuleCreateEventPayload generic structure
+      properties:
+        thresholdRule:
+          $ref: '#/components/schemas/ThresholdRule'
+    ThresholdRuleDeleteEvent:
+      allOf:
+        - $ref: '#/components/schemas/Event'
+        - type: object
+          description: ThresholdRuleDeleteEvent generic structure
+          properties:
+            event:
+              $ref: '#/components/schemas/ThresholdRuleDeleteEventPayload'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdRuleDeleteEvent: '#/components/schemas/ThresholdRuleDeleteEvent'
+    ThresholdRuleDeleteEventPayload:
+      type: object
+      description: ThresholdRuleDeleteEventPayload generic structure
+      properties:
+        thresholdRule:
+          $ref: '#/components/schemas/ThresholdRule'
+    ThresholdRuleRef:
+      type: object
+      description: ThresholdRuleRef reference schema to be use for managed ThresholdRuleRef class.
+      allOf:
+        - $ref: '#/components/schemas/EntityRef'
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          ThresholdRuleRef: '#/components/schemas/ThresholdRuleRef'
+    TimePeriod:
+      type: object
+      description: 'A period of time, either as a deadline (endDateTime only) a startDateTime only, or both'
+      properties:
+        startDateTime:
+          description: 'Start of the time period, using IETC-RFC-3339 format'
+          type: string
+          format: date-time
+          example: '1985-04-12T23:20:50.52Z'
+        endDateTime:
+          description: 'End of the time period, using IETC-RFC-3339 format'
+          type: string
+          format: date-time
+          example: '1985-04-12T23:20:50.52Z'
+    Error:
+      discriminator:
+        propertyName: '@type'
+        mapping:
+          Error: '#/components/schemas/Error'
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - type: object
+          required:
+            - code
+            - reason
+          properties:
+            code:
+              type: string
+              description: 'Application relevant detail, defined in the API or a common list.'
+            reason:
+              type: string
+              description: Explanation of the reason for the error which can be shown to a client user.
+            message:
+              type: string
+              description: >-
+                More details and corrective actions related to the error which can be shown to a
+                client user.
+            status:
+              type: string
+              description: HTTP Error code extension
+            referenceError:
+              type: string
+              description: URI of documentation describing the error.
+      description: 'Used when an API throws an Error, typically with a HTTP error response-code (3xx, 4xx, 5xx)'
+    Hub_FVO:
+      type: object
+      description: >-
+        Sets the communication endpoint address the service instance must use to deliver
+        notification information
+      required:
+        - callback
+      allOf:
+        - $ref: '#/components/schemas/Extensible'
+        - properties:
+            callback:
+              type: string
+              description: The callback being registered.
+            query:
+              type: string
+              description: additional data to be passed
+    Hub:
+      type: object
+      description: >-
+        Sets the communication endpoint address the service instance must use to deliver
+        notification information
+      allOf:
+        - $ref: '#/components/schemas/Entity'
+        - properties:
+            id:
+              type: string
+              description: Id of the listener
+            callback:
+              type: string
+              description: The callback being registered.
+            query:
+              type: string
+              description: additional data to be passed
+          required:
+            - callback
+    JsonPatch:
+      type: object
+      description: A JSONPatch document as defined by RFC 6902
+      required:
+        - op
+        - path
+      properties:
+        op:
+          type: string
+          description: The operation to be performed
+          enum:
+            - add
+            - remove
+            - replace
+            - move
+            - copy
+            - test
+        path:
+          type: string
+          description: A JSON-Pointer
+        value:
+          description: The value to be used within the operations.
+        from:
+          type: string
+          description: A string containing a JSON Pointer value.
+    JsonPatchOperations:
+      description: JSONPatch Operations document as defined by RFC 6902
+      type: array
+      items:
+        $ref: '#/components/schemas/JsonPatch'
+  parameters:
+    Id:
+      name: id
+      required: true
+      schema:
+        type: string
+      in: path
+      description: Identifier of the Resource
+    Fields:
+      name: fields
+      in: query
+      description: Comma-separated properties to be provided in response
+      schema:
+        type: string
+    Offset:
+      name: offset
+      in: query
+      description: Requested index for start of resources to be provided in response
+      schema:
+        type: integer
+    Limit:
+      name: limit
+      in: query
+      description: Requested number of resources to be provided in response
+      schema:
+        type: integer
+    Before:
+      name: before
+      in: query
+      description: An opaque string value representing the page results before the cursor value
+      schema:
+        type: string
+    After:
+      name: after
+      in: query
+      description: An opaque string value representing the page results after the cursor value
+      schema:
+        type: string
+    Sort:
+      name: sort
+      in: query
+      description: >-
+        The default direction is Ascending order, the use of the modifier in front of the sort field
+        name, “-“, changes the sort order direction.
+      schema:
+        type: string
+    Filter:
+      name: filter
+      in: query
+      description: Filter a collection using JSONPath
+      schema:
+        type: string
+        example: 'attachment[?(@size==300)]'
+  requestBodies:
+    Threshold_FVO:
+      description: The Threshold to be created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Threshold_FVO'
+          examples:
+            ThresholdPost201ApplicationJson:
+              $ref: '#/components/examples/ThresholdPost201ApplicationJson_request'
+      required: true
+    Threshold_MVO:
+      description: The Threshold to be patched
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Threshold'
+          examples:
+            ThresholdPatch200ApplicationJson:
+              $ref: '#/components/examples/ThresholdPatch200ApplicationJson_request'
+        application/merge-patch+json:
+          schema:
+            $ref: '#/components/schemas/Threshold'
+          examples:
+            ThresholdPatch200MergerPatchJson:
+              $ref: '#/components/examples/ThresholdPatch200MergerPatchJson_request'
+        application/json-patch+json:
+          schema:
+            $ref: '#/components/schemas/JsonPatchOperations'
+          examples:
+            ThresholdPatch200ApplicationJsonPatch:
+              $ref: '#/components/examples/ThresholdPatch200ApplicationJsonPatch_request'
+        application/json-patch-query+json:
+          schema:
+            $ref: '#/components/schemas/JsonPatchOperations'
+          examples:
+            ThresholdPatch200ApplicationJsonPatchQuery:
+              $ref: '#/components/examples/ThresholdPatch200ApplicationJsonPatchQuery_request'
+      required: true
+    ThresholdCreateEvent:
+      description: Threshold create Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdCreateEvent'
+          examples:
+            ThresholdCreateEventPost204ApplicationJson:
+              $ref: '#/components/examples/ThresholdCreateEventPost204ApplicationJson_request'
+      required: true
+    ThresholdAttributeValueChangeEvent:
+      description: Threshold attributeValueChange Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdAttributeValueChangeEvent'
+          examples:
+            ThresholdAttributeValueChangeEvent:
+              $ref: '#/components/examples/ThresholdAttributeValueChangeEvent_request'
+      required: true
+    ThresholdDeleteEvent:
+      description: Threshold delete Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdDeleteEvent'
+          examples:
+            ThresholdDeleteEventPost204ApplicationJson:
+              $ref: '#/components/examples/ThresholdDeleteEventPost204ApplicationJson_request'
+      required: true
+    ThresholdRule_FVO:
+      description: The ThresholdRule to be created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRule_FVO'
+          examples:
+            ThresholdRulePost201ApplicationJson:
+              $ref: '#/components/examples/ThresholdRulePost201ApplicationJson_request'
+      required: true
+    ThresholdRule_MVO:
+      description: The ThresholdRule to be patched
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRule'
+          examples:
+            ThresholdRulePatch200ApplicationJson:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationJson_request'
+        application/merge-patch+json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRule'
+          examples:
+            ThresholdRulePatch200ApplicationMergePatch:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationMergePatch_request'
+        application/json-patch+json:
+          schema:
+            $ref: '#/components/schemas/JsonPatchOperations'
+          examples:
+            ThresholdRulePatch200ApplicationJsonPatch:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationJsonPatch_request'
+        application/json-patch-query+json:
+          schema:
+            $ref: '#/components/schemas/JsonPatchOperations'
+          examples:
+            ThresholdRulePatch200ApplicationJsonPatchQuery:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationJsonPatchQuery_request'
+      required: true
+    ThresholdRuleCreateEvent:
+      description: ThresholdRule create Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRuleCreateEvent'
+          examples:
+            ThresholdRuleCreateEventPost204ApplicationJson:
+              $ref: '#/components/examples/ThresholdRuleCreateEventPost204ApplicationJson_request'
+      required: true
+    ThresholdRuleAttributeValueChangeEvent:
+      description: ThresholdRule attributeValueChange Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRuleAttributeValueChangeEvent'
+          examples:
+            ThresholdRuleAttributeValueChangeEvent:
+              $ref: '#/components/examples/ThresholdRuleAttributeValueChangeEvent_request'
+      required: true
+    ThresholdRuleDeleteEvent:
+      description: ThresholdRule delete Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRuleDeleteEvent'
+          examples:
+            ThresholdRuleDeleteEventPost204ApplicationJson:
+              $ref: '#/components/examples/ThresholdRuleDeleteEventPost204ApplicationJson_request'
+      required: true
+    ThresholdJob_FVO:
+      description: The ThresholdJob to be created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJob_FVO'
+          examples:
+            ThresholdJobPost201ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobPost201ApplicationJson_request'
+      required: true
+    ThresholdJob_MVO:
+      description: The ThresholdJob to be patched
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJob_MVO'
+          examples:
+            ThresholdJobPatch200ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationJson_request'
+        application/merge-patch+json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJob_MVO'
+          examples:
+            ThresholdJobPatch200ApplicationMergePatch:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationMergePatch_request'
+        application/json-patch+json:
+          schema:
+            $ref: '#/components/schemas/JsonPatchOperations'
+          examples:
+            ThresholdJobPatch200ApplicationJsonPatch:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationJsonPatch_request'
+        application/json-patch-query+json:
+          schema:
+            $ref: '#/components/schemas/JsonPatchOperations'
+          examples:
+            ThresholdJobPatch200ApplicationJsonPatchQuery:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationJsonPatchQuery_request'
+      required: true
+    ThresholdJobCreateEvent:
+      description: ThresholdJob create Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJobCreateEvent'
+          examples:
+            ThresholdJobCreateEventPost204ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobCreateEventPost204ApplicationJson_request'
+      required: true
+    ThresholdJobAttributeValueChangeEvent:
+      description: ThresholdJob attributeValueChange Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJobAttributeValueChangeEvent'
+          examples:
+            ThresholdJobAttributeValueChangeEvent:
+              $ref: '#/components/examples/ThresholdJobAttributeValueChangeEvent_request'
+      required: true
+    ThresholdJobStateChangeEvent:
+      description: ThresholdJob stateChange Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJobStateChangeEvent'
+          examples:
+            ThresholdJobStateChangeEvent:
+              $ref: '#/components/examples/ThresholdJobStateChangeEvent_request'
+      required: true
+    ThresholdJobDeleteEvent:
+      description: ThresholdJob delete Event payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJobDeleteEvent'
+          examples:
+            ThresholdJobDeleteEventPost204ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobDeleteEventPost204ApplicationJson_request'
+      required: true
+    Hub_FVO:
+      description: Data containing the callback endpoint to deliver the information
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Hub_FVO'
+          examples:
+            Basic Hub Example Request:
+              value:
+                '@type': Hub
+                callback: 'https://host/tmf-api/specificAPIName/v5/listener/specificEventListener'
+                query: data
+      required: true
+  responses:
+    '200':
+      description: OK
+    '202':
+      description: Accepted
+    '204':
+      description: Deleted
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Bad Request Error
+              value:
+                '@type': Error
+                code: ERR400
+                reason: Bad Request
+                message: >-
+                  The server could not understand the request due to invalid syntax. Please correct
+                  the syntax and try again.
+                referenceError: 'https://host/errors'
+    '401':
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Unauthorized Error
+              value:
+                '@type': Error
+                code: ERR401
+                reason: Unauthorized
+                message: >-
+                  You are not authorized to access the requested resource. Please provide the
+                  correct credentials.
+                referenceError: 'https://host/errors'
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Forbidden Error
+              value:
+                '@type': Error
+                code: ERR403
+                reason: Forbidden
+                message: >-
+                  You don't have the permission to access the requested resource. It is either
+                  read-protected or not readable by the server.
+                referenceError: 'https://host/errors'
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Not Found Error
+              value:
+                '@type': Error
+                code: ERR404
+                reason: Not Found
+                message: The requested URL was not found on the server.
+                referenceError: 'https://host/errors'
+    '405':
+      description: Method Not allowed
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Method Not allowed Error
+              value:
+                '@type': Error
+                code: ERR405
+                reason: Method Not allowed
+                message: The method is not allowed for the requested URL.
+                referenceError: 'https://host/errors'
+    '409':
+      description: Conflict
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Conflict Error
+              value:
+                '@type': Error
+                code: ERR409
+                reason: Conflict
+                message: >-
+                  The request could not be completed due to a conflict with the current state of the
+                  target resource.
+                referenceError: 'https://host/errors'
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Internal Server Error example
+              value:
+                '@type': Error
+                code: ERR500
+                reason: Internal Server Error
+                message: The server encountered an internal error. Please contact the system administrator.
+                referenceError: 'https://host/errors'
+    '501':
+      description: Not Implemented
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Not Implemented Error
+              value:
+                '@type': Error
+                code: ERR501
+                reason: The requested operation is not implemented
+                message: >-
+                  The requested operation is not implemented. Please contact the system
+                  administrator.
+                referenceError: 'https://host/errors'
+    '503':
+      description: Service Unavailable
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Service Unavailable Error
+              value:
+                '@type': Error
+                code: ERR503
+                reason: Service Unavailable
+                message: The service is currently unavailable. Please try again later.
+                referenceError: 'https://host/errors'
+    200ThresholdArray:
+      description: Success
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Result-Count:
+          $ref: '#/components/headers/X-Result-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Threshold_RES'
+          examples:
+            ThresholdGet200ApplicationJson:
+              $ref: '#/components/examples/ThresholdGet200ApplicationJson_response'
+    200Threshold_Get:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Threshold_RES'
+          examples:
+            ThresholdGet200:
+              $ref: '#/components/examples/ThresholdGet200_response'
+    200Threshold_Patch:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Threshold_RES'
+          examples:
+            ThresholdPatch200MergerPatchJson:
+              $ref: '#/components/examples/ThresholdPatch200MergerPatchJson_response'
+            ThresholdPatch200ApplicationJson:
+              $ref: '#/components/examples/ThresholdPatch200ApplicationJson_response'
+            ThresholdPatch200ApplicationJsonPatch:
+              $ref: '#/components/examples/ThresholdPatch200ApplicationJsonPatch_response'
+            ThresholdPatch200ApplicationJsonPatchQuery:
+              $ref: '#/components/examples/ThresholdPatch200ApplicationJsonPatchQuery_response'
+    201Threshold:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Threshold_RES'
+          examples:
+            ThresholdPost201ApplicationJson:
+              $ref: '#/components/examples/ThresholdPost201ApplicationJson_response'
+    200ThresholdRuleArray:
+      description: Success
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Result-Count:
+          $ref: '#/components/headers/X-Result-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/ThresholdRule_RES'
+          examples:
+            ThresholdRuleGet200ApplicationJson:
+              $ref: '#/components/examples/ThresholdRuleGet200ApplicationJson_response'
+    200ThresholdRule_Get:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRule_RES'
+          examples:
+            ThresholdRuleGet200ApplicationJson:
+              $ref: '#/components/examples/ThresholdRuleGet200ApplicationJson_response'
+    200ThresholdRule_Patch:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRule_RES'
+          examples:
+            ThresholdRulePatch200ApplicationJsonPatch:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationJsonPatch_response'
+            ThresholdRulePatch200ApplicationJsonPatchQuery:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationJsonPatchQuery_response'
+            ThresholdRulePatch200ApplicationMergePatch:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationMergePatch_response'
+            ThresholdRulePatch200ApplicationJson:
+              $ref: '#/components/examples/ThresholdRulePatch200ApplicationJson_response'
+    201ThresholdRule:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdRule_RES'
+          examples:
+            ThresholdRulePost201ApplicationJson:
+              $ref: '#/components/examples/ThresholdRulePost201ApplicationJson_response'
+    200ThresholdJobArray:
+      description: Success
+      headers:
+        X-Total-Count:
+          $ref: '#/components/headers/X-Total-Count'
+        X-Result-Count:
+          $ref: '#/components/headers/X-Result-Count'
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/ThresholdJob_RES'
+          examples:
+            ThresholdJobGet200ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobGet200ApplicationJson_response'
+    200ThresholdJob_Get:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJob_RES'
+          examples:
+            ThresholdJobGet200ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobGet200ApplicationJson_response'
+    200ThresholdJob_Patch:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJob_RES'
+          examples:
+            ThresholdJobPatch200ApplicationJsonPatchQuery:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationJsonPatchQuery_response'
+            ThresholdJobPatch200ApplicationJsonPatch:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationJsonPatch_response'
+            ThresholdJobPatch200ApplicationMergePatch:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationMergePatch_response'
+            ThresholdJobPatch200ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobPatch200ApplicationJson_response'
+    201ThresholdJob:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ThresholdJob_RES'
+          examples:
+            ThresholdJobPost201ApplicationJson:
+              $ref: '#/components/examples/ThresholdJobPost201ApplicationJson_response'
+    Error:
+      description: Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            basic:
+              summary: Error example
+              value:
+                '@type': Error
+                code: ERR001
+                reason: Missing information
+                message: Please provide the additional example information
+                referenceError: 'https://host/errors'
+    Hub:
+      description: Notified
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Hub'
+          examples:
+            basic:
+              summary: Hub example
+              value:
+                '@type': Hub
+                callback: 'https://host/tmf-api/specificAPIName/v5/listener/specificEventListener'
+  headers:
+    X-Total-Count:
+      description: Total number of items matching criteria
+      schema:
+        type: integer
+    X-Result-Count:
+      description: Actual number of items returned in the response body
+      schema:
+        type: integer
+  securitySchemes: {}
+  examples:
+    ThresholdGet200ApplicationJson_response:
+      value:
+        - '@type': Threshold
+          '@baseType': Threshold
+          '@schemaLocation': /schema-registry/v5/Threshold.yml
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+          id: f3a34f89-0046-th-01
+          description: >-
+            Network performance threshold for monitoring packet drop rate and triggering alarms when
+            acceptable limits are exceeded
+          name: threshold-1
+          thresholdRule:
+            - '@type': ThresholdRuleRef
+              '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+              '@referredType': SimpleThresholdRule
+              href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+              id: f3a34f89-0046-thr-01
+      description: >-
+        Here's an example of a request for retrieving a list of threshold(s). The given filter
+        criteria is name threshold-1
+    ThresholdGet200_response:
+      value:
+        '@type': Threshold
+        '@baseType': Threshold
+        '@schemaLocation': /schema-registry/v5/Threshold.yml
+        href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+        id: f3a34f89-0046-th-01
+        description: >-
+          Network performance threshold for monitoring packet drop rate and triggering alarms when
+          acceptable limits are exceeded
+        name: threshold-1
+        thresholdRule:
+          - '@type': ThresholdRuleRef
+            '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+            '@referredType': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+      description: >-
+        Here's an example of a request for retrieving a specific threshold with id
+        f3a34f89-0046-th-01.
+    ThresholdRuleGet200ApplicationJson_response:
+      value:
+        '@type': SimpleThresholdRule
+        '@baseType': ThresholdRule
+        '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+        href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+        id: f3a34f89-0046-thr-01
+        measurement:
+          '@type': PerformanceMeasurementRef
+          '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+          href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+          id: f3a34f89-0046-msr-01
+          '@referredType': PerformanceMeasurement
+        consequence:
+          - '@type': Consequence
+            '@baseType': Consequence
+            '@schemaLocation': /schema-registry/v5/Consequence.yaml
+            description: >-
+              Raises a major severity alarm when packet drop rate exceeds the defined threshold of
+              283 packets per second
+            name: Alarm Consequence
+            prescribedAction: CreateAlarm
+        perfAlarmSpecThresholdCrossingDescription: >-
+          Packet drop rate threshold violation detected - dropped packets per second exceeded
+          acceptable limit
+        performanceAlarmSpecification:
+          perfAlarmSpecAdditionalText: >-
+            The packet drop rate has exceeded the defined performance threshold, indicating
+            potential congestion or network instability. This condition may lead to degraded
+            application performance or increased latency if not resolved promptly.
+          perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+          perfAlarmSpecSeverity: MAJOR
+          perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+          perfAlarmProbableCause: Threshold Crossed
+        condition: Raise
+        name: DropPacketsHighRule
+        severity: MAJOR
+        conformanceComparatorLower: GT
+        conformanceComparatorUpper: LT
+        conformancePeriod:
+          startDateTime: '2025-04-10T06:38:38Z'
+          endDateTime: '2025-04-17T06:38:38Z'
+        conformanceTargetLower: 132
+        conformanceTargetUpper: 776
+        gracePeriods: 933
+        thresholdTarget: 283
+        tolerancePeriod:
+          startDateTime: '2025-04-01T06:38:38Z'
+          endDateTime: '2025-04-10T06:38:38Z'
+      description: >-
+        Here's an example of a request for retrieving a specific threshold rule with id
+        f3a34f89-0046-thr-01.
+    ThresholdJobGet200ApplicationJson_response:
+      value:
+        '@type': ThresholdJob
+        adminState: LOCKED
+        creationDate: '2025-02-12T06:37:22Z'
+        executionState: Active
+        granularity: G_30MN
+        id: 3a34f89-0046-tjb-01
+        href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+        jobPriority: 610
+        lastUpdate: '2025-02-12T06:37:22Z'
+        monitoredObjectsCriteria:
+          - monitoredObjectFilter: nodeName=Router01
+        performanceThreshold:
+          '@type': ThresholdRef
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+          id: f3a34f89-0046-pfth-01
+          '@referredType': Threshold
+        scheduleDefinition:
+          '@type': ScheduleDefinition
+          '@baseType': ScheduleDefinition
+          '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+          id: f3a34f89-0046-sd-01
+          validFor:
+            startDateTime: '2025-04-01T06:37:22Z'
+            endDateTime: '2025-04-15T06:37:22Z'
+          recurringFrequency: every 5 minutes
+          excludedDate:
+            - '2025-02-12T06:37:22Z'
+          scheduleDefinitionHourRange:
+            - startHour: '09:00'
+              endHour: '17:30'
+          weeklyScheduleDefinition: []
+          monthlyScheduleDayOfMonthDefinition:
+            - '2025-04-01T06:37:22Z'
+            - '2025-02-15T06:37:22Z'
+          monthlyScheduleDayOfWeekDefinition:
+            '@type': MonthlyScheduleDayOfWeekDefinition
+            '@baseType': MonthlyScheduleDayOfWeekDefinition
+            '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+            dayOfMonthRecurrence:
+              - '@type': DayOfMonthRecurrence
+                '@baseType': DayOfMonthRecurrence
+                '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+            recurringDaySequence: FirstWeekOfMonth
+        trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: >-
+        Here's an example of a request for retrieving a specific threshold job with id
+        3a34f89-0046-tjb-01.
+    ThresholdPost201ApplicationJson_request:
+      value:
+        '@type': Threshold
+        '@baseType': Threshold
+        '@schemaLocation': /schema-registry/v5/Threshold.yml
+        description: >-
+          Network performance threshold for monitoring packet drop rate and triggering alarms when
+          acceptable limits are exceeded
+        name: threshold-1
+        thresholdRule:
+          - '@type': ThresholdRuleRef
+            '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+            '@referredType': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+      description: >-
+        POST threshold request example - only a subset of threshold attributes are used in this
+        example
+    ThresholdPost201ApplicationJson_response:
+      value:
+        '@type': Threshold
+        '@baseType': Threshold
+        '@schemaLocation': /schema-registry/v5/Threshold.yml
+        href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+        id: f3a34f89-0046-th-01
+        description: >-
+          Network performance threshold for monitoring packet drop rate and triggering alarms when
+          acceptable limits are exceeded
+        name: threshold-1
+        thresholdRule:
+          - '@type': ThresholdRuleRef
+            '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+            '@referredType': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+      description: POST Threshold response description.
+    ThresholdRulePost201ApplicationJson_request:
+      value:
+        '@type': SimpleThresholdRule
+        '@baseType': ThresholdRule
+        '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+        measurement:
+          '@type': PerformanceMeasurementRef
+          '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+          href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+          id: f3a34f89-0046-msr-01
+          '@referredType': PerformanceMeasurement
+        consequence:
+          - '@type': Consequence
+            '@baseType': Consequence
+            '@schemaLocation': /schema-registry/v5/Consequence.yaml
+            description: >-
+              Raises a major severity alarm when packet drop rate exceeds the defined threshold of
+              283 packets per second
+            name: Alarm Consequence
+            prescribedAction: CreateAlarm
+        perfAlarmSpecThresholdCrossingDescription: >-
+          Packet drop rate threshold violation detected - dropped packets per second exceeded
+          acceptable limit
+        performanceAlarmSpecification:
+          perfAlarmSpecAdditionalText: >-
+            The packet drop rate has exceeded the defined performance threshold, indicating
+            potential congestion or network instability. This condition may lead to degraded
+            application performance or increased latency if not resolved promptly.
+          perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+          perfAlarmSpecSeverity: MAJOR
+          perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+          perfAlarmProbableCause: Threshold Crossed
+        condition: Raise
+        name: DropPacketsHighRule
+        severity: MAJOR
+        conformanceComparatorLower: GT
+        conformanceComparatorUpper: LT
+        conformancePeriod:
+          startDateTime: '2025-04-10T06:38:38Z'
+          endDateTime: '2025-04-17T06:38:38Z'
+        conformanceTargetLower: 132
+        conformanceTargetUpper: 776
+        gracePeriods: 933
+        thresholdTarget: 283
+        tolerancePeriod:
+          startDateTime: '2025-04-01T06:38:38Z'
+          endDateTime: '2025-04-10T06:38:38Z'
+      description: >-
+        POST threshold rule request example - only a subset of threshold rule attributes are used in
+        this example
+    ThresholdRulePost201ApplicationJson_response:
+      value:
+        '@type': SimpleThresholdRule
+        '@baseType': ThresholdRule
+        '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+        href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+        id: f3a34f89-0046-thr-01
+        measurement:
+          '@type': PerformanceMeasurementRef
+          '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+          href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+          id: f3a34f89-0046-msr-01
+          '@referredType': PerformanceMeasurement
+        consequence:
+          - '@type': Consequence
+            '@baseType': Consequence
+            '@schemaLocation': /schema-registry/v5/Consequence.yaml
+            description: >-
+              Raises a major severity alarm when packet drop rate exceeds the defined threshold of
+              283 packets per second
+            name: Alarm Consequence
+            prescribedAction: CreateAlarm
+        perfAlarmSpecThresholdCrossingDescription: >-
+          Packet drop rate threshold violation detected - dropped packets per second exceeded
+          acceptable limit
+        performanceAlarmSpecification:
+          perfAlarmSpecAdditionalText: >-
+            The packet drop rate has exceeded the defined performance threshold, indicating
+            potential congestion or network instability. This condition may lead to degraded
+            application performance or increased latency if not resolved promptly.
+          perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+          perfAlarmSpecSeverity: MAJOR
+          perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+          perfAlarmProbableCause: Threshold Crossed
+        condition: Raise
+        name: DropPacketsHighRule
+        severity: MAJOR
+        conformanceComparatorLower: GT
+        conformanceComparatorUpper: LT
+        conformancePeriod:
+          startDateTime: '2025-04-10T06:38:38Z'
+          endDateTime: '2025-04-17T06:38:38Z'
+        conformanceTargetLower: 132
+        conformanceTargetUpper: 776
+        gracePeriods: 933
+        thresholdTarget: 283
+        tolerancePeriod:
+          startDateTime: '2025-04-01T06:38:38Z'
+          endDateTime: '2025-04-10T06:38:38Z'
+      description: POST Threshold Rule response description.
+    ThresholdJobPost201ApplicationJson_request:
+      value:
+        '@type': ThresholdJob
+        adminState: LOCKED
+        creationDate: '2025-02-12T06:37:22Z'
+        executionState: Active
+        granularity: G_30MN
+        jobPriority: 610
+        lastUpdate: '2025-02-12T06:37:22Z'
+        monitoredObjectsCriteria:
+          - monitoredObjectFilter: nodeName=Router01
+        performanceThreshold:
+          '@type': ThresholdRef
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+          id: f3a34f89-0046-pfth-01
+          '@referredType': Threshold
+        scheduleDefinition:
+          '@type': ScheduleDefinition
+          '@baseType': ScheduleDefinition
+          '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+          id: f3a34f89-0046-sd-01
+          validFor:
+            startDateTime: '2025-04-01T06:37:22Z'
+            endDateTime: '2025-04-15T06:37:22Z'
+          recurringFrequency: every 5 minutes
+          excludedDate:
+            - '2025-02-12T06:37:22Z'
+          scheduleDefinitionHourRange:
+            - startHour: '09:00'
+              endHour: '17:30'
+          weeklyScheduleDefinition: []
+          monthlyScheduleDayOfMonthDefinition:
+            - '2025-04-01T06:37:22Z'
+            - '2025-02-15T06:37:22Z'
+          monthlyScheduleDayOfWeekDefinition:
+            '@type': MonthlyScheduleDayOfWeekDefinition
+            '@baseType': MonthlyScheduleDayOfWeekDefinition
+            '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+            dayOfMonthRecurrence:
+              - '@type': DayOfMonthRecurrence
+                '@baseType': DayOfMonthRecurrence
+                '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+            recurringDaySequence: FirstWeekOfMonth
+        trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: >-
+        POST threshold job request example - only a subset of threshold job attributes are used in
+        this example
+    ThresholdJobPost201ApplicationJson_response:
+      value:
+        '@type': ThresholdJob
+        adminState: LOCKED
+        creationDate: '2025-02-12T06:37:22Z'
+        executionState: Active
+        granularity: G_30MN
+        id: 3a34f89-0046-tjb-01
+        href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+        jobPriority: 610
+        lastUpdate: '2025-02-12T06:37:22Z'
+        monitoredObjectsCriteria:
+          - monitoredObjectFilter: nodeName=Router01
+        performanceThreshold:
+          '@type': ThresholdRef
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+          id: f3a34f89-0046-pfth-01
+          '@referredType': Threshold
+        scheduleDefinition:
+          '@type': ScheduleDefinition
+          '@baseType': ScheduleDefinition
+          '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+          id: f3a34f89-0046-sd-01
+          validFor:
+            startDateTime: '2025-04-01T06:37:22Z'
+            endDateTime: '2025-04-15T06:37:22Z'
+          recurringFrequency: every 5 minutes
+          excludedDate:
+            - '2025-02-12T06:37:22Z'
+          scheduleDefinitionHourRange:
+            - startHour: '09:00'
+              endHour: '17:30'
+          weeklyScheduleDefinition: []
+          monthlyScheduleDayOfMonthDefinition:
+            - '2025-04-01T06:37:22Z'
+            - '2025-02-15T06:37:22Z'
+          monthlyScheduleDayOfWeekDefinition:
+            '@type': MonthlyScheduleDayOfWeekDefinition
+            '@baseType': MonthlyScheduleDayOfWeekDefinition
+            '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+            dayOfMonthRecurrence:
+              - '@type': DayOfMonthRecurrence
+                '@baseType': DayOfMonthRecurrence
+                '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+            recurringDaySequence: FirstWeekOfMonth
+        trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: POST Threshold Job response description.
+    ThresholdPatch200MergerPatchJson_request:
+      value:
+        description: Updated threshold description
+        '@type': Threshold
+      description: >-
+        Here's an example of a request for updating a threshold. This example illustrating patch
+        merge, When PATCH is implemented merge syntax is mandatory
+    ThresholdPatch200MergerPatchJson_response:
+      value:
+        '@type': Threshold
+        '@baseType': Threshold
+        '@schemaLocation': /schema-registry/v5/Threshold.yml
+        href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+        id: f3a34f89-0046-th-01
+        description: Updated threshold description
+        name: threshold-1
+        thresholdRule:
+          - '@type': ThresholdRuleRef
+            '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+            '@referredType': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+      description: Response message
+    ThresholdPatch200ApplicationJson_request:
+      value:
+        description: Updated threshold description
+        '@type': Threshold
+      description: >-
+        Here's an example of a request for updating a threshold. This example illustrating patch
+        application/json
+    ThresholdPatch200ApplicationJson_response:
+      value:
+        '@type': Threshold
+        '@baseType': Threshold
+        '@schemaLocation': /schema-registry/v5/Threshold.yml
+        href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+        id: f3a34f89-0046-th-01
+        description: Updated threshold description
+        name: threshold-1
+        thresholdRule:
+          - '@type': ThresholdRuleRef
+            '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+            '@referredType': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+      description: Response message
+    ThresholdPatch200ApplicationJsonPatch_request:
+      value:
+        - op: replace
+          path: /description
+          value: Updated threshold description
+      description: >-
+        Here's an example of a request for updating a threshold. This example illustrating patch
+        json
+    ThresholdPatch200ApplicationJsonPatch_response:
+      value:
+        '@type': Threshold
+        '@baseType': Threshold
+        '@schemaLocation': /schema-registry/v5/Threshold.yml
+        href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+        id: f3a34f89-0046-th-01
+        description: Updated threshold description
+        name: threshold-1
+        thresholdRule:
+          - '@type': ThresholdRuleRef
+            '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+            '@referredType': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+      description: Response message
+    ThresholdPatch200ApplicationJsonPatchQuery_request:
+      value:
+        - op: replace
+          path: /thresholdRule
+          value:
+            - '@type': ThresholdRuleRef
+              '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+              '@referredType': SimpleThresholdRule
+              href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-02
+              id: f3a34f89-0046-thr-02
+      description: >-
+        Here's an example of a request for updating a threshold. This example illustrating patch
+        query json
+    ThresholdPatch200ApplicationJsonPatchQuery_response:
+      value:
+        '@type': Threshold
+        '@baseType': Threshold
+        '@schemaLocation': /schema-registry/v5/Threshold.yml
+        href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+        id: f3a34f89-0046-th-01
+        description: >-
+          Network performance threshold for monitoring packet drop rate and triggering alarms when
+          acceptable limits are exceeded
+        name: threshold-1
+        thresholdRule:
+          - '@type': ThresholdRuleRef
+            '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+            '@referredType': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-02
+            id: f3a34f89-0046-thr-02
+      description: Response message
+    ThresholdRulePatch200ApplicationJsonPatch_request:
+      value:
+        - op: replace
+          path: /perfAlarmSpecThresholdCrossingDescription
+          value: Packet drop rate threshold violation detected
+      description: >-
+        Here's an example of a request for updating a threshold rule. This example illustrating
+        patch json
+    ThresholdRulePatch200ApplicationJsonPatch_response:
+      value:
+        '@type': SimpleThresholdRule
+        '@baseType': ThresholdRule
+        '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+        href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+        id: f3a34f89-0046-thr-01
+        measurement:
+          '@type': PerformanceMeasurementRef
+          '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+          href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+          id: f3a34f89-0046-msr-01
+          '@referredType': PerformanceMeasurement
+        consequence:
+          - '@type': Consequence
+            '@baseType': Consequence
+            '@schemaLocation': /schema-registry/v5/Consequence.yaml
+            description: >-
+              Raises a major severity alarm when packet drop rate exceeds the defined threshold of
+              283 packets per second
+            name: Alarm Consequence
+            prescribedAction: CreateAlarm
+        perfAlarmSpecThresholdCrossingDescription: Packet drop rate threshold violation detected
+        performanceAlarmSpecification:
+          perfAlarmSpecAdditionalText: >-
+            The packet drop rate has exceeded the defined performance threshold, indicating
+            potential congestion or network instability. This condition may lead to degraded
+            application performance or increased latency if not resolved promptly.
+          perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+          perfAlarmSpecSeverity: MAJOR
+          perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+          perfAlarmProbableCause: Threshold Crossed
+        condition: Raise
+        name: DropPacketsHighRule
+        severity: MAJOR
+        conformanceComparatorLower: GT
+        conformanceComparatorUpper: LT
+        conformancePeriod:
+          startDateTime: '2025-04-10T06:38:38Z'
+          endDateTime: '2025-04-17T06:38:38Z'
+        conformanceTargetLower: 132
+        conformanceTargetUpper: 776
+        gracePeriods: 933
+        thresholdTarget: 283
+        tolerancePeriod:
+          startDateTime: '2025-04-01T06:38:38Z'
+          endDateTime: '2025-04-10T06:38:38Z'
+      description: Response message
+    ThresholdRulePatch200ApplicationJsonPatchQuery_request:
+      value:
+        - op: replace
+          path: /consequence/prescribedAction?name=Alarm Consequence
+          value: cancelAlarm
+      description: >-
+        Here's an example of a request for updating a threshold rule. This example illustrating
+        patch query json
+    ThresholdRulePatch200ApplicationJsonPatchQuery_response:
+      value:
+        '@type': SimpleThresholdRule
+        '@baseType': ThresholdRule
+        '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+        href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+        id: f3a34f89-0046-thr-01
+        measurement:
+          '@type': PerformanceMeasurementRef
+          '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+          href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+          id: f3a34f89-0046-msr-01
+          '@referredType': PerformanceMeasurement
+        consequence:
+          - '@type': Consequence
+            '@baseType': Consequence
+            '@schemaLocation': /schema-registry/v5/Consequence.yaml
+            description: >-
+              Raises a major severity alarm when packet drop rate exceeds the defined threshold of
+              283 packets per second
+            name: Alarm Consequence
+            prescribedAction: cancelAlarm
+        perfAlarmSpecThresholdCrossingDescription: >-
+          Packet drop rate threshold violation detected - dropped packets per second exceeded
+          acceptable limit
+        performanceAlarmSpecification:
+          perfAlarmSpecAdditionalText: >-
+            The packet drop rate has exceeded the defined performance threshold, indicating
+            potential congestion or network instability. This condition may lead to degraded
+            application performance or increased latency if not resolved promptly.
+          perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+          perfAlarmSpecSeverity: MAJOR
+          perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+          perfAlarmProbableCause: Threshold Crossed
+        condition: Raise
+        name: DropPacketsHighRule
+        severity: MAJOR
+        conformanceComparatorLower: GT
+        conformanceComparatorUpper: LT
+        conformancePeriod:
+          startDateTime: '2025-04-10T06:38:38Z'
+          endDateTime: '2025-04-17T06:38:38Z'
+        conformanceTargetLower: 132
+        conformanceTargetUpper: 776
+        gracePeriods: 933
+        thresholdTarget: 283
+        tolerancePeriod:
+          startDateTime: '2025-04-01T06:38:38Z'
+          endDateTime: '2025-04-10T06:38:38Z'
+      description: Response message
+    ThresholdRulePatch200ApplicationMergePatch_request:
+      value:
+        perfAlarmSpecThresholdCrossingDescription: Packet drop rate threshold violation detected
+        '@type': SimpleThresholdRule
+      description: >-
+        Here's an example of a request for updating a threshold rule. This example illustrating
+        patch merge, When PATCH is implemented merge syntax is mandatory
+    ThresholdRulePatch200ApplicationMergePatch_response:
+      value:
+        '@type': SimpleThresholdRule
+        '@baseType': ThresholdRule
+        '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+        href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+        id: f3a34f89-0046-thr-01
+        measurement:
+          '@type': PerformanceMeasurementRef
+          '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+          href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+          id: f3a34f89-0046-msr-01
+          '@referredType': PerformanceMeasurement
+        consequence:
+          - '@type': Consequence
+            '@baseType': Consequence
+            '@schemaLocation': /schema-registry/v5/Consequence.yaml
+            description: >-
+              Raises a major severity alarm when packet drop rate exceeds the defined threshold of
+              283 packets per second
+            name: Alarm Consequence
+            prescribedAction: CreateAlarm
+        perfAlarmSpecThresholdCrossingDescription: Packet drop rate threshold violation detected
+        performanceAlarmSpecification:
+          perfAlarmSpecAdditionalText: >-
+            The packet drop rate has exceeded the defined performance threshold, indicating
+            potential congestion or network instability. This condition may lead to degraded
+            application performance or increased latency if not resolved promptly.
+          perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+          perfAlarmSpecSeverity: MAJOR
+          perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+          perfAlarmProbableCause: Threshold Crossed
+        condition: Raise
+        name: DropPacketsHighRule
+        severity: MAJOR
+        conformanceComparatorLower: GT
+        conformanceComparatorUpper: LT
+        conformancePeriod:
+          startDateTime: '2025-04-10T06:38:38Z'
+          endDateTime: '2025-04-17T06:38:38Z'
+        conformanceTargetLower: 132
+        conformanceTargetUpper: 776
+        gracePeriods: 933
+        thresholdTarget: 283
+        tolerancePeriod:
+          startDateTime: '2025-04-01T06:38:38Z'
+          endDateTime: '2025-04-10T06:38:38Z'
+      description: Response message
+    ThresholdRulePatch200ApplicationJson_request:
+      value:
+        perfAlarmSpecThresholdCrossingDescription: >-
+          Packet drop rate threshold violation detected - dropped packets per second exceeded
+          acceptable limit
+        '@type': SimpleThresholdRule
+      description: >-
+        Here's an example of a request for updating a threshold rule. This example illustrating
+        patch application/json
+    ThresholdRulePatch200ApplicationJson_response:
+      value:
+        '@type': SimpleThresholdRule
+        '@baseType': ThresholdRule
+        '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+        href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+        id: f3a34f89-0046-thr-01
+        measurement:
+          '@type': PerformanceMeasurementRef
+          '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+          href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+          id: f3a34f89-0046-msr-01
+          '@referredType': PerformanceMeasurement
+        consequence:
+          - '@type': Consequence
+            '@baseType': Consequence
+            '@schemaLocation': /schema-registry/v5/Consequence.yaml
+            description: >-
+              Raises a major severity alarm when packet drop rate exceeds the defined threshold of
+              283 packets per second
+            name: Alarm Consequence
+            prescribedAction: CreateAlarm
+        perfAlarmSpecThresholdCrossingDescription: >-
+          Packet drop rate threshold violation detected - dropped packets per second exceeded
+          acceptable limit
+        performanceAlarmSpecification:
+          perfAlarmSpecAdditionalText: >-
+            The packet drop rate has exceeded the defined performance threshold, indicating
+            potential congestion or network instability. This condition may lead to degraded
+            application performance or increased latency if not resolved promptly.
+          perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+          perfAlarmSpecSeverity: MAJOR
+          perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+          perfAlarmProbableCause: Threshold Crossed
+        condition: Raise
+        name: DropPacketsHighRule
+        severity: MAJOR
+        conformanceComparatorLower: GT
+        conformanceComparatorUpper: LT
+        conformancePeriod:
+          startDateTime: '2025-04-10T06:38:38Z'
+          endDateTime: '2025-04-17T06:38:38Z'
+        conformanceTargetLower: 132
+        conformanceTargetUpper: 776
+        gracePeriods: 933
+        thresholdTarget: 283
+        tolerancePeriod:
+          startDateTime: '2025-04-01T06:38:38Z'
+          endDateTime: '2025-04-10T06:38:38Z'
+      description: Response message
+    ThresholdJobPatch200ApplicationJsonPatchQuery_request:
+      value:
+        - op: replace
+          path: >-
+            /monitoredObjectsCriteria[?(@.monitoredObjectFilter=='nodeName=Router01')]/monitoredObjectFilter
+          value: nodeName=Router02
+      description: >-
+        Here's an example of a request for updating a threshold job. This example illustrating patch
+        query json
+    ThresholdJobPatch200ApplicationJsonPatchQuery_response:
+      value:
+        '@type': ThresholdJob
+        adminState: LOCKED
+        creationDate: '2025-02-12T06:37:22Z'
+        executionState: Active
+        granularity: G_30MN
+        id: 3a34f89-0046-tjb-01
+        href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+        jobPriority: 610
+        lastUpdate: '2025-02-12T06:37:22Z'
+        monitoredObjectsCriteria:
+          - monitoredObjectFilter: nodeName=Router02
+        performanceThreshold:
+          '@type': ThresholdRef
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+          id: f3a34f89-0046-pfth-01
+          '@referredType': Threshold
+        scheduleDefinition:
+          '@type': ScheduleDefinition
+          '@baseType': ScheduleDefinition
+          '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+          id: f3a34f89-0046-sd-01
+          validFor:
+            startDateTime: '2025-04-01T06:37:22Z'
+            endDateTime: '2025-04-15T06:37:22Z'
+          recurringFrequency: every 5 minutes
+          excludedDate:
+            - '2025-02-12T06:37:22Z'
+          scheduleDefinitionHourRange:
+            - startHour: '09:00'
+              endHour: '17:30'
+          weeklyScheduleDefinition: []
+          monthlyScheduleDayOfMonthDefinition:
+            - '2025-04-01T06:37:22Z'
+            - '2025-02-15T06:37:22Z'
+          monthlyScheduleDayOfWeekDefinition:
+            '@type': MonthlyScheduleDayOfWeekDefinition
+            '@baseType': MonthlyScheduleDayOfWeekDefinition
+            '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+            dayOfMonthRecurrence:
+              - '@type': DayOfMonthRecurrence
+                '@baseType': DayOfMonthRecurrence
+                '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+            recurringDaySequence: FirstWeekOfMonth
+        trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: Response message
+    ThresholdJobPatch200ApplicationJsonPatch_request:
+      value:
+        - op: replace
+          path: /jobPriority
+          value: '611'
+      description: >-
+        Here's an example of a request for updating a threshold job. This example illustrating patch
+        json
+    ThresholdJobPatch200ApplicationJsonPatch_response:
+      value:
+        '@type': ThresholdJob
+        adminState: LOCKED
+        creationDate: '2025-02-12T06:37:22Z'
+        executionState: Deactive
+        granularity: G_30MN
+        id: 3a34f89-0046-tjb-01
+        href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+        jobPriority: 611
+        lastUpdate: '2025-02-12T06:37:22Z'
+        monitoredObjectsCriteria:
+          - monitoredObjectFilter: nodeName=Router01
+        performanceThreshold:
+          '@type': ThresholdRef
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+          id: f3a34f89-0046-pfth-01
+          '@referredType': Threshold
+        scheduleDefinition:
+          '@type': ScheduleDefinition
+          '@baseType': ScheduleDefinition
+          '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+          id: f3a34f89-0046-sd-01
+          validFor:
+            startDateTime: '2025-04-01T06:37:22Z'
+            endDateTime: '2025-04-15T06:37:22Z'
+          recurringFrequency: every 5 minutes
+          excludedDate:
+            - '2025-02-12T06:37:22Z'
+          scheduleDefinitionHourRange:
+            - startHour: '09:00'
+              endHour: '17:30'
+          weeklyScheduleDefinition: []
+          monthlyScheduleDayOfMonthDefinition:
+            - '2025-04-01T06:37:22Z'
+            - '2025-02-15T06:37:22Z'
+          monthlyScheduleDayOfWeekDefinition:
+            '@type': MonthlyScheduleDayOfWeekDefinition
+            '@baseType': MonthlyScheduleDayOfWeekDefinition
+            '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+            dayOfMonthRecurrence:
+              - '@type': DayOfMonthRecurrence
+                '@baseType': DayOfMonthRecurrence
+                '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+            recurringDaySequence: FirstWeekOfMonth
+        trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: Response message
+    ThresholdJobPatch200ApplicationMergePatch_request:
+      value:
+        jobPriority: 611
+        '@type': ThresholdJob
+      description: >-
+        Here's an example of a request for updating a threshold job. This example illustrating patch
+        merge, When PATCH is implemented merge syntax is mandatory
+    ThresholdJobPatch200ApplicationMergePatch_response:
+      value:
+        '@type': ThresholdJob
+        adminState: LOCKED
+        creationDate: '2025-02-12T06:37:22Z'
+        executionState: Active
+        granularity: G_30MN
+        id: 3a34f89-0046-tjb-01
+        href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+        jobPriority: 611
+        lastUpdate: '2025-02-12T06:37:22Z'
+        monitoredObjectsCriteria:
+          - monitoredObjectFilter: nodeName=Router01
+        performanceThreshold:
+          '@type': ThresholdRef
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+          id: f3a34f89-0046-pfth-01
+          '@referredType': Threshold
+        scheduleDefinition:
+          '@type': ScheduleDefinition
+          '@baseType': ScheduleDefinition
+          '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+          id: f3a34f89-0046-sd-01
+          validFor:
+            startDateTime: '2025-04-01T06:37:22Z'
+            endDateTime: '2025-04-15T06:37:22Z'
+          recurringFrequency: every 5 minutes
+          excludedDate:
+            - '2025-02-12T06:37:22Z'
+          scheduleDefinitionHourRange:
+            - startHour: '09:00'
+              endHour: '17:30'
+          weeklyScheduleDefinition: []
+          monthlyScheduleDayOfMonthDefinition:
+            - '2025-04-01T06:37:22Z'
+            - '2025-02-15T06:37:22Z'
+          monthlyScheduleDayOfWeekDefinition:
+            '@type': MonthlyScheduleDayOfWeekDefinition
+            '@baseType': MonthlyScheduleDayOfWeekDefinition
+            '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+            dayOfMonthRecurrence:
+              - '@type': DayOfMonthRecurrence
+                '@baseType': DayOfMonthRecurrence
+                '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+            recurringDaySequence: FirstWeekOfMonth
+        trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: Response message
+    ThresholdJobPatch200ApplicationJson_request:
+      value:
+        jobPriority: 611
+        '@type': ThresholdJob
+      description: >-
+        Here's an example of a request for updating a threshold job. This example illustrating patch
+        application/json
+    ThresholdJobPatch200ApplicationJson_response:
+      value:
+        '@type': ThresholdJob
+        adminState: LOCKED
+        creationDate: '2025-02-12T06:37:22Z'
+        executionState: Active
+        granularity: G_30MN
+        id: 3a34f89-0046-tjb-01
+        href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+        jobPriority: 611
+        lastUpdate: '2025-02-12T06:37:22Z'
+        monitoredObjectsCriteria:
+          - monitoredObjectFilter: nodeName=Router01
+        performanceThreshold:
+          '@type': ThresholdRef
+          href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+          id: f3a34f89-0046-pfth-01
+          '@referredType': Threshold
+        scheduleDefinition:
+          '@type': ScheduleDefinition
+          '@baseType': ScheduleDefinition
+          '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+          id: f3a34f89-0046-sd-01
+          validFor:
+            startDateTime: '2025-04-01T06:37:22Z'
+            endDateTime: '2025-04-15T06:37:22Z'
+          recurringFrequency: every 5 minutes
+          excludedDate:
+            - '2025-02-12T06:37:22Z'
+          scheduleDefinitionHourRange:
+            - startHour: '09:00'
+              endHour: '17:30'
+          weeklyScheduleDefinition: []
+          monthlyScheduleDayOfMonthDefinition:
+            - '2025-04-01T06:37:22Z'
+            - '2025-02-15T06:37:22Z'
+          monthlyScheduleDayOfWeekDefinition:
+            '@type': MonthlyScheduleDayOfWeekDefinition
+            '@baseType': MonthlyScheduleDayOfWeekDefinition
+            '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+            dayOfMonthRecurrence:
+              - '@type': DayOfMonthRecurrence
+                '@baseType': DayOfMonthRecurrence
+                '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+            recurringDaySequence: FirstWeekOfMonth
+        trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: Response message
+    ThresholdCreateEventPost204ApplicationJson_request:
+      value:
+        '@type': ThresholdCreateEvent
+        '@baseType': ThresholdCreateEvent
+        '@schemaLocation': /schema-registry/ThresholdCreateEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdCreateEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdCreateEvent
+        description: ThresholdCreateEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdCreateEvent
+        event:
+          threshold:
+            '@type': Threshold
+            '@baseType': Threshold
+            '@schemaLocation': /schema-registry/v5/Threshold.yml
+            href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+            id: f3a34f89-0046-th-01
+            description: >-
+              Network performance threshold for monitoring packet drop rate and triggering alarms
+              when acceptable limits are exceeded
+            name: threshold-1
+            thresholdRule:
+              - '@type': ThresholdRuleRef
+                '@schemaLocation': /schema-registry/v5/ThresholdRuleRef.yml
+                '@referredType': SimpleThresholdRule
+                href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+                id: f3a34f89-0046-thr-01
+      description: Message example for ThresholdCreateEvent event
+    ThresholdAttributeValueChangeEvent_request:
+      value:
+        '@type': ThresholdAttributeValueChangeEvent
+        '@baseType': ThresholdAttributeValueChangeEvent
+        '@schemaLocation': /schema-registry/ThresholdAttributeValueChangeEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdAttributeValueChangeChange/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdAttributeValueChangeEvent
+        description: ThresholdAttributeValueChangeEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdAttributeValueChangeEvent
+        event:
+          threshold:
+            href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+            id: f3a34f89-0046-th-01
+            '@type': Threshold
+            description: >-
+              Network performance threshold for monitoring packet drop rate and triggering alarms
+              when acceptable limits are exceeded
+      description: Message example for ThresholdAttributeValueChangeEvent event
+    ThresholdDeleteEventPost204ApplicationJson_request:
+      value:
+        '@type': ThresholdDeleteEvent
+        '@baseType': ThresholdDeleteEvent
+        '@schemaLocation': /schema-registry/ThresholdDeleteEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdDeleteEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdDeleteEvent
+        description: ThresholdDeleteEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdDeleteEvent
+        event:
+          threshold:
+            '@type': Threshold
+            '@baseType': Threshold
+            '@schemaLocation': /schema-registry/v5/Threshold.yml
+            href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-th-01
+            id: f3a34f89-0046-th-01
+      description: Message example for ThresholdDeleteEvent event
+    ThresholdRuleCreateEventPost204ApplicationJson_request:
+      value:
+        '@type': ThresholdRuleCreateEvent
+        '@baseType': ThresholdRuleCreateEvent
+        '@schemaLocation': /schema-registry/ThresholdRuleChange.yaml
+        href: /tmf-api/performanceManagement/ThresholdRuleCreate/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdRuleChangeEvent
+        description: ThresholdRuleChangeEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdRuleCreateEvent
+        event:
+          thresholdRule:
+            '@type': SimpleThresholdRule
+            '@baseType': ThresholdRule
+            '@schemaLocation': /schema-registry/v5/SimpleThresholdRule.yml
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+            measurement:
+              '@type': PerformanceMeasurementRef
+              '@schemaLocation': /schema-registry/v5/PerformanceMeasurementRef.yaml
+              href: tmf-api/performanceManagement/v5/performanceMeasurement/f3a34f89-0046-msr-01
+              id: f3a34f89-0046-msr-01
+              '@referredType': PerformanceMeasurement
+            consequence:
+              - '@type': Consequence
+                '@baseType': Consequence
+                '@schemaLocation': /schema-registry/v5/Consequence.yaml
+                description: >-
+                  Raises a major severity alarm when packet drop rate exceeds the defined threshold
+                  of 283 packets per second
+                name: Alarm Consequence
+                prescribedAction: CreateAlarm
+            perfAlarmSpecThresholdCrossingDescription: >-
+              Packet drop rate threshold violation detected - dropped packets per second exceeded
+              acceptable limit
+            performanceAlarmSpecification:
+              perfAlarmSpecAdditionalText: >-
+                The packet drop rate has exceeded the defined performance threshold, indicating
+                potential congestion or network instability. This condition may lead to degraded
+                application performance or increased latency if not resolved promptly.
+              perfAlarmSpecAlarmType: PERFORMANCE_DEGRADATION
+              perfAlarmSpecSeverity: MAJOR
+              perfAlarmSpecSpecificProblem: Packet drop rate exceeded
+              perfAlarmProbableCause: Threshold Crossed
+            condition: Raise
+            name: DropPacketsHighRule
+            severity: MAJOR
+            conformanceComparatorLower: GT
+            conformanceComparatorUpper: LT
+            conformancePeriod:
+              startDateTime: '2025-04-10T06:38:38Z'
+              endDateTime: '2025-04-17T06:38:38Z'
+            conformanceTargetLower: 132
+            conformanceTargetUpper: 776
+            gracePeriods: 933
+            thresholdTarget: 283
+            tolerancePeriod:
+              startDateTime: '2025-04-01T06:38:38Z'
+              endDateTime: '2025-04-10T06:38:38Z'
+      description: Message example for ThresholdRuleCreateEvent event
+    ThresholdRuleAttributeValueChangeEvent_request:
+      value:
+        '@type': ThresholdRuleAttributeValueChangeEvent
+        '@baseType': ThresholdRuleChangeEvent
+        '@schemaLocation': /schema-registry/ThresholdRuleAttributeValueChangeEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdRuleAttributeValueChangeEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdRuleAttributeValueChangeEvent
+        description: ThresholdRuleAttributeValueChangeEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdRuleAttributeValueChangeEvent
+        event:
+          thresholdRule:
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+            '@type': SimpleThresholdRule
+            gracePeriods: 933
+            thresholdTarget: 283
+      description: Message example for ThresholdRuleAttributeValueChangeEvent event
+    ThresholdRuleDeleteEventPost204ApplicationJson_request:
+      value:
+        '@type': ThresholdRuleDeleteEvent
+        '@baseType': ThresholdRuleDeleteEvent
+        '@schemaLocation': /schema-registry/ThresholdRuleDeleteEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdRuleDeleteEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdRuleDeleteEvent
+        description: ThresholdRuleChangeEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdRuleDeleteEvent
+        event:
+          thresholdRule:
+            '@type': SimpleThresholdRule
+            href: tmf-api/performanceThresholding/v5/thresholdRule/f3a34f89-0046-thr-01
+            id: f3a34f89-0046-thr-01
+      description: Message example for ThresholdRuleDeleteEvent event
+    ThresholdJobCreateEventPost204ApplicationJson_request:
+      value:
+        '@type': ThresholdJobCreateEvent
+        '@baseType': ThresholdJobCreateEvent
+        '@schemaLocation': /schema-registry/ThresholdJobCreateEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdJobCreateEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdJobCreateEvent
+        description: ThresholdBatchEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdJobCreateEvent
+        event:
+          thresholdJob:
+            '@type': ThresholdJob
+            adminState: LOCKED
+            creationDate: '2025-02-12T06:37:22Z'
+            executionState: Active
+            granularity: G_30MN
+            id: 3a34f89-0046-tjb-01
+            href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+            jobPriority: 610
+            lastUpdate: '2025-02-12T06:37:22Z'
+            monitoredObjectsCriteria:
+              - monitoredObjectFilter: nodeName=Router01
+            performanceThreshold:
+              '@type': ThresholdRef
+              href: tmf-api/performanceThresholding/v5/threshold/f3a34f89-0046-pfth-01
+              id: f3a34f89-0046-pfth-01
+              '@referredType': Threshold
+            scheduleDefinition:
+              '@type': ScheduleDefinition
+              '@baseType': ScheduleDefinition
+              '@schemaLocation': /schema-registry/v5/ScheduleDefinition.yaml
+              id: f3a34f89-0046-sd-01
+              validFor:
+                startDateTime: '2025-04-01T06:37:22Z'
+                endDateTime: '2025-04-15T06:37:22Z'
+              recurringFrequency: every 5 minutes
+              excludedDate:
+                - '2025-02-12T06:37:22Z'
+              scheduleDefinitionHourRange:
+                - startHour: '09:00'
+                  endHour: '17:30'
+              weeklyScheduleDefinition: []
+              monthlyScheduleDayOfMonthDefinition:
+                - '2025-04-01T06:37:22Z'
+                - '2025-02-15T06:37:22Z'
+              monthlyScheduleDayOfWeekDefinition:
+                '@type': MonthlyScheduleDayOfWeekDefinition
+                '@baseType': MonthlyScheduleDayOfWeekDefinition
+                '@schemaLocation': /schema-registry/v5/MonthlyScheduleDayOfWeekDefinition.yaml
+                dayOfMonthRecurrence:
+                  - '@type': DayOfMonthRecurrence
+                    '@baseType': DayOfMonthRecurrence
+                    '@schemaLocation': /schema-registry/v5/DayOfMonthRecurrence.yaml
+                recurringDaySequence: FirstWeekOfMonth
+            trackingRecord: Router01_PacketDropRate_ThresholdMonitoring_ExecutionLog
+      description: Message example for ThresholdJobCreateEvent event
+    ThresholdJobAttributeValueChangeEvent_request:
+      value:
+        '@type': ThresholdJobAttributeValueChangeEvent
+        '@baseType': ThresholdJobAttributeValueChangeEvent
+        '@schemaLocation': /schema-registry/ThresholdJobAttributeValueChangeEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdJobAttributeValueChangeEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdJobAttributeValueChangeEvent
+        description: ThresholdBatchEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdJobAttributeValueChangeEvent
+        event:
+          thresholdJob:
+            '@type': ThresholdJob
+            jobPriority: 610
+            id: 3a34f89-0046-tjb-01
+            href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+      description: Message example for ThresholdJobAttributeValueChangeEvent event
+    ThresholdJobStateChangeEvent_request:
+      value:
+        '@type': ThresholdJobStateChangeEvent
+        '@baseType': ThresholdJobStateChangeEvent
+        '@schemaLocation': /schema-registry/ThresholdJobStateChangeEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdJobStateChangeEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdJobStateChangeEvent
+        description: ThresholdJobStateChangeEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdJobStateChangeEvent
+        event:
+          thresholdJob:
+            '@type': ThresholdJob
+            id: 3a34f89-0046-tjb-01
+            href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+            executionState: Draft
+            adminState: UNLOCKED
+      description: Message example for ThresholdJobStateChangeEvent event
+    ThresholdJobDeleteEventPost204ApplicationJson_request:
+      value:
+        '@type': ThresholdJobDeleteEvent
+        '@baseType': ThresholdJobDeleteEvent
+        '@schemaLocation': /schema-registry/ThresholdJobDeleteEvent.yaml
+        href: /tmf-api/performanceManagement/ThresholdJobDeleteEvent/f3a34f89-0046-tjb-01
+        id: f3a34f89-0046-01
+        correlationId: f3a34f89-0046-cr-01
+        domain: Commercial
+        title: ThresholdJobDeleteEvent
+        description: ThresholdBatchEvent illustration
+        priority: '5'
+        timeOccurred: '2024-11-18T09:35:14Z'
+        source:
+          '@type': EntityRef
+          '@schemaLocation': /schema-registry/EntityRef.yaml
+          href: /tmf-api/resourceInventoryManagement/v5/logicalResource/f3a34f89-0046-src-01
+          id: f3a34f89-0046-src-01
+          name: CRM App
+          '@referredType': LogicalResource
+        reportingSystem:
+          '@type': SoftwareRef
+          '@schemaLocation': 'https://mycsp.com:8080/tmfapi/schema/SoftwareRef/Extended.schema.json'
+          '@referredType': SoftwareResource
+          id: 533242BC35DSSA55555
+          href: 'https://mycsp.com:8080/tmfapi/resourceManagement/v5/resource/533242BC35DSSA55555'
+          name: BlueSkySoftware BSS/OSS
+        relatedParty:
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRoleRef
+              '@schemaLocation': /schema-registry/PartyRoleRef.yaml
+              href: /tmf-api/customerManagement/v5/customer/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: John Doe
+              '@referredType': Customer
+              partyId: f3a34f89-0046-pt-01
+              partyName: John Doe
+          - '@type': RelatedPartyRefOrPartyRoleRef
+            '@schemaLocation': /schema-registry/RelatedPartyRefOrPartyRoleRef.yaml
+            role: initiator
+            partyOrPartyRole:
+              '@type': PartyRef
+              '@schemaLocation': /schema-registry/PartyRef.yaml
+              href: /tmf-api/partyManagement/v5/organization/f3a34f89-0046-pt-01
+              id: f3a34f89-0046-pt-01
+              name: 6d Tech
+              '@referredType': Organization
+        eventId: f3a34f89-0046-evtid-01
+        eventTime: '2024-11-18T09:35:14Z'
+        eventType: ThresholdJobDeleteEvent
+        event:
+          thresholdJob:
+            '@type': ThresholdJob
+            id: 3a34f89-0046-tjb-01
+            href: tmf-api/performanceThresholding/v5/thresholdJob/3a34f89-0046-tjb-01
+      description: Message example for ThresholdJobDeleteEvent event

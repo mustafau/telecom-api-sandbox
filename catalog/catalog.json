@@ -1,0 +1,1311 @@
+{
+  "as_of": "2026-10-22",
+  "basis": "User-provided snapshot; not a verified spec-download inventory",
+  "api_count": 104,
+  "major_version_pair_count": 159,
+  "apis": [
+    {
+      "api_id": "TMF699",
+      "name": "Sales Management API",
+      "category": "Marketing Sales",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF646",
+      "name": "Appointment Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF678",
+      "name": "Customer Bill Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF629",
+      "name": "Customer Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF717",
+      "name": "Customer360 Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF770",
+      "name": "Fraud Managment API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF676",
+      "name": "Payment Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v1",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF670",
+      "name": "Payment Method Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF654",
+      "name": "Prepay Balance Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF760",
+      "name": "Product Configuration Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF622",
+      "name": "Product Ordering Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF648",
+      "name": "Quote Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF680",
+      "name": "Recommendation Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v2",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF696",
+      "name": "Risk Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF663",
+      "name": "Shopping Cart Management API",
+      "category": "Customer",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF658",
+      "name": "Loyalty Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF936",
+      "name": "Open Gateway Product Catalog API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": true
+    },
+    {
+      "api_id": "TMF937",
+      "name": "Open Gateway Product Usage API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": true
+    },
+    {
+      "api_id": "TMF620",
+      "name": "Product Catalog Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF637",
+      "name": "Product Inventory Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF679",
+      "name": "Product Offering Qualification Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF767",
+      "name": "Product Usage Catalog Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF635",
+      "name": "Product Usage Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF671",
+      "name": "Promotion Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF677",
+      "name": "Usage Consumption Management API",
+      "category": "Product",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF924",
+      "name": "DCS 5GSlice Service Activation API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": true
+    },
+    {
+      "api_id": "TMF914",
+      "name": "IoT Service Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF909",
+      "name": "Network as a Service Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v3",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF777",
+      "name": "Outage Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF640",
+      "name": "Service Activation Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF633",
+      "name": "Service Catalog Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v3",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF638",
+      "name": "Service Inventory Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF641",
+      "name": "Service Ordering Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF656",
+      "name": "Service Problem Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF645",
+      "name": "Service Qualification Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF657",
+      "name": "Service Quality Management Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v1",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF653",
+      "name": "Service Test Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF727",
+      "name": "Service Usage Management API",
+      "category": "Service",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF642",
+      "name": "Alarm Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF908",
+      "name": "IoT Agent and Device Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF759",
+      "name": "Private Optimized Binding",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": true
+    },
+    {
+      "api_id": "TMF702",
+      "name": "Resource Activation Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF634",
+      "name": "Resource Catalog Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF664",
+      "name": "Resource Function Activation Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF639",
+      "name": "Resource Inventory Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF652",
+      "name": "Resource Order Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF685",
+      "name": "Resource Pool Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v3",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF689",
+      "name": "Resource Portability API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF761",
+      "name": "Resource Qualification API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF716",
+      "name": "Resource Reservation",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF768",
+      "name": "Resource Role API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF771",
+      "name": "Resource Usage API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF730",
+      "name": "Software And Compute Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF687",
+      "name": "Stock Management API",
+      "category": "Resource",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF666",
+      "name": "Account Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF651",
+      "name": "Agreement Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF668",
+      "name": "Partnership Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v3",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF683",
+      "name": "Party Interaction Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF632",
+      "name": "Party Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF669",
+      "name": "Party Role Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF644",
+      "name": "Privacy Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF736",
+      "name": "Revenue Sharing Algorithm Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF738",
+      "name": "Revenue Sharing Model Management",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF737",
+      "name": "Revenue Sharing Report Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF711",
+      "name": "Shipment Management Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF684",
+      "name": "Shipment Tracking Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v1"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF700",
+      "name": "Shipping Order Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF623",
+      "name": "SLA Management API",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v2"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF713",
+      "name": "Work Management",
+      "category": "Business Partner",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF915",
+      "name": "AI Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF735",
+      "name": "CDR Transaction Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF655",
+      "name": "Change Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v3",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF681",
+      "name": "Communication Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v3",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF764",
+      "name": "Cost Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF720",
+      "name": "Digital Identity Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF667",
+      "name": "Document Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF728",
+      "name": "Dunning Case Management",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF662",
+      "name": "Entity Catalog Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v3",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF703",
+      "name": "Entity Inventory Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF688",
+      "name": "Event Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF691",
+      "name": "Federated ID Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF710",
+      "name": "General Test Artifact Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF673",
+      "name": "Geographic Address Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF675",
+      "name": "Geographic Location Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v1",
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF674",
+      "name": "Geographic Site Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF724",
+      "name": "Incident Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF921",
+      "name": "Intent Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF725",
+      "name": "Metadata Catalog Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF931",
+      "name": "Open Gateway Onboarding and Ordering Component Suite",
+      "category": "Common",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": true
+    },
+    {
+      "api_id": "TMF628",
+      "name": "Performance Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF649",
+      "name": "Performance Thresholding Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF701",
+      "name": "Process Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF910",
+      "name": "Self Care Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v1"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF704",
+      "name": "Test Case Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF706",
+      "name": "Test Data Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF705",
+      "name": "Test Environment Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF708",
+      "name": "Test Execution Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF707",
+      "name": "Test Result Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF709",
+      "name": "Test Scenario Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF686",
+      "name": "Topology Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF621",
+      "name": "Trouble Ticket Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4",
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF672",
+      "name": "User Role Permission Management API",
+      "category": "Common",
+      "directory_major_versions": [
+        "v5"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF715",
+      "name": "Warranty Management",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    },
+    {
+      "api_id": "TMF714",
+      "name": "Work Qualification Management",
+      "category": "Common",
+      "directory_major_versions": [
+        "v4"
+      ],
+      "source": "User-provided TM Forum directory snapshot, 2026-10-22",
+      "spec_status": "UNVERIFIED",
+      "source_artifacts": [],
+      "needs_special_review": false
+    }
+  ]
+}

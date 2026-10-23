@@ -1,0 +1,19 @@
+name: Bug report
+description: Report a reproducible runtime, compiler, or documentation problem.
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Include expected behavior and the observed response. Use synthetic data only.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: API ID and major
+      placeholder: TMF629 v5
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Include the repository revision, Node version, OS, command or curl request, and relevant error output. Remove tokens and personal data.
+    validations:
+      required: true
