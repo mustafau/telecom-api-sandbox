@@ -34,7 +34,7 @@
     "format": "biome check --write apps tools tests package.json tsconfig.json biome.json wrangler.jsonc"
   },
   "dependencies": {
-    "hono": "4.13.14"
+    "hono": "4.13.16"
   },
   "devDependencies": {
     "@apidevtools/swagger-parser": "13.1.0",
