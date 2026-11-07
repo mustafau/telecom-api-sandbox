@@ -117,7 +117,8 @@ $('try').onclick = async () => {
       method: op.method,
     });
     const body = await r.text();
-    $('response').textContent = `HTTP ${r.status}\n${formatBody(r.headers.get('Content-Type'), body)}`;
+    $('response').textContent =
+      `HTTP ${r.status}\n${formatBody(r.headers.get('Content-Type'), body)}`;
   } catch (e) {
     $('response').textContent = String(e);
   }
