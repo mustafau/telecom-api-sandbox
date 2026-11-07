@@ -3,12 +3,29 @@ import { exampleId, examplePath } from './example-path.js';
 const $ = (id) => document.getElementById(id);
 let catalog,
   operations = [],
-  projections = [];
+  projections = [],
+  current = null;
 const text = (tag, value) => {
   const e = document.createElement(tag);
   e.textContent = value;
   return e;
 };
+function selectionFromUrl() {
+  const params = new URLSearchParams(location.search);
+  const api = params.get('api');
+  const major = params.get('major');
+  const op = params.get('op');
+  if (!api || !major || !/^TMF\d{3}$/.test(api) || !/^v[1-5]$/.test(major)) return null;
+  return { api, major, op: op != null && /^\d+$/.test(op) ? op : null };
+}
+function writeSelection(apiId, major, opIndex) {
+  const url = new URL(location.href);
+  url.searchParams.set('api', apiId);
+  url.searchParams.set('major', major);
+  if (opIndex != null && opIndex !== '') url.searchParams.set('op', String(opIndex));
+  else url.searchParams.delete('op');
+  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+}
 async function load() {
   const [coverage, data, scenarioIndex] = await Promise.all(
     ['/coverage', '/catalog', '/scenarios'].map(async (path) => {
@@ -41,7 +58,14 @@ async function load() {
     stats.append(s);
   }
   $('summary').append(stats);
+  const saved = selectionFromUrl();
+  if (saved && !$('search').value) $('search').value = saved.api;
   render();
+  if (saved) {
+    const api = catalog.apis.find((a) => a.api_id === saved.api);
+    const version = api?.versions.find((v) => v.major === saved.major);
+    if (api && version) await select(api, version, { restoreOp: saved.op, scroll: false });
+  }
 }
 function render() {
   const query = $('search').value.toLowerCase();
@@ -62,10 +86,11 @@ function render() {
     $('apis').append(row);
   }
 }
-async function select(api, version) {
+async function select(api, version, { restoreOp = null, scroll = true } = {}) {
   const r = await fetch(`/catalog/${api.api_id}/${version.major}`);
   const data = await r.json();
   operations = data.operations || [];
+  current = { apiId: api.api_id, major: version.major };
   $('explorer').hidden = false;
   $('selected').textContent = `${api.api_id} · ${version.major} · ${api.name}`;
   $('details').textContent =
@@ -81,9 +106,11 @@ async function select(api, version) {
       return option;
     }),
   );
+  if (restoreOp != null && operations[Number(restoreOp)]) $('operation').value = restoreOp;
   $('try').disabled = $('copy').disabled = !operations.length;
+  writeSelection(api.api_id, version.major, operations.length ? $('operation').value : null);
   updateCurl();
-  $('explorer').scrollIntoView({ behavior: 'smooth' });
+  if (scroll) $('explorer').scrollIntoView({ behavior: 'smooth' });
 }
 function selected() {
   const op = operations[Number($('operation').value)];
@@ -99,7 +126,10 @@ function updateCurl() {
   $('response').textContent = '';
 }
 $('search').addEventListener('input', render);
-$('operation').addEventListener('change', updateCurl);
+$('operation').addEventListener('change', () => {
+  if (current) writeSelection(current.apiId, current.major, $('operation').value);
+  updateCurl();
+});
 $('copy').onclick = () => navigator.clipboard.writeText($('curl').textContent);
 function formatBody(contentType, body) {
   if (!body || !contentType?.includes('json')) return body;
