@@ -10,21 +10,40 @@ const text = (tag, value) => {
   e.textContent = value;
   return e;
 };
+function params() {
+  return new URLSearchParams(location.search);
+}
+function replaceParams(mutate) {
+  const url = new URL(location.href);
+  mutate(url.searchParams);
+  const query = url.searchParams.toString();
+  history.replaceState(null, '', `${url.pathname}${query ? `?${query}` : ''}${url.hash}`);
+}
 function selectionFromUrl() {
-  const params = new URLSearchParams(location.search);
-  const api = params.get('api');
-  const major = params.get('major');
-  const op = params.get('op');
+  const values = params();
+  const api = values.get('api');
+  const major = values.get('major');
+  const op = values.get('op');
   if (!api || !major || !/^TMF\d{3}$/.test(api) || !/^v[1-5]$/.test(major)) return null;
   return { api, major, op: op != null && /^\d+$/.test(op) ? op : null };
 }
+function searchFromUrl() {
+  return params().get('q') ?? '';
+}
 function writeSelection(apiId, major, opIndex) {
-  const url = new URL(location.href);
-  url.searchParams.set('api', apiId);
-  url.searchParams.set('major', major);
-  if (opIndex != null && opIndex !== '') url.searchParams.set('op', String(opIndex));
-  else url.searchParams.delete('op');
-  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+  replaceParams((values) => {
+    values.set('api', apiId);
+    values.set('major', major);
+    if (opIndex != null && opIndex !== '') values.set('op', String(opIndex));
+    else values.delete('op');
+  });
+}
+function writeSearch(query) {
+  replaceParams((values) => {
+    const trimmed = query.trim();
+    if (trimmed) values.set('q', trimmed);
+    else values.delete('q');
+  });
 }
 async function load() {
   const [coverage, data, scenarioIndex] = await Promise.all(
@@ -58,9 +77,9 @@ async function load() {
     stats.append(s);
   }
   $('summary').append(stats);
-  const saved = selectionFromUrl();
-  if (saved && !$('search').value) $('search').value = saved.api;
+  $('search').value = searchFromUrl();
   render();
+  const saved = selectionFromUrl();
   if (saved) {
     const api = catalog.apis.find((a) => a.api_id === saved.api);
     const version = api?.versions.find((v) => v.major === saved.major);
@@ -125,7 +144,10 @@ function updateCurl() {
     : 'No compiled operations available.';
   $('response').textContent = '';
 }
-$('search').addEventListener('input', render);
+$('search').addEventListener('input', () => {
+  writeSearch($('search').value);
+  render();
+});
 $('operation').addEventListener('change', () => {
   if (current) writeSelection(current.apiId, current.major, $('operation').value);
   updateCurl();
