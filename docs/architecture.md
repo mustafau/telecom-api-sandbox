@@ -50,4 +50,4 @@ TMF777 has no verified source in this snapshot. Outage facts come from the origi
 
 ## Hosting
 
-The configuration uses one Worker and static assets, with no required D1 database or paid dependency. Reports measure asset and module sizes against the documented [Workers limits](https://developers.cloudflare.com/workers/platform/limits/). Local wall-clock measurements are not Cloudflare CPU measurements. Deployment and production CPU acceptance require explicit maintainer authorization.
+The configuration uses one Worker and static assets, with no required D1 database or paid dependency. The current preview host is [telecom-api-sandbox.mustafaulu.workers.dev](https://telecom-api-sandbox.mustafaulu.workers.dev/docs/). Reports measure asset and module sizes against the documented [Workers limits](https://developers.cloudflare.com/workers/platform/limits/). Local wall-clock measurements are not Cloudflare CPU measurements. Production CPU acceptance still requires measured traffic after an authorized deployment.

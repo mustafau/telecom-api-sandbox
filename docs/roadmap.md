@@ -4,7 +4,7 @@ This is the maintained list of remaining work from the [original proposal](desig
 
 ## Current baseline
 
-The 2026-10-22 inventory contains 104 APIs and 159 major-version pairs. The current implementation verifies 109 licensed, pinned contracts and all 2,532 of their operations, with 14 seeded read projections for the fiber-outage scenario. Public mutations return immutable fixtures. Local workerd verification passes; production deployment and CPU acceptance remain pending.
+The 2026-10-22 inventory contains 104 APIs and 159 major-version pairs. The current implementation verifies 109 licensed, pinned contracts and all 2,532 of their operations, with 14 seeded read projections for the fiber-outage scenario. Public mutations return immutable fixtures. Local workerd verification passes. A preview Worker is hosted at [telecom-api-sandbox.mustafaulu.workers.dev](https://telecom-api-sandbox.mustafaulu.workers.dev/docs/); production CPU acceptance remains pending.
 
 ## Next priorities
 
@@ -16,11 +16,11 @@ The 2026-10-22 inventory contains 104 APIs and 159 major-version pairs. The curr
 
 The 159-contract goal is complete only when all target pairs have verified sources and passing operations. Follow the [source workflow](sources.md) and [baseline review](testing.md) for changes.
 
-### Publish and measure the hosted service
+### Measure the hosted service
 
-- Create the public GitHub repository, run CI, and enable the repository protections in the [maintainer checklist](maintaining.md).
-- After maintainer deployment authorization, rebuild with the actual public origin and verify the hosted API, explorer, coverage, and scenario links.
-- Measure production CPU and confirm hosting limits and expected traffic before claiming production free-tier acceptance. Local bundle and asset measurements already exist.
+- Preview deployment is live at `https://telecom-api-sandbox.mustafaulu.workers.dev` after a rebuild with that `PUBLIC_ORIGIN`. Hosted API, explorer, coverage, and scenario links have been smoke-checked.
+- Continue the [maintainer checklist](maintaining.md) repository protections where not already enabled.
+- Measure production CPU under representative traffic and confirm hosting limits before claiming production free-tier acceptance. Local bundle and asset measurements already exist; Worker observability is enabled for that measurement.
 
 ### Expand useful read behavior
 

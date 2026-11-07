@@ -22,10 +22,10 @@ Do not describe all 159 target pairs as implemented while source gaps remain. Re
 
 ## Deployment
 
-The default `npm run deploy` command refuses automatic publication. After explicit authorization, rebuild with the actual trusted Worker origin:
+The current preview Worker is **https://telecom-api-sandbox.mustafaulu.workers.dev**. The default `npm run deploy` command still refuses automatic publication. After explicit authorization, rebuild with the trusted Worker origin so seeded links match the host:
 
 ```sh
-PUBLIC_ORIGIN=https://your-approved-worker.workers.dev npm run build
+PUBLIC_ORIGIN=https://telecom-api-sandbox.mustafaulu.workers.dev npm run build
 npm run verify:runtime
 ```
 

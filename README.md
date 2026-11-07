@@ -1,8 +1,10 @@
 # Telecom API Sandbox
 
-A local telecom API sandbox for integration tests, agent tools, and support demos. It compiles real TM Forum OpenAPI contracts into deterministic responses served by one Cloudflare Worker.
+A telecom API sandbox for integration tests, agent tools, and support demos. It compiles real TM Forum OpenAPI contracts into deterministic responses served by one Cloudflare Worker.
 
 **Early preview · v0.1.0** — Independent implementation. Not affiliated with, endorsed by, or certified by TM Forum.
+
+Hosted preview: **https://telecom-api-sandbox.mustafaulu.workers.dev/docs/**
 
 ![Catalog explorer showing verified contract coverage](docs/images/catalog.png)
 
@@ -24,7 +26,15 @@ Every locked contract must pass verification. The [source gaps](catalog/source-g
 
 ## Quick start
 
-Use **npm** and the Node version in [.node-version](.node-version).
+Try the hosted preview without building locally:
+
+```sh
+curl https://telecom-api-sandbox.mustafaulu.workers.dev/tmf-api/customer/v5/customer/customer-001
+```
+
+Open **https://telecom-api-sandbox.mustafaulu.workers.dev/docs/** to browse contracts and send example requests.
+
+For local development, use **npm** and the Node version in [.node-version](.node-version).
 
 ```sh
 npm ci
@@ -32,7 +42,7 @@ npm run build
 npm run dev
 ```
 
-Open **http://localhost:8787/docs/** to browse contracts and send example requests.
+Then open **http://localhost:8787/docs/** or:
 
 ```sh
 curl http://localhost:8787/tmf-api/customer/v5/customer/customer-001
@@ -74,7 +84,7 @@ npm run verify:runtime
 
 Build before these commands on a clean checkout. The runtime command starts local Wrangler, tests every generated operation and the docs endpoints over HTTP, measures the bundle with a dry run, and stops the server. It does not deploy.
 
-GitHub Actions runs this pipeline on Linux and uploads coverage reports and generated assets. Reports identify the source revision, content fingerprint, and pinned-source hash. Production CPU time remains unmeasured until an authorized Cloudflare test deployment.
+GitHub Actions runs this pipeline on Linux and uploads coverage reports and generated assets. Reports identify the source revision, content fingerprint, and pinned-source hash. A preview Worker is hosted on `workers.dev`; production CPU acceptance remains pending measured traffic.
 
 ## Project documentation
 

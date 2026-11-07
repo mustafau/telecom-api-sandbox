@@ -12,6 +12,7 @@ Initial public preview of the contract-driven Telecom API Sandbox.
 
 Known limitations include 50 source gaps, unsupported advanced queries, no persistent writes, no webhook delivery, and unmeasured production CPU. See the README and source-gap inventory for details.
 
+- Hosted the preview Worker at `https://telecom-api-sandbox.mustafaulu.workers.dev` with observability enabled and pretty-printed docs explorer responses.
 - Added ADRs, an ADR template, and agent/contributor instructions requiring architecture decision review.
 - Added fresh weekly/manual upstream monitoring with source, commit, license, and official-page reports.
 - Filled 13 missing v5 server contexts: seven derived from verified in-scope v4 evidence and six explicit sandbox conventions, including TMF638. Affected resource, hub, listener, and scenario URLs now use API-specific contexts; generated specs disclose the overrides.
