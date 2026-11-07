@@ -101,6 +101,14 @@ function updateCurl() {
 $('search').addEventListener('input', render);
 $('operation').addEventListener('change', updateCurl);
 $('copy').onclick = () => navigator.clipboard.writeText($('curl').textContent);
+function formatBody(contentType, body) {
+  if (!body || !contentType?.includes('json')) return body;
+  try {
+    return JSON.stringify(JSON.parse(body), null, 2);
+  } catch {
+    return body;
+  }
+}
 $('try').onclick = async () => {
   const op = selected();
   if (!op) return;
@@ -108,7 +116,8 @@ $('try').onclick = async () => {
     const r = await fetch(op.url, {
       method: op.method,
     });
-    $('response').textContent = `HTTP ${r.status}\n${await r.text()}`;
+    const body = await r.text();
+    $('response').textContent = `HTTP ${r.status}\n${formatBody(r.headers.get('Content-Type'), body)}`;
   } catch (e) {
     $('response').textContent = String(e);
   }
