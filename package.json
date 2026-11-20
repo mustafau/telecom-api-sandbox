@@ -38,8 +38,8 @@
   },
   "devDependencies": {
     "@apidevtools/swagger-parser": "13.1.0",
-    "@biomejs/biome": "2.6.6",
-    "@cloudflare/workers-types": "5.20261108.1",
+    "@biomejs/biome": "2.6.8",
+    "@cloudflare/workers-types": "5.20261115.1",
     "@types/node": "26.6.6",
     "@types/swagger2openapi": "7.0.4",
     "ajv": "8.20.0",
@@ -48,7 +48,7 @@
     "swagger2openapi": "7.0.8",
     "tsx": "4.23.15",
     "typescript": "7.0.2",
-    "wrangler": "4.158.0",
+    "wrangler": "4.162.0",
     "yaml": "2.9.1"
   }
 }
